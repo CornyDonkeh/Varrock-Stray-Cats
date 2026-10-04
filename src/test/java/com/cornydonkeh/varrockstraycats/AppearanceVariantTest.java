@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class AppearanceVariantTest
 {
-    private final VarrockStrayCatsConfig dogFavorites = new VarrockStrayCatsConfig()
+    private final VarrockStrayCatsConfig dogFavorites = new EmptyFavorites()
     {
         @Override public boolean randomBreeds() { return true; }
         @Override public boolean corgiPuppyFawn() { return true; }
@@ -22,7 +22,7 @@ public class AppearanceVariantTest
     public void dukeKeepsHealthyAppearanceUnlessExplicitlyIncluded()
     {
         assertNull(AppearanceVariant.choose(NpcID.XMAS24_STRAYDOG_FINAL, dogFavorites, new Random(1)));
-        VarrockStrayCatsConfig includeDuke = new VarrockStrayCatsConfig()
+        VarrockStrayCatsConfig includeDuke = new EmptyFavorites()
         {
             @Override public boolean randomBreeds() { return true; }
             @Override public boolean replaceDuke() { return true; }
@@ -35,12 +35,13 @@ public class AppearanceVariantTest
     @Test
     public void emptyFavoritesAndDisabledRandomizationFallBackToHealing()
     {
-        VarrockStrayCatsConfig empty = new VarrockStrayCatsConfig()
+        VarrockStrayCatsConfig empty = new EmptyFavorites()
         {
             @Override public boolean randomBreeds() { return true; }
         };
-        VarrockStrayCatsConfig disabled = new VarrockStrayCatsConfig()
+        VarrockStrayCatsConfig disabled = new EmptyFavorites()
         {
+            @Override public boolean randomBreeds() { return false; }
             @Override public boolean appearanceGrowncat() { return true; }
             @Override public boolean corgiPuppyFawn() { return true; }
         };
@@ -67,7 +68,7 @@ public class AppearanceVariantTest
     @Test
     public void mixedCategoriesShareOneEqualWeightPool()
     {
-        VarrockStrayCatsConfig mixed = new VarrockStrayCatsConfig()
+        VarrockStrayCatsConfig mixed = new EmptyFavorites()
         {
             @Override public boolean randomBreeds() { return true; }
             @Override public boolean corgiPuppyFawn() { return true; }
@@ -125,5 +126,102 @@ public class AppearanceVariantTest
         int[] recentPets = {NpcID.DOM_PET, NpcID.GRYPHONBOSS_PET, NpcID.SKILLPET_SAILING,
             NpcID.COWBOSS_PET, NpcID.MAGGOT_KING_PET, NpcID.GOAT_PIT_PET, NpcID.MAD_ANGEL_PET};
         for (int id : recentPets) { assertTrue("Missing recent pet " + id, npcIds.contains(id)); }
+    }
+
+    private static class EmptyFavorites implements VarrockStrayCatsConfig
+    {
+        @Override public boolean appearanceGrowncat() { return false; }
+        @Override public boolean appearanceGrowncatLight() { return false; }
+        @Override public boolean appearanceGrowncatBrown() { return false; }
+        @Override public boolean appearanceGrowncatBlack() { return false; }
+        @Override public boolean appearanceGrowncatBrowngrey() { return false; }
+        @Override public boolean appearanceGrowncatBluegrey() { return false; }
+        @Override public boolean appearanceGrowncatHell() { return false; }
+        @Override public boolean appearanceLazycatLight() { return false; }
+        @Override public boolean appearanceLazycat() { return false; }
+        @Override public boolean appearanceLazycatBrown() { return false; }
+        @Override public boolean appearanceLazycatBlack() { return false; }
+        @Override public boolean appearanceLazycatBrowngrey() { return false; }
+        @Override public boolean appearanceLazycatBluegrey() { return false; }
+        @Override public boolean appearanceLazycatHell() { return false; }
+        @Override public boolean appearanceWileycatLight() { return false; }
+        @Override public boolean appearanceWileycat() { return false; }
+        @Override public boolean appearanceWileycatBrown() { return false; }
+        @Override public boolean appearanceWileycatBlack() { return false; }
+        @Override public boolean appearanceWileycatBrowngrey() { return false; }
+        @Override public boolean appearanceWileycatBluegrey() { return false; }
+        @Override public boolean appearanceWileycatHell() { return false; }
+        @Override public boolean appearanceKittenpet1() { return false; }
+        @Override public boolean appearanceKittenpetLight() { return false; }
+        @Override public boolean appearanceKittenpetBrown() { return false; }
+        @Override public boolean appearanceKittenpetBlack() { return false; }
+        @Override public boolean appearanceKittenpetBrowngrey() { return false; }
+        @Override public boolean appearanceKittenpetBluegrey() { return false; }
+        @Override public boolean appearanceKittenpetHell() { return false; }
+        @Override public boolean appearanceOvergrowncat() { return false; }
+        @Override public boolean appearanceOvergrowncatLight() { return false; }
+        @Override public boolean appearanceOvergrowncatBrown() { return false; }
+        @Override public boolean appearanceOvergrowncatBlack() { return false; }
+        @Override public boolean appearanceOvergrowncatBrowngrey() { return false; }
+        @Override public boolean appearanceOvergrowncatBluegrey() { return false; }
+        @Override public boolean appearanceOvergrowncatHell() { return false; }
+        @Override public boolean appearanceWiseOldMan() { return false; }
+        @Override public boolean appearanceItemCabbage() { return false; }
+    }
+
+    @Test
+    public void freshDefaultsChooseOnlyCatsWiseOldManAndCabbage()
+    {
+        VarrockStrayCatsConfig config = new VarrockStrayCatsConfig() {};
+        assertTrue(config.healVarrockDogs());
+        assertTrue(config.randomBreeds());
+        EnumSet<AppearanceVariant> expected = EnumSet.of(
+            AppearanceVariant.APPEARANCEGROWNCAT,
+            AppearanceVariant.APPEARANCEGROWNCATLIGHT,
+            AppearanceVariant.APPEARANCEGROWNCATBROWN,
+            AppearanceVariant.APPEARANCEGROWNCATBLACK,
+            AppearanceVariant.APPEARANCEGROWNCATBROWNGREY,
+            AppearanceVariant.APPEARANCEGROWNCATBLUEGREY,
+            AppearanceVariant.APPEARANCEGROWNCATHELL,
+            AppearanceVariant.APPEARANCELAZYCATLIGHT,
+            AppearanceVariant.APPEARANCELAZYCAT,
+            AppearanceVariant.APPEARANCELAZYCATBROWN,
+            AppearanceVariant.APPEARANCELAZYCATBLACK,
+            AppearanceVariant.APPEARANCELAZYCATBROWNGREY,
+            AppearanceVariant.APPEARANCELAZYCATBLUEGREY,
+            AppearanceVariant.APPEARANCELAZYCATHELL,
+            AppearanceVariant.APPEARANCEWILEYCATLIGHT,
+            AppearanceVariant.APPEARANCEWILEYCAT,
+            AppearanceVariant.APPEARANCEWILEYCATBROWN,
+            AppearanceVariant.APPEARANCEWILEYCATBLACK,
+            AppearanceVariant.APPEARANCEWILEYCATBROWNGREY,
+            AppearanceVariant.APPEARANCEWILEYCATBLUEGREY,
+            AppearanceVariant.APPEARANCEWILEYCATHELL,
+            AppearanceVariant.APPEARANCEKITTENPET1,
+            AppearanceVariant.APPEARANCEKITTENPETLIGHT,
+            AppearanceVariant.APPEARANCEKITTENPETBROWN,
+            AppearanceVariant.APPEARANCEKITTENPETBLACK,
+            AppearanceVariant.APPEARANCEKITTENPETBROWNGREY,
+            AppearanceVariant.APPEARANCEKITTENPETBLUEGREY,
+            AppearanceVariant.APPEARANCEKITTENPETHELL,
+            AppearanceVariant.APPEARANCEOVERGROWNCAT,
+            AppearanceVariant.APPEARANCEOVERGROWNCATLIGHT,
+            AppearanceVariant.APPEARANCEOVERGROWNCATBROWN,
+            AppearanceVariant.APPEARANCEOVERGROWNCATBLACK,
+            AppearanceVariant.APPEARANCEOVERGROWNCATBROWNGREY,
+            AppearanceVariant.APPEARANCEOVERGROWNCATBLUEGREY,
+            AppearanceVariant.APPEARANCEOVERGROWNCATHELL,
+            AppearanceVariant.APPEARANCEWISEOLDMAN,
+            AppearanceVariant.APPEARANCEITEMCABBAGE);
+        EnumSet<AppearanceVariant> seen = EnumSet.noneOf(AppearanceVariant.class);
+        Random random = new Random(42);
+        for (int i = 0; i < 2000; i++)
+        {
+            AppearanceVariant choice = AppearanceVariant.choose(NpcID.DOG_STRAY, config, random);
+            assertTrue(expected.contains(choice));
+            seen.add(choice);
+        }
+        assertEquals(37, expected.size());
+        assertEquals(expected, seen);
     }
 }

@@ -17,7 +17,7 @@ public interface VarrockStrayCatsConfig extends Config
     default boolean healVarrockDogs() { return true; }
 
     @ConfigItem(keyName = "randomBreeds", name = "Random favorite appearances", description = "Choose equally from checked cats, dogs, pets, bosses, Wise Old Man and cabbage. With none checked, use healthy dogs.", position = 1)
-    default boolean randomBreeds() { return false; }
+    default boolean randomBreeds() { return true; }
 
     @ConfigItem(keyName = "replaceDuke", name = "Include Duke in favorites", description = "Let Duke use checked favorites too. Disabled: Duke always keeps his healthy appearance.", position = 2)
     default boolean replaceDuke() { return false; }
@@ -523,121 +523,121 @@ public interface VarrockStrayCatsConfig extends Config
     String section0 = "section0";
 
     @ConfigItem(keyName = "appearanceGrowncat", name = "Default", description = "Include Default in random appearances.", section = section0, position = 0)
-    default boolean appearanceGrowncat() { return false; }
+    default boolean appearanceGrowncat() { return true; }
 
     @ConfigItem(keyName = "appearanceGrowncatLight", name = "White", description = "Include White in random appearances.", section = section0, position = 1)
-    default boolean appearanceGrowncatLight() { return false; }
+    default boolean appearanceGrowncatLight() { return true; }
 
     @ConfigItem(keyName = "appearanceGrowncatBrown", name = "Brown", description = "Include Brown in random appearances.", section = section0, position = 2)
-    default boolean appearanceGrowncatBrown() { return false; }
+    default boolean appearanceGrowncatBrown() { return true; }
 
     @ConfigItem(keyName = "appearanceGrowncatBlack", name = "Black", description = "Include Black in random appearances.", section = section0, position = 3)
-    default boolean appearanceGrowncatBlack() { return false; }
+    default boolean appearanceGrowncatBlack() { return true; }
 
     @ConfigItem(keyName = "appearanceGrowncatBrowngrey", name = "Brown & grey", description = "Include Brown & grey in random appearances.", section = section0, position = 4)
-    default boolean appearanceGrowncatBrowngrey() { return false; }
+    default boolean appearanceGrowncatBrowngrey() { return true; }
 
     @ConfigItem(keyName = "appearanceGrowncatBluegrey", name = "Blue & grey", description = "Include Blue & grey in random appearances.", section = section0, position = 5)
-    default boolean appearanceGrowncatBluegrey() { return false; }
+    default boolean appearanceGrowncatBluegrey() { return true; }
 
     @ConfigItem(keyName = "appearanceGrowncatHell", name = "Hell", description = "Include Hell in random appearances.", section = section0, position = 6)
-    default boolean appearanceGrowncatHell() { return false; }
+    default boolean appearanceGrowncatHell() { return true; }
 
     @ConfigSection(name = "Cats: Lazy", description = "Favorite appearances: Cats: Lazy", position = 11, closedByDefault = true)
     String section1 = "section1";
 
     @ConfigItem(keyName = "appearanceLazycatLight", name = "White", description = "Include White in random appearances.", section = section1, position = 0)
-    default boolean appearanceLazycatLight() { return false; }
+    default boolean appearanceLazycatLight() { return true; }
 
     @ConfigItem(keyName = "appearanceLazycat", name = "Default", description = "Include Default in random appearances.", section = section1, position = 1)
-    default boolean appearanceLazycat() { return false; }
+    default boolean appearanceLazycat() { return true; }
 
     @ConfigItem(keyName = "appearanceLazycatBrown", name = "Brown", description = "Include Brown in random appearances.", section = section1, position = 2)
-    default boolean appearanceLazycatBrown() { return false; }
+    default boolean appearanceLazycatBrown() { return true; }
 
     @ConfigItem(keyName = "appearanceLazycatBlack", name = "Black", description = "Include Black in random appearances.", section = section1, position = 3)
-    default boolean appearanceLazycatBlack() { return false; }
+    default boolean appearanceLazycatBlack() { return true; }
 
     @ConfigItem(keyName = "appearanceLazycatBrowngrey", name = "Brown & grey", description = "Include Brown & grey in random appearances.", section = section1, position = 4)
-    default boolean appearanceLazycatBrowngrey() { return false; }
+    default boolean appearanceLazycatBrowngrey() { return true; }
 
     @ConfigItem(keyName = "appearanceLazycatBluegrey", name = "Blue & grey", description = "Include Blue & grey in random appearances.", section = section1, position = 5)
-    default boolean appearanceLazycatBluegrey() { return false; }
+    default boolean appearanceLazycatBluegrey() { return true; }
 
     @ConfigItem(keyName = "appearanceLazycatHell", name = "Hell", description = "Include Hell in random appearances.", section = section1, position = 6)
-    default boolean appearanceLazycatHell() { return false; }
+    default boolean appearanceLazycatHell() { return true; }
 
     @ConfigSection(name = "Cats: Wily", description = "Favorite appearances: Cats: Wily", position = 12, closedByDefault = true)
     String section2 = "section2";
 
     @ConfigItem(keyName = "appearanceWileycatLight", name = "White", description = "Include White in random appearances.", section = section2, position = 0)
-    default boolean appearanceWileycatLight() { return false; }
+    default boolean appearanceWileycatLight() { return true; }
 
     @ConfigItem(keyName = "appearanceWileycat", name = "Default", description = "Include Default in random appearances.", section = section2, position = 1)
-    default boolean appearanceWileycat() { return false; }
+    default boolean appearanceWileycat() { return true; }
 
     @ConfigItem(keyName = "appearanceWileycatBrown", name = "Brown", description = "Include Brown in random appearances.", section = section2, position = 2)
-    default boolean appearanceWileycatBrown() { return false; }
+    default boolean appearanceWileycatBrown() { return true; }
 
     @ConfigItem(keyName = "appearanceWileycatBlack", name = "Black", description = "Include Black in random appearances.", section = section2, position = 3)
-    default boolean appearanceWileycatBlack() { return false; }
+    default boolean appearanceWileycatBlack() { return true; }
 
     @ConfigItem(keyName = "appearanceWileycatBrowngrey", name = "Brown & grey", description = "Include Brown & grey in random appearances.", section = section2, position = 4)
-    default boolean appearanceWileycatBrowngrey() { return false; }
+    default boolean appearanceWileycatBrowngrey() { return true; }
 
     @ConfigItem(keyName = "appearanceWileycatBluegrey", name = "Blue & grey", description = "Include Blue & grey in random appearances.", section = section2, position = 5)
-    default boolean appearanceWileycatBluegrey() { return false; }
+    default boolean appearanceWileycatBluegrey() { return true; }
 
     @ConfigItem(keyName = "appearanceWileycatHell", name = "Hell", description = "Include Hell in random appearances.", section = section2, position = 6)
-    default boolean appearanceWileycatHell() { return false; }
+    default boolean appearanceWileycatHell() { return true; }
 
     @ConfigSection(name = "Cats: Kitten", description = "Favorite appearances: Cats: Kitten", position = 13, closedByDefault = true)
     String section3 = "section3";
 
     @ConfigItem(keyName = "appearanceKittenpet1", name = "Default", description = "Include Default in random appearances.", section = section3, position = 0)
-    default boolean appearanceKittenpet1() { return false; }
+    default boolean appearanceKittenpet1() { return true; }
 
     @ConfigItem(keyName = "appearanceKittenpetLight", name = "White", description = "Include White in random appearances.", section = section3, position = 1)
-    default boolean appearanceKittenpetLight() { return false; }
+    default boolean appearanceKittenpetLight() { return true; }
 
     @ConfigItem(keyName = "appearanceKittenpetBrown", name = "Brown", description = "Include Brown in random appearances.", section = section3, position = 2)
-    default boolean appearanceKittenpetBrown() { return false; }
+    default boolean appearanceKittenpetBrown() { return true; }
 
     @ConfigItem(keyName = "appearanceKittenpetBlack", name = "Black", description = "Include Black in random appearances.", section = section3, position = 3)
-    default boolean appearanceKittenpetBlack() { return false; }
+    default boolean appearanceKittenpetBlack() { return true; }
 
     @ConfigItem(keyName = "appearanceKittenpetBrowngrey", name = "Brown & grey", description = "Include Brown & grey in random appearances.", section = section3, position = 4)
-    default boolean appearanceKittenpetBrowngrey() { return false; }
+    default boolean appearanceKittenpetBrowngrey() { return true; }
 
     @ConfigItem(keyName = "appearanceKittenpetBluegrey", name = "Blue & grey", description = "Include Blue & grey in random appearances.", section = section3, position = 5)
-    default boolean appearanceKittenpetBluegrey() { return false; }
+    default boolean appearanceKittenpetBluegrey() { return true; }
 
     @ConfigItem(keyName = "appearanceKittenpetHell", name = "Hell", description = "Include Hell in random appearances.", section = section3, position = 6)
-    default boolean appearanceKittenpetHell() { return false; }
+    default boolean appearanceKittenpetHell() { return true; }
 
     @ConfigSection(name = "Cats: Overgrown", description = "Favorite appearances: Cats: Overgrown", position = 14, closedByDefault = true)
     String section4 = "section4";
 
     @ConfigItem(keyName = "appearanceOvergrowncat", name = "Default", description = "Include Default in random appearances.", section = section4, position = 0)
-    default boolean appearanceOvergrowncat() { return false; }
+    default boolean appearanceOvergrowncat() { return true; }
 
     @ConfigItem(keyName = "appearanceOvergrowncatLight", name = "White", description = "Include White in random appearances.", section = section4, position = 1)
-    default boolean appearanceOvergrowncatLight() { return false; }
+    default boolean appearanceOvergrowncatLight() { return true; }
 
     @ConfigItem(keyName = "appearanceOvergrowncatBrown", name = "Brown", description = "Include Brown in random appearances.", section = section4, position = 2)
-    default boolean appearanceOvergrowncatBrown() { return false; }
+    default boolean appearanceOvergrowncatBrown() { return true; }
 
     @ConfigItem(keyName = "appearanceOvergrowncatBlack", name = "Black", description = "Include Black in random appearances.", section = section4, position = 3)
-    default boolean appearanceOvergrowncatBlack() { return false; }
+    default boolean appearanceOvergrowncatBlack() { return true; }
 
     @ConfigItem(keyName = "appearanceOvergrowncatBrowngrey", name = "Brown & grey", description = "Include Brown & grey in random appearances.", section = section4, position = 4)
-    default boolean appearanceOvergrowncatBrowngrey() { return false; }
+    default boolean appearanceOvergrowncatBrowngrey() { return true; }
 
     @ConfigItem(keyName = "appearanceOvergrowncatBluegrey", name = "Blue & grey", description = "Include Blue & grey in random appearances.", section = section4, position = 5)
-    default boolean appearanceOvergrowncatBluegrey() { return false; }
+    default boolean appearanceOvergrowncatBluegrey() { return true; }
 
     @ConfigItem(keyName = "appearanceOvergrowncatHell", name = "Hell", description = "Include Hell in random appearances.", section = section4, position = 6)
-    default boolean appearanceOvergrowncatHell() { return false; }
+    default boolean appearanceOvergrowncatHell() { return true; }
 
     @ConfigSection(name = "Dogs: Bernese Mountain Dog", description = "Favorite appearances: Dogs: Bernese Mountain Dog", position = 15, closedByDefault = true)
     String section5 = "bernese";
@@ -2074,9 +2074,9 @@ public interface VarrockStrayCatsConfig extends Config
     String section26 = "section26";
 
     @ConfigItem(keyName = "appearanceWiseOldMan", name = "Wise Old Man", description = "Include Wise Old Man in random appearances.", section = section26, position = 0)
-    default boolean appearanceWiseOldMan() { return false; }
+    default boolean appearanceWiseOldMan() { return true; }
 
     @ConfigItem(keyName = "appearanceItemCabbage", name = "Cabbage", description = "Include Cabbage in random appearances.", section = section26, position = 1)
-    default boolean appearanceItemCabbage() { return false; }
+    default boolean appearanceItemCabbage() { return true; }
 
 }

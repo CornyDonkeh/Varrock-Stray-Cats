@@ -36,7 +36,7 @@ public interface VarrockStrayCatsConfig extends Config
     default boolean healVarrockDogs() { return true; }
 
     @ConfigItem(keyName = "randomBreeds", name = "Random favorite appearances", description = "Choose equally from checked cats, dogs, pets, bosses, Wise Old Man and cabbage. With none checked, use healthy dogs.", position = 1)
-    default boolean randomBreeds() { return false; }
+    default boolean randomBreeds() { return true; }
 
     @ConfigItem(keyName = "replaceDuke", name = "Include Duke in favorites", description = "Let Duke use checked favorites too. Disabled: Duke always keeps his healthy appearance.", position = 2)
     default boolean replaceDuke() { return false; }
@@ -51,7 +51,8 @@ for i,s in enumerate(sections):
     section_id = original_dog_sections.get(s.removeprefix('Dogs: '), sk)
     config+=f'    @ConfigSection(name = {quoted(s)}, description = {quoted("Favorite appearances: "+s)}, position = {10+i}, closedByDefault = true)\n    String {sk} = "{section_id}";\n\n'
     for pos,e in enumerate(x for x in entries if x['section']==s):
-        config+=f'    @ConfigItem(keyName = "{e["key"]}", name = {quoted(e["label"])}, description = {quoted("Include "+e["label"]+" in random appearances.")}, section = {sk}, position = {pos})\n    default boolean {e["key"]}() {{ return false; }}\n\n'
+        default = 'true' if s.startswith('Cats:') or s == 'Characters & cabbage' else 'false'
+        config+=f'    @ConfigItem(keyName = "{e["key"]}", name = {quoted(e["label"])}, description = {quoted("Include "+e["label"]+" in random appearances.")}, section = {sk}, position = {pos})\n    default boolean {e["key"]}() {{ return {default}; }}\n\n'
 config+='}\n'
 (JAVA/'VarrockStrayCatsConfig.java').write_text(config,encoding='utf-8')
 enum='''package com.cornydonkeh.varrockstraycats;

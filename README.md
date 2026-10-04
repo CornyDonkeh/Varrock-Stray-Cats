@@ -9,7 +9,9 @@ cats, dogs, obtainable pets, bosses, the Wise Old Man, and a cabbage.
 
 - **Enable appearances** enables healing and optional favorite replacements.
 - **Random favorite appearances** chooses equally from every checked appearance.
-  This is off by default, preserving the original healthy-dog behavior.
+  The plugin and appearances are enabled by default. The initial favorites are
+  all 35 cat variants, the Wise Old Man, and cabbage. Dogs, other pets, and bosses
+  start unchecked and can be selected manually. Existing saved settings are retained.
 - Expand the collapsible **Cats**, **Dogs**, **Pets**, **Bosses**, and
   **Characters & cabbage** sections to check individual appearances. Cats include
   kitten, adult, overgrown, lazy and wily forms, with every coat and hell variant.

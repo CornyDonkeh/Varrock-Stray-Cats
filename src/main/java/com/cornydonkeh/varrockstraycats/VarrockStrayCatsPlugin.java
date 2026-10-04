@@ -37,6 +37,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 @Slf4j
 @PluginDescriptor(
 	name = "Varrock Stray Cats",
+	enabledByDefault = true,
 	description = "Give Varrock's stray dogs healthy, cat, pet, boss, Wise Old Man or cabbage appearances.",
 	tags = {"cat", "cats", "dog", "dogs", "pets", "boss", "varrock", "duke", "cosmetic"}
 )
