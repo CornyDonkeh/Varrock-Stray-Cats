@@ -9,7 +9,14 @@ import javax.inject.Inject;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Animation;
 import net.runelite.api.Client;
+import net.runelite.api.ChatMessageType;
+import net.runelite.api.MenuEntry;
+import net.runelite.api.events.ChatMessage;
+import net.runelite.api.events.MenuEntryAdded;
+import net.runelite.api.events.MenuOptionClicked;
+import net.runelite.api.events.OverheadTextChanged;
 import net.runelite.api.GameState;
+import net.runelite.api.GameObject;
 import net.runelite.api.ItemComposition;
 import net.runelite.api.Model;
 import net.runelite.api.ModelData;
@@ -17,6 +24,8 @@ import net.runelite.api.NPC;
 import net.runelite.api.NPCComposition;
 import net.runelite.api.Renderable;
 import net.runelite.api.RuneLiteObject;
+import net.runelite.api.Scene;
+import net.runelite.api.TileObject;
 import net.runelite.api.events.BeforeRender;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.GameTick;
@@ -56,29 +65,158 @@ public class VarrockStrayCatsPlugin extends Plugin
 
 	// NPC indices can be reused after despawn: track the actual NPC instances.
 	private final Map<NPC, DogAppearance> dogs = new IdentityHashMap<>();
+	private NPC interactionNpc;
+	private String[] interactionTexts;
+	private int interactionAction;
+	private int interactionTick;
+	private boolean interactionNarrated;
+
+	private String[] texts(NPC npc)
+	{
+		DogAppearance appearance = dogs.get(npc);
+		return running && appearance != null && appearance.replacement != null
+			&& appearance.replacement.isActive() ? InteractionTexts.get(appearance.variant) : null;
+	}
+
+	@Subscribe
+	public void onMenuEntryAdded(MenuEntryAdded event)
+	{
+		MenuEntry entry = event.getMenuEntry();
+		String[] text = texts(entry.getNpc());
+		if (text != null)
+		{
+			// Preserve the selected item prefix, action opcode and original NPC index.
+			entry.setTarget(entry.getTarget().replace("Stray dog", text[0]));
+		}
+	}
+
+	@Subscribe
+	public void onMenuOptionClicked(MenuOptionClicked event)
+	{
+		interactionNpc = null;
+		MenuEntry entry = event.getMenuEntry();
+		String[] text = texts(entry.getNpc());
+		if (text == null)
+		{
+			return;
+		}
+		String option = entry.getOption();
+		int action = "Pet".equals(option) ? 0 : "Shoo-away".equals(option) ? 1 : "Use".equals(option) ? 2 : -1;
+		if (action >= 0)
+		{
+			interactionNpc = entry.getNpc();
+			interactionTexts = text;
+			interactionAction = action;
+			interactionTick = client.getTickCount();
+			interactionNarrated = false;
+		}
+	}
+
+	private boolean hasInteraction()
+	{
+		return interactionNpc != null && texts(interactionNpc) != null
+			&& client.getTickCount() - interactionTick <= 50;
+	}
+
+	@Subscribe
+	public void onOverheadTextChanged(OverheadTextChanged event)
+	{
+		if (event.getActor() instanceof NPC && isDogCall(event.getOverheadText())
+			&& (!hasInteraction() || event.getActor() != interactionNpc))
+		{
+			String[] text = texts((NPC) event.getActor());
+			if (text != null && !text[2].equals(event.getOverheadText()))
+			{
+				event.getActor().setOverheadText(text[2]);
+			}
+			return;
+		}
+		if (!hasInteraction())
+		{
+			return;
+		}
+		String original = event.getOverheadText();
+		if (event.getActor() == interactionNpc && isDogCall(original))
+		{
+			String replacement = interactionTexts[2 + interactionAction * 3];
+			if (!replacement.equals(original))
+			{
+				event.getActor().setOverheadText(replacement);
+			}
+			if (!interactionNarrated && interactionAction < 2)
+			{
+				interactionNarrated = true;
+				client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", interactionTexts[3 + interactionAction * 3], "");
+			}
+		}
+		else if (event.getActor() == client.getLocalPlayer())
+		{
+			if (interactionAction == 0 && "Who's a good doggy!".equals(original)
+				|| interactionAction == 1 && "Boo!".equals(original))
+			{
+				event.getActor().setOverheadText(interactionTexts[1 + interactionAction * 3]);
+			}
+		}
+	}
+
+	static boolean isDogCall(String text)
+	{
+		return "Woof!".equalsIgnoreCase(text) || "Woof woof!".equalsIgnoreCase(text)
+			|| "Whine!".equalsIgnoreCase(text) || "Grrrr!".equalsIgnoreCase(text)
+			|| "Bark!".equalsIgnoreCase(text);
+	}
+
+	@Subscribe
+	public void onChatMessage(ChatMessage event)
+	{
+		if (!hasInteraction() || interactionAction != 2
+			|| event.getType() != ChatMessageType.GAMEMESSAGE && event.getType() != ChatMessageType.SPAM)
+		{
+			return;
+		}
+		String original = event.getMessage();
+		String replacement = null;
+		if ("You give the dog some nice bones.".equals(original))
+		{
+			replacement = "You offer " + interactionTexts[0] + " some bones.";
+		}
+		else if ("It happily gnaws on them.".equals(original))
+		{
+			replacement = interactionTexts[9];
+		}
+		else if ("You give the dog a nice piece of meat.".equals(original))
+		{
+			replacement = "You offer " + interactionTexts[0] + " some meat.";
+		}
+		else if ("It gobbles it up.".equals(original))
+		{
+			replacement = interactionTexts[12];
+		}
+		else if ("The dog doesn't seem interested in that.".equals(original))
+		{
+			replacement = interactionTexts[13];
+		}
+		if (replacement != null)
+		{
+			event.getMessageNode().setValue(replacement);
+			client.refreshChat();
+		}
+	}
 	private final Random random = new Random();
 	private final RenderCallback drawListener = new RenderCallback()
 	{
 		@Override
-		public boolean addEntity(Renderable renderable, boolean ui)
+		public boolean drawObject(Scene scene, TileObject object)
 		{
-			// Keep the NPC's 2D layer, but suppress its 3D model once our replacement is ready.
-			if (!ui && renderable instanceof NPC)
-			{
-				DogAppearance appearance = dogs.get(renderable);
-				if (appearance != null && !appearance.observedInScene)
-				{
-					appearance.observedInScene = true;
-					log.debug("Tracked stray {} added to scene; replacement active={}",
-						appearance.originalNpcId, appearance.replacement != null && appearance.replacement.isActive());
-				}
-			}
-			return ui || shouldDraw(renderable);
+			// Keep the NPC in the scene for the client's original clickbox and menus.
+			// Temporary NPC scene objects wrap their NPC as a GameObject renderable.
+			return !(object instanceof GameObject)
+				|| shouldDraw(((GameObject) object).getRenderable());
 		}
 	};
 	private volatile boolean running;
 	// Share geometry only among dogs with the same original color palette.
-	private final Map<Integer, Model> healthyModels = new HashMap<>();
+	private final Map<Object, Model> healthyModels = new HashMap<>();
 
 	@Provides
 	VarrockStrayCatsConfig provideConfig(ConfigManager manager)
@@ -101,6 +239,7 @@ public class VarrockStrayCatsPlugin extends Plugin
 	protected void shutDown()
 	{
 		running = false;
+		interactionNpc = null;
 		renderCallbackManager.unregister(drawListener);
 		clientThread.invoke(() ->
 		{
@@ -233,8 +372,7 @@ public class VarrockStrayCatsPlugin extends Plugin
 			{
 				continue;
 			}
-			int modelKey = appearance.variant == null ? original.getId()
-				: (appearance.variant.item ? -appearance.variant.definitionId : appearance.variant.definitionId);
+			Object modelKey = appearance.variant == null ? original.getId() : appearance.variant;
 			Model healthyModel = healthyModels.get(modelKey);
 			if (healthyModel == null)
 			{
@@ -249,7 +387,16 @@ public class VarrockStrayCatsPlugin extends Plugin
 			RuneLiteObject replacement = client.createRuneLiteObject();
 			replacement.setModel(healthyModel);
 			replacement.setShouldLoop(true);
+			NPCComposition sizeDefinition = appearance.variant == null
+				? client.getNpcDefinition(NpcID.CLAN_HALL_DOG)
+				: appearance.variant.item || appearance.variant == AppearanceVariant.APPEARANCEOLMHEAD
+					? null : client.getNpcDefinition(appearance.variant.definitionId);
+			appearance.widthScale = sizeDefinition == null ? 128 : sizeDefinition.getWidthScale();
+			appearance.heightScale = sizeDefinition == null ? 128 : sizeDefinition.getHeightScale();
+			int initialAnimation = appearance.variant == null ? entry.getKey().getPoseAnimation()
+				: appearance.variant.idleAnimation;
 			appearance.replacement = replacement;
+			setReplacementAnimation(appearance, initialAnimation);
 			positionReplacement(entry.getKey(), replacement);
 			log.debug("Created appearance {} for NPC {}", modelKey, original.getId());
 		}
@@ -263,6 +410,15 @@ public class VarrockStrayCatsPlugin extends Plugin
 
 	private Model loadAppearanceModel(AppearanceVariant variant)
 	{
+		if (variant == AppearanceVariant.APPEARANCEOLMHEAD)
+		{
+			// ObjectID.OLM_HEAD (29881): visible head meshes from the reviewed cache.
+			// The NPC definition has only the invisible interaction placeholder (32709).
+			ModelData head = client.loadModelData(32523);
+			ModelData neck = client.loadModelData(32522);
+			return head == null || neck == null ? null
+				: copyMutableModelData(client.mergeModels(head, neck)).light();
+		}
 		if (variant.item)
 		{
 			ItemComposition item = client.getItemDefinition(variant.definitionId);
@@ -274,6 +430,10 @@ public class VarrockStrayCatsPlugin extends Plugin
 			ModelData data = copyMutableModelData(cached.shallowCopy());
 			recolor(data, item.getColorToReplace(), item.getColorToReplaceWith());
 			retexture(data, item.getTextureToReplace(), item.getTextureToReplaceWith());
+			if (variant.targetHeight > 0)
+			{
+				scaleToHeight(data, variant.targetHeight);
+			}
 			return data.light();
 		}
 		NPCComposition definition = client.getNpcDefinition(variant.definitionId);
@@ -306,8 +466,30 @@ public class VarrockStrayCatsPlugin extends Plugin
 		ModelData data = copyMutableModelData(parts.length == 1 ? parts[0].shallowCopy() : client.mergeModels(parts));
 		recolor(data, colors.getColorToReplace(), colors.getColorToReplaceWith());
 		retexture(data, textureFrom, textureTo);
-		data.scale(healthy.getWidthScale(), healthy.getHeightScale(), healthy.getWidthScale());
 		return data.light();
+	}
+
+	static void scaleToHeight(ModelData data, int targetHeight)
+	{
+		float[] y = data.getVerticesY();
+		if (y == null || y.length == 0)
+		{
+			return;
+		}
+		float minimum = y[0];
+		float maximum = y[0];
+		for (float value : y)
+		{
+			minimum = Math.min(minimum, value);
+			maximum = Math.max(maximum, value);
+		}
+		if (maximum > minimum)
+		{
+			int scale = Math.max(1, Math.round(targetHeight * 128f / (maximum - minimum)));
+			data.scale(scale, scale, scale);
+			// Rest the enlarged cabbage on the ground rather than burying its bottom half.
+			data.translate(0, Math.round(-maximum * scale / 128f), 0);
+		}
 	}
 
 	static ModelData copyMutableModelData(ModelData data)
@@ -377,7 +559,7 @@ public class VarrockStrayCatsPlugin extends Plugin
 			Animation current = replacement.getAnimation();
 			if ((current == null ? -1 : current.getId()) != animationId)
 			{
-				replacement.setAnimation(animationId == -1 ? null : client.loadAnimation(animationId));
+				setReplacementAnimation(appearance, animationId);
 			}
 		}
 	}
@@ -392,10 +574,16 @@ public class VarrockStrayCatsPlugin extends Plugin
 		}
 	}
 
+	private void setReplacementAnimation(DogAppearance appearance, int animationId)
+	{
+		appearance.replacement.setAnimationController(new ScaledAnimationController(client,
+			animationId == -1 ? null : client.loadAnimation(animationId),
+			appearance.widthScale, appearance.heightScale));
+	}
+
 	private boolean shouldDraw(Renderable renderable)
 	{
-		// addEntity covers NPCs in both the software and GPU renderers.
-		// drawObject alone does not suppress the original in every rendering path.
+		// Suppress geometry only, never scene insertion or interaction processing.
 		if (!running || !(renderable instanceof NPC))
 		{
 			return true;
@@ -436,7 +624,8 @@ public class VarrockStrayCatsPlugin extends Plugin
 		private final int originalNpcId;
 		private final AppearanceVariant variant;
 		private RuneLiteObject replacement;
-		private boolean observedInScene;
+		private int widthScale = 128;
+		private int heightScale = 128;
 		private boolean suppressionLogged;
 
 		private DogAppearance(int originalNpcId, AppearanceVariant variant)

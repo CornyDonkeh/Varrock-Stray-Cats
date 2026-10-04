@@ -51,7 +51,7 @@ for i,s in enumerate(sections):
     section_id = original_dog_sections.get(s.removeprefix('Dogs: '), sk)
     config+=f'    @ConfigSection(name = {quoted(s)}, description = {quoted("Favorite appearances: "+s)}, position = {10+i}, closedByDefault = true)\n    String {sk} = "{section_id}";\n\n'
     for pos,e in enumerate(x for x in entries if x['section']==s):
-        default = 'true' if s.startswith('Cats:') or s == 'Characters & cabbage' else 'false'
+        default = 'true' if (s.startswith('Cats:') or s == 'Characters & cabbage') and not e.get('targetHeight') else 'false'
         config+=f'    @ConfigItem(keyName = "{e["key"]}", name = {quoted(e["label"])}, description = {quoted("Include "+e["label"]+" in random appearances.")}, section = {sk}, position = {pos})\n    default boolean {e["key"]}() {{ return {default}; }}\n\n'
 config+='}\n'
 (JAVA/'VarrockStrayCatsConfig.java').write_text(config,encoding='utf-8')
@@ -71,7 +71,8 @@ enum AppearanceVariant
 '''
 for i,e in enumerate(entries):
     textures=e['textures'].split(':')
-    enum+=f'    {e["key"].upper()}({"ItemID" if "itemId" in e else "NpcID"}.{e["symbol"]}, {str("itemId" in e).lower()}, {animation(e["idle"])}, {animation(e["walk"])}, {array(textures[0])}, {array(textures[1])}, VarrockStrayCatsConfig::{e["key"]})'+(';' if i==len(entries)-1 else ',')+'\n'
+    height = str(e['targetHeight'])+', ' if e.get('targetHeight') else ''
+    enum+=f'    {e["key"].upper()}({"ItemID" if "itemId" in e else "NpcID"}.{e["symbol"]}, {str("itemId" in e).lower()}, {animation(e["idle"])}, {animation(e["walk"])}, {array(textures[0])}, {array(textures[1])}, {height}VarrockStrayCatsConfig::{e["key"]})'+(';' if i==len(entries)-1 else ',')+'\n'
 enum+='''
     final int definitionId;
     final boolean item;
@@ -79,10 +80,17 @@ enum+='''
     final int walkAnimation;
     final short[] textureFrom;
     final short[] textureTo;
+    final int targetHeight;
     private final Predicate<VarrockStrayCatsConfig> selected;
 
     AppearanceVariant(int definitionId, boolean item, int idleAnimation, int walkAnimation,
         short[] textureFrom, short[] textureTo, Predicate<VarrockStrayCatsConfig> selected)
+    {
+        this(definitionId, item, idleAnimation, walkAnimation, textureFrom, textureTo, 0, selected);
+    }
+
+    AppearanceVariant(int definitionId, boolean item, int idleAnimation, int walkAnimation,
+        short[] textureFrom, short[] textureTo, int targetHeight, Predicate<VarrockStrayCatsConfig> selected)
     {
         this.definitionId = definitionId;
         this.item = item;
@@ -90,6 +98,7 @@ enum+='''
         this.walkAnimation = walkAnimation;
         this.textureFrom = textureFrom;
         this.textureTo = textureTo;
+        this.targetHeight = targetHeight;
         this.selected = selected;
     }
 
@@ -132,8 +141,10 @@ available NPC models. Wintertodt has no standalone NPC model in this cache and
 therefore is not a selectable appearance. Historical event bosses whose models
 are absent are also excluded. Multipart bosses use their principal NPC model.
 
-Large boss models keep their native scale. The NPC rendering callback hides the
-original model and its 3D clickbox; replacements do not add pet interactions.
+Large boss models keep their native scale, applied after animation. Great Olm
+uses the visible head scene-object geometry rather than its invisible NPC placeholder.
+Giant cabbage uniformly scales the regular cabbage mesh to approximately player height.
+The drawing callback keeps the original NPC in the scene for normal interactions.
 Static pets, fishbowls and cabbage follow the stray without an animation.
 
 ## Rebuilding

@@ -132,6 +132,8 @@ def item(symbol,label,section):
     id=next(i for i,s in item_constants.items() if s==symbol)
     entries.append(dict(itemId=id,symbol=symbol,label=label,section=section,key=key('appearance item '+symbol),idle=-1,walk=-1,textures='null:null'))
 item('CABBAGE','Cabbage','Characters & cabbage')
+giant = dict(entries[-1], label='Giant cabbage', key='appearanceGiantCabbage', targetHeight=200)
+entries.append(giant)
 # Pet fish are inventory pets with no follower NPC; use the actual fishbowl models.
 for sym in ['FISHBOWL_BLUEFISH','FISHBOWL_GREENFISH','FISHBOWL_SPINEFISH']:
     if sym in item_constants.values(): item(sym,'Pet fish — '+sym.removeprefix('FISHBOWL_').title(),'Pets: Other')
@@ -163,5 +165,9 @@ for e in entries:
         for group,names in [('Slayer',slayer),('Raids',raids),('Minigames & skilling',minigame),('Wilderness',wild)]:
             if e['label'] in names:e['section']='Bosses: '+group
 
+# Olm's NPC mesh is an invisible click target; runtime uses the animated head object.
+for e in entries:
+    if e['symbol'] == 'OLM_HEAD':
+        e['idle'] = 7336
 (ROOT/'tools/appearance-catalogue.json').write_text(json.dumps(entries,indent=2)+'\n')
 print(f'{len(entries)} entries; missing world bosses: {missing}')

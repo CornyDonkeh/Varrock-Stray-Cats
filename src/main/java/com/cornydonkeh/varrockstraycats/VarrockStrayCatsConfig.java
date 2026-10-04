@@ -514,6 +514,7 @@ public interface VarrockStrayCatsConfig extends Config
         "appearanceSoteArianwynCombat",
         "appearanceWiseOldMan",
         "appearanceItemCabbage",
+        "appearanceGiantCabbage",
         "appearanceItemFishbowlBluefish",
         "appearanceItemFishbowlGreenfish",
         "appearanceItemFishbowlSpinefish"
@@ -2078,5 +2079,8 @@ public interface VarrockStrayCatsConfig extends Config
 
     @ConfigItem(keyName = "appearanceItemCabbage", name = "Cabbage", description = "Include Cabbage in random appearances.", section = section26, position = 1)
     default boolean appearanceItemCabbage() { return true; }
+
+    @ConfigItem(keyName = "appearanceGiantCabbage", name = "Giant cabbage", description = "Include Giant cabbage in random appearances.", section = section26, position = 2)
+    default boolean appearanceGiantCabbage() { return false; }
 
 }

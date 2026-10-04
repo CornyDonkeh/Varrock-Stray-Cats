@@ -18,8 +18,10 @@ available NPC models. Wintertodt has no standalone NPC model in this cache and
 therefore is not a selectable appearance. Historical event bosses whose models
 are absent are also excluded. Multipart bosses use their principal NPC model.
 
-Large boss models keep their native scale. The NPC rendering callback hides the
-original model and its 3D clickbox; replacements do not add pet interactions.
+Large boss models keep their native scale, applied after animation. Great Olm
+uses the visible head scene-object geometry rather than its invisible NPC placeholder.
+Giant cabbage uniformly scales the regular cabbage mesh to approximately player height.
+The drawing callback keeps the original NPC in the scene for normal interactions.
 Static pets, fishbowls and cabbage follow the stray without an animation.
 
 ## Rebuilding
@@ -547,7 +549,7 @@ cutscene and other inactive models are deprioritized when choosing boss models.
 | Vespula | NpcID.RAIDS_VESPULA_FLYING (7530) | 7453 | 7453 |
 | Vasa Nistirio | NpcID.RAIDS_VASANISTIRIO_WALKING (7566) | 7416 | 7411 |
 | Muttadile | NpcID.RAIDS_DOGODILE_JUNIOR (7562) | 7417 | 7419 |
-| Great Olm | NpcID.OLM_HEAD (7554) | -1 | -1 |
+| Great Olm | NpcID.OLM_HEAD (7554) | 7336 | -1 |
 | The Maiden of Sugadinti | NpcID.TOB_MAIDEN_100 (8360) | 8090 | 8090 |
 | Pestilent Bloat | NpcID.TOB_BLOAT (8359) | 8080 | 8081 |
 | Nylocas Vasilias | NpcID.NYLOCAS_BOSS_MELEE (8355) | 8002 | 8003 |
@@ -662,4 +664,5 @@ cutscene and other inactive models are deprioritized when choosing boss models.
 | --- | --- | --- | --- |
 | Wise Old Man | NpcID.WISE_OLD_MAN (2108) | 813 | 1146 |
 | Cabbage | ItemID.CABBAGE (1965) | -1 | -1 |
+| Giant cabbage | ItemID.CABBAGE (1965) | -1 | -1 |
 

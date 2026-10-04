@@ -3805,7 +3805,7 @@
     "label": "Great Olm",
     "section": "Bosses: Raids",
     "key": "appearanceOlmHead",
-    "idle": -1,
+    "idle": 7336,
     "walk": -1,
     "textures": "null:null"
   },
@@ -4898,6 +4898,17 @@
     "idle": -1,
     "walk": -1,
     "textures": "null:null"
+  },
+  {
+    "itemId": 1965,
+    "symbol": "CABBAGE",
+    "label": "Giant cabbage",
+    "section": "Characters & cabbage",
+    "key": "appearanceGiantCabbage",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null",
+    "targetHeight": 200
   },
   {
     "itemId": 6670,

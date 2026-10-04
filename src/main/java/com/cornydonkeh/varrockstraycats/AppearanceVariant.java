@@ -391,7 +391,7 @@ enum AppearanceVariant
     APPEARANCERAIDSVESPULAFLYING(NpcID.RAIDS_VESPULA_FLYING, false, AnimationID.VESPULA_FLYING, AnimationID.VESPULA_FLYING, null, null, VarrockStrayCatsConfig::appearanceRaidsVespulaFlying),
     APPEARANCERAIDSVASANISTIRIOWALKING(NpcID.RAIDS_VASANISTIRIO_WALKING, false, AnimationID.VASA_IDLE, AnimationID.VASA_WALK, null, null, VarrockStrayCatsConfig::appearanceRaidsVasanistirioWalking),
     APPEARANCERAIDSDOGODILEJUNIOR(NpcID.RAIDS_DOGODILE_JUNIOR, false, AnimationID.DOHGADYLE_IDLE, AnimationID.DOHGADYLE_WALK, null, null, VarrockStrayCatsConfig::appearanceRaidsDogodileJunior),
-    APPEARANCEOLMHEAD(NpcID.OLM_HEAD, false, -1, -1, null, null, VarrockStrayCatsConfig::appearanceOlmHead),
+    APPEARANCEOLMHEAD(NpcID.OLM_HEAD, false, AnimationID.OLM_HEAD_IDLE_FRONT, -1, null, null, VarrockStrayCatsConfig::appearanceOlmHead),
     APPEARANCETOBMAIDEN100(NpcID.TOB_MAIDEN_100, false, AnimationID.MAIDEN_IDLE, AnimationID.MAIDEN_IDLE, null, null, VarrockStrayCatsConfig::appearanceTobMaiden100),
     APPEARANCETOBBLOAT(NpcID.TOB_BLOAT, false, AnimationID.TOB_BLOAT_READY, AnimationID.TOB_BLOAT_WALK, null, null, VarrockStrayCatsConfig::appearanceTobBloat),
     APPEARANCENYLOCASBOSSMELEE(NpcID.NYLOCAS_BOSS_MELEE, false, AnimationID.TOP_SPIDER_MELEE_IDLE, AnimationID.TOP_SPIDER_MELEE_WALK, null, null, VarrockStrayCatsConfig::appearanceNylocasBossMelee),
@@ -501,6 +501,7 @@ enum AppearanceVariant
     APPEARANCESOTEARIANWYNCOMBAT(NpcID.SOTE_ARIANWYN_COMBAT, false, AnimationID.HUMAN_READY, AnimationID.HUMAN_WALK_F, null, null, VarrockStrayCatsConfig::appearanceSoteArianwynCombat),
     APPEARANCEWISEOLDMAN(NpcID.WISE_OLD_MAN, false, AnimationID.HUMAN_STAFFREADY, AnimationID.WALK_WALKINGSTICK, null, null, VarrockStrayCatsConfig::appearanceWiseOldMan),
     APPEARANCEITEMCABBAGE(ItemID.CABBAGE, true, -1, -1, null, null, VarrockStrayCatsConfig::appearanceItemCabbage),
+    APPEARANCEGIANTCABBAGE(ItemID.CABBAGE, true, -1, -1, null, null, 200, VarrockStrayCatsConfig::appearanceGiantCabbage),
     APPEARANCEITEMFISHBOWLBLUEFISH(ItemID.FISHBOWL_BLUEFISH, true, -1, -1, null, null, VarrockStrayCatsConfig::appearanceItemFishbowlBluefish),
     APPEARANCEITEMFISHBOWLGREENFISH(ItemID.FISHBOWL_GREENFISH, true, -1, -1, null, null, VarrockStrayCatsConfig::appearanceItemFishbowlGreenfish),
     APPEARANCEITEMFISHBOWLSPINEFISH(ItemID.FISHBOWL_SPINEFISH, true, -1, -1, null, null, VarrockStrayCatsConfig::appearanceItemFishbowlSpinefish);
@@ -511,10 +512,17 @@ enum AppearanceVariant
     final int walkAnimation;
     final short[] textureFrom;
     final short[] textureTo;
+    final int targetHeight;
     private final Predicate<VarrockStrayCatsConfig> selected;
 
     AppearanceVariant(int definitionId, boolean item, int idleAnimation, int walkAnimation,
         short[] textureFrom, short[] textureTo, Predicate<VarrockStrayCatsConfig> selected)
+    {
+        this(definitionId, item, idleAnimation, walkAnimation, textureFrom, textureTo, 0, selected);
+    }
+
+    AppearanceVariant(int definitionId, boolean item, int idleAnimation, int walkAnimation,
+        short[] textureFrom, short[] textureTo, int targetHeight, Predicate<VarrockStrayCatsConfig> selected)
     {
         this.definitionId = definitionId;
         this.item = item;
@@ -522,6 +530,7 @@ enum AppearanceVariant
         this.walkAnimation = walkAnimation;
         this.textureFrom = textureFrom;
         this.textureTo = textureTo;
+        this.targetHeight = targetHeight;
         this.selected = selected;
     }
 

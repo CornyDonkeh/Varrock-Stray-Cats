@@ -11,6 +11,20 @@ public class DumpNpcs {
             store.load();
             NpcManager manager = new NpcManager(store);
             manager.load();
+            if (args.length == 1) {
+                for (int id : new int[] {11992, 6609, 12821, 12857, 7554}) {
+                    NpcDefinition npc = manager.getNpcs().stream().filter(n -> n.id == id).findFirst().get();
+                    System.out.println("NPC " + id + " " + npc);
+                }
+                net.runelite.cache.ObjectManager objects = new net.runelite.cache.ObjectManager(store);
+                objects.load();
+                for (net.runelite.cache.definitions.ObjectDefinition object : objects.getObjects()) {
+                    if (object.getAnimationID() >= 7334 && object.getAnimationID() <= 7338) {
+                        System.out.println("OBJECT " + object);
+                    }
+                }
+                return;
+            }
             try (PrintWriter out = new PrintWriter(args[1], StandardCharsets.UTF_8.name())) {
                 out.println("id\tname\tidle\twalk\tfollower\tmodels\ttextures");
                 for (NpcDefinition npc : manager.getNpcs()) {

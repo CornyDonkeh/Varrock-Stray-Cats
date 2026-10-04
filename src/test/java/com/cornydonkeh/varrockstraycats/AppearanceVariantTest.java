@@ -114,7 +114,7 @@ public class AppearanceVariantTest
         Set<Integer> npcIds = new HashSet<>();
         for (AppearanceVariant variant : AppearanceVariant.values())
         {
-            assertTrue("Duplicate definition", definitions.add(variant.item + ":" + variant.definitionId));
+            assertTrue("Duplicate appearance", definitions.add(variant.item + ":" + variant.definitionId + ":" + variant.targetHeight));
             if (!variant.item) { npcIds.add(variant.definitionId); }
             assertTrue(variant.idleAnimation >= -1);
             assertTrue(variant.walkAnimation >= -1);

@@ -23,11 +23,18 @@ Each stray keeps its appearance while loaded. Changing settings, leaving and
 returning, relogging, or hopping worlds can reroll it. With no favorites checked,
 the plugin falls back to healthy dogs with their original coats.
 
-Original NPC names and server behavior remain. These cosmetic models do not
-become owned pets. The rendering callback hides the original dog's 3D clickbox
-along with its model; the replacement does not add pet interactions.
+Displayed menu names and automatic overhead reactions match the selected appearance.
+Petting, shooing and feeding use the approved creature-specific narration in
+[the interaction catalogue](docs/interaction-text-proposal.md). The cabbage sizes
+have distinct feeding lines. These are cosmetic text reactions, not recorded audio.
+Player-authored chat and server behavior remain unchanged. These cosmetic models do not
+become owned pets. The rendering callback hides only the original dog's drawn
+model, keeping the original NPC in the scene for its normal interaction checks.
+Pet, shoo-away, and item-on-NPC actions still target the original stray dog.
 Bosses keep their native scale. Stationary models and inventory
 pets follow the stray without walking animations.
+**Giant cabbage** is an additional checkbox beside regular cabbage. It enlarges
+the same model evenly to about player height and starts unchecked.
 Wintertodt has no standalone NPC model in this cache and is excluded; multipart
 bosses use their main NPC model. Historical event bosses with absent models are
 also excluded. See the [appearance catalogue](docs/appearances.md) for IDs,
@@ -54,6 +61,11 @@ Do not share or commit the credentials file referenced there.
 ## In-game acceptance checks
 
 The build and unit tests cannot verify in-game rendering. Manually check:
+
+- Pet, shoo, and feed bones/meat to a cat, boss, Wise Old Man and both cabbage
+  sizes. Check menu names, overhead reactions and chat narration. Check rejected
+  items and a cancelled interaction. Other NPCs and player-authored chat must
+  stay unchanged.
 
 1. With random appearances off, grey strays, the brown west-gate dog and Duke
    appear healthy with their original coats.

@@ -1,7 +1,13 @@
 package com.cornydonkeh.varrockstraycats;
 
 import net.runelite.api.Client;
+import net.runelite.api.GameObject;
+import net.runelite.api.TileObject;
 import net.runelite.api.Model;
+import net.runelite.api.MenuEntry;
+import net.runelite.api.events.MenuEntryAdded;
+import net.runelite.api.events.MenuOptionClicked;
+import net.runelite.api.events.OverheadTextChanged;
 import net.runelite.api.ModelData;
 import net.runelite.api.NPC;
 import net.runelite.api.NPCComposition;
@@ -41,6 +47,8 @@ public class OriginalVisibilityTest
     {
         WorldView world = mock(WorldView.class);
         NPC stray = mock(NPC.class);
+        GameObject strayObject = mock(GameObject.class);
+        when(strayObject.getRenderable()).thenReturn(stray);
         NPC unrelated = mock(NPC.class);
         NPCComposition definition = mock(NPCComposition.class);
         ModelData data = mock(ModelData.class);
@@ -68,19 +76,42 @@ public class OriginalVisibilityTest
         plugin.onNpcSpawned(new NpcSpawned(stray));
 
         // Missing/unready assets must not make the dog disappear.
-        assertTrue(callback.getValue().addEntity(stray, false));
+        assertTrue(callback.getValue().drawObject(null, strayObject));
         plugin.onGameTick(new GameTick());
-        assertTrue(callback.getValue().addEntity(stray, false));
+        assertTrue(callback.getValue().drawObject(null, strayObject));
 
         when(replacement.isActive()).thenReturn(true);
+        MenuEntry entry = mock(MenuEntry.class);
+        when(entry.getNpc()).thenReturn(stray);
+        when(entry.getTarget()).thenReturn("Bones -> <col=ffff00>Stray dog");
+        when(entry.getOption()).thenReturn("Pet");
+        plugin.onMenuEntryAdded(new MenuEntryAdded(entry));
+        verify(entry).setTarget("Bones -> <col=ffff00>Stray dog");
+        verify(entry, never()).setIdentifier(anyInt());
+        plugin.onMenuOptionClicked(new MenuOptionClicked(entry));
+        plugin.onOverheadTextChanged(new OverheadTextChanged(stray, "Woof!"));
+        verify(client).addChatMessage(net.runelite.api.ChatMessageType.GAMEMESSAGE, "",
+            "You gently pet them. They wag their tail happily.", "");
+        plugin.onOverheadTextChanged(new OverheadTextChanged(unrelated, "Woof!"));
+        verify(unrelated, never()).setOverheadText(anyString());
         assertFalse("Original dog must not render underneath the replacement",
+            callback.getValue().drawObject(null, strayObject));
+        assertTrue("Keep original NPC in scene for clickbox and item-on-NPC menus",
             callback.getValue().addEntity(stray, false));
         assertTrue(callback.getValue().addEntity(stray, true));
         assertTrue(callback.getValue().addEntity(unrelated, false));
         assertTrue(callback.getValue().addEntity(mock(Renderable.class), false));
+        GameObject unrelatedObject = mock(GameObject.class);
+        when(unrelatedObject.getRenderable()).thenReturn(unrelated);
+        assertTrue(callback.getValue().drawObject(null, unrelatedObject));
+        assertTrue(callback.getValue().drawObject(null, mock(TileObject.class)));
+        GameObject replacementObject = mock(GameObject.class);
+        when(replacementObject.getRenderable()).thenReturn(mock(Renderable.class));
+        assertTrue(callback.getValue().drawObject(null, replacementObject));
 
         plugin.shutDown();
         assertTrue(callback.getValue().addEntity(stray, false));
+        assertTrue(callback.getValue().drawObject(null, strayObject));
         verify(renderCallbackManager).unregister(callback.getValue());
     }
 }
