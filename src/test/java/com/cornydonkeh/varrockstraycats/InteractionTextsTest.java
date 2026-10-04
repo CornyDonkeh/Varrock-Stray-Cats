@@ -38,4 +38,18 @@ public class InteractionTextsTest
         assertFalse(VarrockStrayCatsPlugin.isDogCall("Purr...purr..."));
         assertFalse(VarrockStrayCatsPlugin.isDogCall(null));
     }
+
+    @Test
+    public void multilineBoneMessagesUseTheCorrectCabbageNarration()
+    {
+        String original = "You give the dog some nice bones.<br>It happily gnaws on them.";
+        assertEquals("The bones vanish into the folds, followed by a wet, echoing crunch.",
+            VarrockStrayCatsPlugin.feedingText(original,
+                InteractionTexts.get(AppearanceVariant.APPEARANCEGIANTCABBAGE)));
+        assertEquals("You hear a faint, leafy crunch as the bone dissolves into fertilizer.",
+            VarrockStrayCatsPlugin.feedingText(original.replace("<br>", "\n"),
+                InteractionTexts.get(AppearanceVariant.APPEARANCEITEMCABBAGE)));
+        assertNull(VarrockStrayCatsPlugin.feedingText("Someone said: " + original,
+            InteractionTexts.get(AppearanceVariant.APPEARANCEITEMCABBAGE)));
+    }
 }

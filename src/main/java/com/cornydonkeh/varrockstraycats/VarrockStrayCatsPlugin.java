@@ -11,6 +11,7 @@ import net.runelite.api.Animation;
 import net.runelite.api.Client;
 import net.runelite.api.ChatMessageType;
 import net.runelite.api.MenuEntry;
+import net.runelite.api.MenuAction;
 import net.runelite.api.events.ChatMessage;
 import net.runelite.api.events.MenuEntryAdded;
 import net.runelite.api.events.MenuOptionClicked;
@@ -40,6 +41,8 @@ import net.runelite.client.callback.RenderCallbackManager;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
+import net.runelite.client.events.ChatboxInput;
+import net.runelite.client.util.Text;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 
@@ -70,6 +73,28 @@ public class VarrockStrayCatsPlugin extends Plugin
 	private int interactionAction;
 	private int interactionTick;
 	private boolean interactionNarrated;
+	private boolean playerLineChanged;
+	private boolean playerLineDisabled;
+	private int manualPetEchoes;
+	private int manualShooEchoes;
+
+	private NPC menuNpc(MenuEntry entry)
+	{
+		NPC npc = entry.getNpc();
+		if (npc == null && (entry.getType() == MenuAction.ITEM_USE_ON_NPC
+			|| entry.getType() == MenuAction.WIDGET_TARGET_ON_NPC))
+		{
+			for (NPC tracked : dogs.keySet())
+			{
+				if (tracked.getIndex() == entry.getIdentifier()
+					&& tracked.getWorldView() == client.getTopLevelWorldView())
+				{
+					return tracked;
+				}
+			}
+		}
+		return npc;
+	}
 
 	private String[] texts(NPC npc)
 	{
@@ -82,7 +107,7 @@ public class VarrockStrayCatsPlugin extends Plugin
 	public void onMenuEntryAdded(MenuEntryAdded event)
 	{
 		MenuEntry entry = event.getMenuEntry();
-		String[] text = texts(entry.getNpc());
+		String[] text = texts(menuNpc(entry));
 		if (text != null)
 		{
 			// Preserve the selected item prefix, action opcode and original NPC index.
@@ -95,20 +120,25 @@ public class VarrockStrayCatsPlugin extends Plugin
 	{
 		interactionNpc = null;
 		MenuEntry entry = event.getMenuEntry();
-		String[] text = texts(entry.getNpc());
+		NPC npc = menuNpc(entry);
+		String[] text = texts(npc);
 		if (text == null)
 		{
 			return;
 		}
 		String option = entry.getOption();
-		int action = "Pet".equals(option) ? 0 : "Shoo-away".equals(option) ? 1 : "Use".equals(option) ? 2 : -1;
+		int action = "Pet".equals(option) ? 0 : "Shoo-away".equals(option) ? 1
+			: entry.getType() == MenuAction.ITEM_USE_ON_NPC
+			|| entry.getType() == MenuAction.WIDGET_TARGET_ON_NPC || "Use".equals(option) ? 2 : -1;
 		if (action >= 0)
 		{
-			interactionNpc = entry.getNpc();
+			interactionNpc = npc;
 			interactionTexts = text;
 			interactionAction = action;
 			interactionTick = client.getTickCount();
 			interactionNarrated = false;
+			playerLineChanged = false;
+			playerLineDisabled = false;
 		}
 	}
 
@@ -149,7 +179,7 @@ public class VarrockStrayCatsPlugin extends Plugin
 				client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", interactionTexts[3 + interactionAction * 3], "");
 			}
 		}
-		else if (event.getActor() == client.getLocalPlayer())
+		else if (event.getActor() == client.getLocalPlayer() && !playerLineDisabled)
 		{
 			if (interactionAction == 0 && "Who's a good doggy!".equals(original)
 				|| interactionAction == 1 && "Boo!".equals(original))
@@ -157,6 +187,22 @@ public class VarrockStrayCatsPlugin extends Plugin
 				event.getActor().setOverheadText(interactionTexts[1 + interactionAction * 3]);
 			}
 		}
+	}
+
+	@Subscribe
+	public void onChatboxInput(ChatboxInput event)
+	{
+		// Observe input only. Never consume it, edit it, resume it or send chat.
+		String value = event.getValue();
+		if ("Who's a good doggy!".equals(value))
+		{
+			manualPetEchoes = Math.min(16, manualPetEchoes + 1);
+		}
+		else if ("Boo!".equals(value))
+		{
+			manualShooEchoes = Math.min(16, manualShooEchoes + 1);
+		}
+		playerLineDisabled = true;
 	}
 
 	static boolean isDogCall(String text)
@@ -169,38 +215,68 @@ public class VarrockStrayCatsPlugin extends Plugin
 	@Subscribe
 	public void onChatMessage(ChatMessage event)
 	{
+		String original = event.getMessage();
+		if (event.getType() == ChatMessageType.PUBLICCHAT && client.getLocalPlayer() != null
+			&& Text.removeTags(event.getName()).equals(client.getLocalPlayer().getName()))
+		{
+			boolean pet = "Who's a good doggy!".equals(original);
+			boolean shoo = "Boo!".equals(original);
+			if (pet && manualPetEchoes > 0 || shoo && manualShooEchoes > 0)
+			{
+				if (pet) { manualPetEchoes--; } else { manualShooEchoes--; }
+				playerLineDisabled = true;
+				return;
+			}
+			if (hasInteraction() && !playerLineChanged && !playerLineDisabled
+				&& (pet && interactionAction == 0 || shoo && interactionAction == 1))
+			{
+				playerLineChanged = true;
+				setChatText(event, interactionTexts[1 + interactionAction * 3]);
+			}
+			return;
+		}
 		if (!hasInteraction() || interactionAction != 2
-			|| event.getType() != ChatMessageType.GAMEMESSAGE && event.getType() != ChatMessageType.SPAM)
+			|| event.getType() != ChatMessageType.GAMEMESSAGE && event.getType() != ChatMessageType.SPAM
+			&& event.getType() != ChatMessageType.MESBOX)
 		{
 			return;
 		}
-		String original = event.getMessage();
-		String replacement = null;
-		if ("You give the dog some nice bones.".equals(original))
-		{
-			replacement = "You offer " + interactionTexts[0] + " some bones.";
-		}
-		else if ("It happily gnaws on them.".equals(original))
-		{
-			replacement = interactionTexts[9];
-		}
-		else if ("You give the dog a nice piece of meat.".equals(original))
-		{
-			replacement = "You offer " + interactionTexts[0] + " some meat.";
-		}
-		else if ("It gobbles it up.".equals(original))
-		{
-			replacement = interactionTexts[12];
-		}
-		else if ("The dog doesn't seem interested in that.".equals(original))
-		{
-			replacement = interactionTexts[13];
-		}
+		String replacement = feedingText(original, interactionTexts);
 		if (replacement != null)
 		{
-			event.getMessageNode().setValue(replacement);
-			client.refreshChat();
+			setChatText(event, replacement);
 		}
+	}
+
+	private void setChatText(ChatMessage event, String text)
+	{
+		event.getMessageNode().setValue(text);
+		event.getMessageNode().setRuneLiteFormatMessage(null);
+		client.refreshChat();
+	}
+
+	static String feedingText(String original, String[] text)
+	{
+		String normalized = original.replace("<br>", "\n").replace("\r\n", "\n");
+		if (normalized.equals("You give the dog some nice bones.\nIt happily gnaws on them.")
+			|| normalized.equals("It happily gnaws on them."))
+		{
+			return text[9];
+		}
+		if (normalized.equals("You give the dog a nice piece of meat.\nIt gobbles it up.")
+			|| normalized.equals("It gobbles it up."))
+		{
+			return text[12];
+		}
+		if (normalized.equals("You give the dog some nice bones."))
+		{
+			return "You offer " + text[0] + " some bones.";
+		}
+		if (normalized.equals("You give the dog a nice piece of meat."))
+		{
+			return "You offer " + text[0] + " some meat.";
+		}
+		return normalized.equals("The dog doesn't seem interested in that.") ? text[13] : null;
 	}
 	private final Random random = new Random();
 	private final RenderCallback drawListener = new RenderCallback()
@@ -240,6 +316,8 @@ public class VarrockStrayCatsPlugin extends Plugin
 	{
 		running = false;
 		interactionNpc = null;
+		manualPetEchoes = 0;
+		manualShooEchoes = 0;
 		renderCallbackManager.unregister(drawListener);
 		clientThread.invoke(() ->
 		{

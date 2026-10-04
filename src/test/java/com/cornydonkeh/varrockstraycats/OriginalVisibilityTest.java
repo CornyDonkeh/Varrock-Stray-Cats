@@ -5,6 +5,12 @@ import net.runelite.api.GameObject;
 import net.runelite.api.TileObject;
 import net.runelite.api.Model;
 import net.runelite.api.MenuEntry;
+import net.runelite.api.MenuAction;
+import net.runelite.api.Player;
+import net.runelite.api.MessageNode;
+import net.runelite.api.ChatMessageType;
+import net.runelite.api.events.ChatMessage;
+import net.runelite.client.events.ChatboxInput;
 import net.runelite.api.events.MenuEntryAdded;
 import net.runelite.api.events.MenuOptionClicked;
 import net.runelite.api.events.OverheadTextChanged;
@@ -94,6 +100,36 @@ public class OriginalVisibilityTest
             "You gently pet them. They wag their tail happily.", "");
         plugin.onOverheadTextChanged(new OverheadTextChanged(unrelated, "Woof!"));
         verify(unrelated, never()).setOverheadText(anyString());
+        Player player = mock(Player.class);
+        when(client.getLocalPlayer()).thenReturn(player);
+        when(player.getName()).thenReturn("Tester");
+        MessageNode automatic = mock(MessageNode.class);
+        plugin.onChatMessage(new ChatMessage(automatic, ChatMessageType.PUBLICCHAT,
+            "Tester", "Who's a good doggy!", "", 0));
+        verify(automatic).setValue("Who's a good doggy?");
+
+        // Typed chat must remain intact, even when it matches the automatic line.
+        plugin.onMenuOptionClicked(new MenuOptionClicked(entry));
+        ChatboxInput typed = new ChatboxInput("Who's a good doggy!", 2, () -> {});
+        plugin.onChatboxInput(typed);
+        MessageNode manual = mock(MessageNode.class);
+        plugin.onChatMessage(new ChatMessage(manual, ChatMessageType.PUBLICCHAT,
+            "Tester", "Who's a good doggy!", "", 0));
+        verify(manual, never()).setValue(anyString());
+        assertFalse(typed.isConsumed());
+
+        // Item-on-NPC uses the opcode even when another plugin changes its label.
+        when(entry.getType()).thenReturn(MenuAction.WIDGET_TARGET_ON_NPC);
+        when(entry.getOption()).thenReturn("Feed");
+        plugin.onMenuOptionClicked(new MenuOptionClicked(entry));
+        MessageNode bones = mock(MessageNode.class);
+        plugin.onChatMessage(new ChatMessage(bones, ChatMessageType.GAMEMESSAGE, "",
+            "You give the dog some nice bones.<br>It happily gnaws on them.", "", 0));
+        verify(bones).setValue("You offer them the bones. They happily gnaw on them.");
+        MessageNode privateChat = mock(MessageNode.class);
+        plugin.onChatMessage(new ChatMessage(privateChat, ChatMessageType.PRIVATECHAT,
+            "Tester", "It happily gnaws on them.", "", 0));
+        verify(privateChat, never()).setValue(anyString());
         assertFalse("Original dog must not render underneath the replacement",
             callback.getValue().drawObject(null, strayObject));
         assertTrue("Keep original NPC in scene for clickbox and item-on-NPC menus",
