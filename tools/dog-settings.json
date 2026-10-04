@@ -1,0 +1,722 @@
+[
+  {
+    "npcId": 16457,
+    "symbol": "SHEPARD_CHOCO_PUPPY",
+    "label": "Puppy: Chocolate",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "bernesePuppyChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16458,
+    "symbol": "SHEPARD_MERLE_PUPPY",
+    "label": "Puppy: Merle",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "bernesePuppyMerle",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16459,
+    "symbol": "SHEPARD_TOASTED_PUPPY",
+    "label": "Puppy: Toasted",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "bernesePuppyToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16385,
+    "symbol": "SHEPARD_CHOCO",
+    "label": "Adult: Chocolate",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "berneseAdultChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16386,
+    "symbol": "SHEPARD_MERLE",
+    "label": "Adult: Merle",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "berneseAdultMerle",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16387,
+    "symbol": "SHEPARD_TOASTED",
+    "label": "Adult: Toasted",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "berneseAdultToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16442,
+    "symbol": "COLLIE_CHOCO_PUPPY",
+    "label": "Puppy: Chocolate",
+    "section": "Dogs: Border Collie",
+    "key": "borderColliePuppyChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16443,
+    "symbol": "COLLIE_MERLE_PUPPY",
+    "label": "Puppy: Merle",
+    "section": "Dogs: Border Collie",
+    "key": "borderColliePuppyMerle",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16444,
+    "symbol": "COLLIE_BW_PUPPY",
+    "label": "Puppy: Black White",
+    "section": "Dogs: Border Collie",
+    "key": "borderColliePuppyBlackWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16367,
+    "symbol": "COLLIE_CHOCO",
+    "label": "Adult: Chocolate",
+    "section": "Dogs: Border Collie",
+    "key": "borderCollieAdultChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16368,
+    "symbol": "COLLIE_MERLE",
+    "label": "Adult: Merle",
+    "section": "Dogs: Border Collie",
+    "key": "borderCollieAdultMerle",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16369,
+    "symbol": "COLLIE_BW",
+    "label": "Adult: Black White",
+    "section": "Dogs: Border Collie",
+    "key": "borderCollieAdultBlackWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16439,
+    "symbol": "CHIHUAHUA_TAN_PUPPY",
+    "label": "Puppy: Tan",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaPuppyTan",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16440,
+    "symbol": "CHIHUAHUA_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaPuppyWhite",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16441,
+    "symbol": "CHIHUAHUA_TOASTED_PUPPY",
+    "label": "Puppy: Toasted",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaPuppyToasted",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16364,
+    "symbol": "CHIHUAHUA_TAN",
+    "label": "Adult: Tan",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaAdultTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16365,
+    "symbol": "CHIHUAHUA_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16366,
+    "symbol": "CHIHUAHUA_TOASTED",
+    "label": "Adult: Toasted",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaAdultToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16445,
+    "symbol": "CORGI_TAN_PUPPY",
+    "label": "Puppy: Tan",
+    "section": "Dogs: Corgi",
+    "key": "corgiPuppyTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16446,
+    "symbol": "CORGI_YELLOW_PUPPY",
+    "label": "Puppy: Fawn",
+    "section": "Dogs: Corgi",
+    "key": "corgiPuppyFawn",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16447,
+    "symbol": "CORGI_TOASTED_PUPPY",
+    "label": "Puppy: Toasted",
+    "section": "Dogs: Corgi",
+    "key": "corgiPuppyToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16370,
+    "symbol": "CORGI_TAN",
+    "label": "Adult: Tan",
+    "section": "Dogs: Corgi",
+    "key": "corgiAdultTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16371,
+    "symbol": "CORGI_YELLOW",
+    "label": "Adult: Fawn",
+    "section": "Dogs: Corgi",
+    "key": "corgiAdultFawn",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16372,
+    "symbol": "CORGI_TOASTED",
+    "label": "Adult: Toasted",
+    "section": "Dogs: Corgi",
+    "key": "corgiAdultToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16448,
+    "symbol": "GREYHOUND_TAN_PUPPY",
+    "label": "Puppy: Tan",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundPuppyTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16449,
+    "symbol": "GREYHOUND_GREY_PUPPY",
+    "label": "Puppy: Grey",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundPuppyGrey",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16450,
+    "symbol": "GREYHOUND_CREAM_PUPPY",
+    "label": "Puppy: Cream",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundPuppyCream",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16373,
+    "symbol": "GREYHOUND_TAN",
+    "label": "Adult: Tan",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundAdultTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16374,
+    "symbol": "GREYHOUND_GREY",
+    "label": "Adult: Grey",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundAdultGrey",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16375,
+    "symbol": "GREYHOUND_CREAM",
+    "label": "Adult: Cream",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundAdultCream",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16436,
+    "symbol": "HUSKY_BW_PUPPY",
+    "label": "Puppy: Black White",
+    "section": "Dogs: Husky",
+    "key": "huskyPuppyBlackWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16437,
+    "symbol": "HUSKY_GREY_PUPPY",
+    "label": "Puppy: Grey",
+    "section": "Dogs: Husky",
+    "key": "huskyPuppyGrey",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16438,
+    "symbol": "HUSKY_CHOCO_PUPPY",
+    "label": "Puppy: Chocolate",
+    "section": "Dogs: Husky",
+    "key": "huskyPuppyChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16376,
+    "symbol": "HUSKY_BW",
+    "label": "Adult: Black White",
+    "section": "Dogs: Husky",
+    "key": "huskyAdultBlackWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16377,
+    "symbol": "HUSKY_GREY",
+    "label": "Adult: Grey",
+    "section": "Dogs: Husky",
+    "key": "huskyAdultGrey",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16378,
+    "symbol": "HUSKY_CHOCO",
+    "label": "Adult: Chocolate",
+    "section": "Dogs: Husky",
+    "key": "huskyAdultChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16433,
+    "symbol": "LABRADOR_YELLOW_PUPPY",
+    "label": "Puppy: Golden",
+    "section": "Dogs: Labrador",
+    "key": "labradorPuppyGolden",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16434,
+    "symbol": "LABRADOR_CHOCO_PUPPY",
+    "label": "Puppy: Chocolate",
+    "section": "Dogs: Labrador",
+    "key": "labradorPuppyChocolate",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16435,
+    "symbol": "LABRADOR_BLACK_PUPPY",
+    "label": "Puppy: Black",
+    "section": "Dogs: Labrador",
+    "key": "labradorPuppyBlack",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16361,
+    "symbol": "LABRADOR_YELLOW",
+    "label": "Adult: Golden",
+    "section": "Dogs: Labrador",
+    "key": "labradorAdultGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16362,
+    "symbol": "LABRADOR_BROWN",
+    "label": "Adult: Chocolate",
+    "section": "Dogs: Labrador",
+    "key": "labradorAdultChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16363,
+    "symbol": "LABRADOR_BLACK",
+    "label": "Adult: Black",
+    "section": "Dogs: Labrador",
+    "key": "labradorAdultBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16451,
+    "symbol": "PUG_FAWN_PUPPY",
+    "label": "Puppy: Fawn",
+    "section": "Dogs: Pug",
+    "key": "pugPuppyFawn",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16452,
+    "symbol": "PUG_BROWN_PUPPY",
+    "label": "Puppy: Brown",
+    "section": "Dogs: Pug",
+    "key": "pugPuppyBrown",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16453,
+    "symbol": "PUG_BLACK_PUPPY",
+    "label": "Puppy: Black",
+    "section": "Dogs: Pug",
+    "key": "pugPuppyBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16379,
+    "symbol": "PUG_FAWN",
+    "label": "Adult: Fawn",
+    "section": "Dogs: Pug",
+    "key": "pugAdultFawn",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16380,
+    "symbol": "PUG_BROWN",
+    "label": "Adult: Brown",
+    "section": "Dogs: Pug",
+    "key": "pugAdultBrown",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16381,
+    "symbol": "PUG_BLACK",
+    "label": "Adult: Black",
+    "section": "Dogs: Pug",
+    "key": "pugAdultBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16454,
+    "symbol": "SAMOYED_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedPuppyWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16455,
+    "symbol": "SAMOYED_YELLOW_PUPPY",
+    "label": "Puppy: Golden",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedPuppyGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16456,
+    "symbol": "SAMOYED_BLACK_PUPPY",
+    "label": "Puppy: Black",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedPuppyBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16382,
+    "symbol": "SAMOYED_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16383,
+    "symbol": "SAMOYED_YELLOW",
+    "label": "Adult: Golden",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedAdultGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16384,
+    "symbol": "SAMOYED_BLACK",
+    "label": "Adult: Black",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedAdultBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16460,
+    "symbol": "SHIBA_TAN_PUPPY",
+    "label": "Puppy: Tan",
+    "section": "Dogs: Shiba",
+    "key": "shibaPuppyTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16461,
+    "symbol": "SHIBA_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Shiba",
+    "key": "shibaPuppyWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16462,
+    "symbol": "SHIBA_TOASTED_PUPPY",
+    "label": "Puppy: Toasted",
+    "section": "Dogs: Shiba",
+    "key": "shibaPuppyToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16388,
+    "symbol": "SHIBA_TAN",
+    "label": "Adult: Tan",
+    "section": "Dogs: Shiba",
+    "key": "shibaAdultTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16389,
+    "symbol": "SHIBA_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Shiba",
+    "key": "shibaAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16390,
+    "symbol": "SHIBA_TOASTED",
+    "label": "Adult: Toasted",
+    "section": "Dogs: Shiba",
+    "key": "shibaAdultToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16463,
+    "symbol": "SPANIEL_RED_PUPPY",
+    "label": "Puppy: Red",
+    "section": "Dogs: Spaniel",
+    "key": "spanielPuppyRed",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16464,
+    "symbol": "SPANIEL_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Spaniel",
+    "key": "spanielPuppyWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16465,
+    "symbol": "SPANIEL_BLACK_PUPPY",
+    "label": "Puppy: Black",
+    "section": "Dogs: Spaniel",
+    "key": "spanielPuppyBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16391,
+    "symbol": "SPANIEL_RED",
+    "label": "Adult: Red",
+    "section": "Dogs: Spaniel",
+    "key": "spanielAdultRed",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16392,
+    "symbol": "SPANIEL_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Spaniel",
+    "key": "spanielAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16393,
+    "symbol": "SPANIEL_BLACK",
+    "label": "Adult: Black",
+    "section": "Dogs: Spaniel",
+    "key": "spanielAdultBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16466,
+    "symbol": "YORKIE_BROWN_PUPPY",
+    "label": "Puppy: Brown",
+    "section": "Dogs: Yorkie",
+    "key": "yorkiePuppyBrown",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16467,
+    "symbol": "YORKIE_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Yorkie",
+    "key": "yorkiePuppyWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16468,
+    "symbol": "YORKIE_YELLOW_PUPPY",
+    "label": "Puppy: Golden",
+    "section": "Dogs: Yorkie",
+    "key": "yorkiePuppyGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16394,
+    "symbol": "YORKIE_BROWN",
+    "label": "Adult: Brown",
+    "section": "Dogs: Yorkie",
+    "key": "yorkieAdultBrown",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16395,
+    "symbol": "YORKIE_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Yorkie",
+    "key": "yorkieAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16396,
+    "symbol": "YORKIE_YELLOW",
+    "label": "Adult: Golden",
+    "section": "Dogs: Yorkie",
+    "key": "yorkieAdultGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  }
+]

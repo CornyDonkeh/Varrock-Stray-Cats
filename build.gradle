@@ -14,7 +14,7 @@ repositories {
 }
 
 def runeLiteVersion = 'latest.release'
-def pluginMainClass = 'com.cornydonkeh.healthydogs.HealthyDogsPluginLauncher'
+def pluginMainClass = 'com.cornydonkeh.varrockstraycats.VarrockStrayCatsPluginLauncher'
 
 dependencies {
 	compileOnly group: 'net.runelite', name:'client', version: runeLiteVersion
@@ -23,11 +23,12 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.30'
 
 	testImplementation 'junit:junit:4.12'
+	testImplementation 'org.mockito:mockito-core:4.11.0'
 	testImplementation group: 'net.runelite', name:'client', version: runeLiteVersion
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
 }
 
-group = 'com.cornydonkeh.healthydogs'
+group = 'com.cornydonkeh.varrockstraycats'
 
 tasks.withType(JavaCompile).configureEach {
 	options.encoding = 'UTF-8'

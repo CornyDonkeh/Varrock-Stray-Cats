@@ -1,6 +1,6 @@
 # Dog appearance catalogue
 
-NPC follower IDs were read from the OSRS Wiki's structured page data on 2026-09-10 and checked against the local game cache. Item and POH IDs are not used. RuneLite 1.12.38 has no gameval NPC constants for these new pets, so DogVariant temporarily names these verified numeric IDs; migrate to gameval constants when available.
+NPC follower IDs were originally read from the OSRS Wiki's structured page data on 2026-09-10 and checked against the local game cache. The expanded plugin uses RuneLite 1.13.1 gameval NPC constants for these same 72 choices. Their saved checkbox keys are preserved. See [the expanded catalogue](appearances.md) for current constants and all added appearances.
 
 | Breed | Colors (in ID order) | Adult IDs | Puppy IDs |
 | --- | --- | --- | --- |

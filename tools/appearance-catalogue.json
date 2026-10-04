@@ -1,0 +1,4932 @@
+[
+  {
+    "npcId": 16457,
+    "symbol": "SHEPARD_CHOCO_PUPPY",
+    "label": "Puppy: Chocolate",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "bernesePuppyChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16458,
+    "symbol": "SHEPARD_MERLE_PUPPY",
+    "label": "Puppy: Merle",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "bernesePuppyMerle",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16459,
+    "symbol": "SHEPARD_TOASTED_PUPPY",
+    "label": "Puppy: Toasted",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "bernesePuppyToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16385,
+    "symbol": "SHEPARD_CHOCO",
+    "label": "Adult: Chocolate",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "berneseAdultChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16386,
+    "symbol": "SHEPARD_MERLE",
+    "label": "Adult: Merle",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "berneseAdultMerle",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16387,
+    "symbol": "SHEPARD_TOASTED",
+    "label": "Adult: Toasted",
+    "section": "Dogs: Bernese Mountain Dog",
+    "key": "berneseAdultToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16442,
+    "symbol": "COLLIE_CHOCO_PUPPY",
+    "label": "Puppy: Chocolate",
+    "section": "Dogs: Border Collie",
+    "key": "borderColliePuppyChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16443,
+    "symbol": "COLLIE_MERLE_PUPPY",
+    "label": "Puppy: Merle",
+    "section": "Dogs: Border Collie",
+    "key": "borderColliePuppyMerle",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16444,
+    "symbol": "COLLIE_BW_PUPPY",
+    "label": "Puppy: Black White",
+    "section": "Dogs: Border Collie",
+    "key": "borderColliePuppyBlackWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16367,
+    "symbol": "COLLIE_CHOCO",
+    "label": "Adult: Chocolate",
+    "section": "Dogs: Border Collie",
+    "key": "borderCollieAdultChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16368,
+    "symbol": "COLLIE_MERLE",
+    "label": "Adult: Merle",
+    "section": "Dogs: Border Collie",
+    "key": "borderCollieAdultMerle",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16369,
+    "symbol": "COLLIE_BW",
+    "label": "Adult: Black White",
+    "section": "Dogs: Border Collie",
+    "key": "borderCollieAdultBlackWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16439,
+    "symbol": "CHIHUAHUA_TAN_PUPPY",
+    "label": "Puppy: Tan",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaPuppyTan",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16440,
+    "symbol": "CHIHUAHUA_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaPuppyWhite",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16441,
+    "symbol": "CHIHUAHUA_TOASTED_PUPPY",
+    "label": "Puppy: Toasted",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaPuppyToasted",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16364,
+    "symbol": "CHIHUAHUA_TAN",
+    "label": "Adult: Tan",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaAdultTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16365,
+    "symbol": "CHIHUAHUA_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16366,
+    "symbol": "CHIHUAHUA_TOASTED",
+    "label": "Adult: Toasted",
+    "section": "Dogs: Chihuahua",
+    "key": "chihuahuaAdultToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16445,
+    "symbol": "CORGI_TAN_PUPPY",
+    "label": "Puppy: Tan",
+    "section": "Dogs: Corgi",
+    "key": "corgiPuppyTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16446,
+    "symbol": "CORGI_YELLOW_PUPPY",
+    "label": "Puppy: Fawn",
+    "section": "Dogs: Corgi",
+    "key": "corgiPuppyFawn",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16447,
+    "symbol": "CORGI_TOASTED_PUPPY",
+    "label": "Puppy: Toasted",
+    "section": "Dogs: Corgi",
+    "key": "corgiPuppyToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16370,
+    "symbol": "CORGI_TAN",
+    "label": "Adult: Tan",
+    "section": "Dogs: Corgi",
+    "key": "corgiAdultTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16371,
+    "symbol": "CORGI_YELLOW",
+    "label": "Adult: Fawn",
+    "section": "Dogs: Corgi",
+    "key": "corgiAdultFawn",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16372,
+    "symbol": "CORGI_TOASTED",
+    "label": "Adult: Toasted",
+    "section": "Dogs: Corgi",
+    "key": "corgiAdultToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16448,
+    "symbol": "GREYHOUND_TAN_PUPPY",
+    "label": "Puppy: Tan",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundPuppyTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16449,
+    "symbol": "GREYHOUND_GREY_PUPPY",
+    "label": "Puppy: Grey",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundPuppyGrey",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16450,
+    "symbol": "GREYHOUND_CREAM_PUPPY",
+    "label": "Puppy: Cream",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundPuppyCream",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16373,
+    "symbol": "GREYHOUND_TAN",
+    "label": "Adult: Tan",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundAdultTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16374,
+    "symbol": "GREYHOUND_GREY",
+    "label": "Adult: Grey",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundAdultGrey",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16375,
+    "symbol": "GREYHOUND_CREAM",
+    "label": "Adult: Cream",
+    "section": "Dogs: Greyhound",
+    "key": "greyhoundAdultCream",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16436,
+    "symbol": "HUSKY_BW_PUPPY",
+    "label": "Puppy: Black White",
+    "section": "Dogs: Husky",
+    "key": "huskyPuppyBlackWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16437,
+    "symbol": "HUSKY_GREY_PUPPY",
+    "label": "Puppy: Grey",
+    "section": "Dogs: Husky",
+    "key": "huskyPuppyGrey",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16438,
+    "symbol": "HUSKY_CHOCO_PUPPY",
+    "label": "Puppy: Chocolate",
+    "section": "Dogs: Husky",
+    "key": "huskyPuppyChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16376,
+    "symbol": "HUSKY_BW",
+    "label": "Adult: Black White",
+    "section": "Dogs: Husky",
+    "key": "huskyAdultBlackWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16377,
+    "symbol": "HUSKY_GREY",
+    "label": "Adult: Grey",
+    "section": "Dogs: Husky",
+    "key": "huskyAdultGrey",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16378,
+    "symbol": "HUSKY_CHOCO",
+    "label": "Adult: Chocolate",
+    "section": "Dogs: Husky",
+    "key": "huskyAdultChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16433,
+    "symbol": "LABRADOR_YELLOW_PUPPY",
+    "label": "Puppy: Golden",
+    "section": "Dogs: Labrador",
+    "key": "labradorPuppyGolden",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16434,
+    "symbol": "LABRADOR_CHOCO_PUPPY",
+    "label": "Puppy: Chocolate",
+    "section": "Dogs: Labrador",
+    "key": "labradorPuppyChocolate",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16435,
+    "symbol": "LABRADOR_BLACK_PUPPY",
+    "label": "Puppy: Black",
+    "section": "Dogs: Labrador",
+    "key": "labradorPuppyBlack",
+    "idle": 7858,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16361,
+    "symbol": "LABRADOR_YELLOW",
+    "label": "Adult: Golden",
+    "section": "Dogs: Labrador",
+    "key": "labradorAdultGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16362,
+    "symbol": "LABRADOR_BROWN",
+    "label": "Adult: Chocolate",
+    "section": "Dogs: Labrador",
+    "key": "labradorAdultChocolate",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16363,
+    "symbol": "LABRADOR_BLACK",
+    "label": "Adult: Black",
+    "section": "Dogs: Labrador",
+    "key": "labradorAdultBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16451,
+    "symbol": "PUG_FAWN_PUPPY",
+    "label": "Puppy: Fawn",
+    "section": "Dogs: Pug",
+    "key": "pugPuppyFawn",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16452,
+    "symbol": "PUG_BROWN_PUPPY",
+    "label": "Puppy: Brown",
+    "section": "Dogs: Pug",
+    "key": "pugPuppyBrown",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16453,
+    "symbol": "PUG_BLACK_PUPPY",
+    "label": "Puppy: Black",
+    "section": "Dogs: Pug",
+    "key": "pugPuppyBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16379,
+    "symbol": "PUG_FAWN",
+    "label": "Adult: Fawn",
+    "section": "Dogs: Pug",
+    "key": "pugAdultFawn",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16380,
+    "symbol": "PUG_BROWN",
+    "label": "Adult: Brown",
+    "section": "Dogs: Pug",
+    "key": "pugAdultBrown",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16381,
+    "symbol": "PUG_BLACK",
+    "label": "Adult: Black",
+    "section": "Dogs: Pug",
+    "key": "pugAdultBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16454,
+    "symbol": "SAMOYED_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedPuppyWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16455,
+    "symbol": "SAMOYED_YELLOW_PUPPY",
+    "label": "Puppy: Golden",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedPuppyGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16456,
+    "symbol": "SAMOYED_BLACK_PUPPY",
+    "label": "Puppy: Black",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedPuppyBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16382,
+    "symbol": "SAMOYED_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16383,
+    "symbol": "SAMOYED_YELLOW",
+    "label": "Adult: Golden",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedAdultGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16384,
+    "symbol": "SAMOYED_BLACK",
+    "label": "Adult: Black",
+    "section": "Dogs: Samoyed",
+    "key": "samoyedAdultBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16460,
+    "symbol": "SHIBA_TAN_PUPPY",
+    "label": "Puppy: Tan",
+    "section": "Dogs: Shiba",
+    "key": "shibaPuppyTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16461,
+    "symbol": "SHIBA_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Shiba",
+    "key": "shibaPuppyWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16462,
+    "symbol": "SHIBA_TOASTED_PUPPY",
+    "label": "Puppy: Toasted",
+    "section": "Dogs: Shiba",
+    "key": "shibaPuppyToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16388,
+    "symbol": "SHIBA_TAN",
+    "label": "Adult: Tan",
+    "section": "Dogs: Shiba",
+    "key": "shibaAdultTan",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16389,
+    "symbol": "SHIBA_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Shiba",
+    "key": "shibaAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16390,
+    "symbol": "SHIBA_TOASTED",
+    "label": "Adult: Toasted",
+    "section": "Dogs: Shiba",
+    "key": "shibaAdultToasted",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16463,
+    "symbol": "SPANIEL_RED_PUPPY",
+    "label": "Puppy: Red",
+    "section": "Dogs: Spaniel",
+    "key": "spanielPuppyRed",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16464,
+    "symbol": "SPANIEL_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Spaniel",
+    "key": "spanielPuppyWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16465,
+    "symbol": "SPANIEL_BLACK_PUPPY",
+    "label": "Puppy: Black",
+    "section": "Dogs: Spaniel",
+    "key": "spanielPuppyBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16391,
+    "symbol": "SPANIEL_RED",
+    "label": "Adult: Red",
+    "section": "Dogs: Spaniel",
+    "key": "spanielAdultRed",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16392,
+    "symbol": "SPANIEL_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Spaniel",
+    "key": "spanielAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16393,
+    "symbol": "SPANIEL_BLACK",
+    "label": "Adult: Black",
+    "section": "Dogs: Spaniel",
+    "key": "spanielAdultBlack",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16466,
+    "symbol": "YORKIE_BROWN_PUPPY",
+    "label": "Puppy: Brown",
+    "section": "Dogs: Yorkie",
+    "key": "yorkiePuppyBrown",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16467,
+    "symbol": "YORKIE_WHITE_PUPPY",
+    "label": "Puppy: White",
+    "section": "Dogs: Yorkie",
+    "key": "yorkiePuppyWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16468,
+    "symbol": "YORKIE_YELLOW_PUPPY",
+    "label": "Puppy: Golden",
+    "section": "Dogs: Yorkie",
+    "key": "yorkiePuppyGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16394,
+    "symbol": "YORKIE_BROWN",
+    "label": "Adult: Brown",
+    "section": "Dogs: Yorkie",
+    "key": "yorkieAdultBrown",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16395,
+    "symbol": "YORKIE_WHITE",
+    "label": "Adult: White",
+    "section": "Dogs: Yorkie",
+    "key": "yorkieAdultWhite",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16396,
+    "symbol": "YORKIE_YELLOW",
+    "label": "Adult: Golden",
+    "section": "Dogs: Yorkie",
+    "key": "yorkieAdultGolden",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1619,
+    "symbol": "GROWNCAT",
+    "label": "Default",
+    "section": "Cats: Adult",
+    "key": "appearanceGrowncat",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1620,
+    "symbol": "GROWNCAT_LIGHT",
+    "label": "White",
+    "section": "Cats: Adult",
+    "key": "appearanceGrowncatLight",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1621,
+    "symbol": "GROWNCAT_BROWN",
+    "label": "Brown",
+    "section": "Cats: Adult",
+    "key": "appearanceGrowncatBrown",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1622,
+    "symbol": "GROWNCAT_BLACK",
+    "label": "Black",
+    "section": "Cats: Adult",
+    "key": "appearanceGrowncatBlack",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1623,
+    "symbol": "GROWNCAT_BROWNGREY",
+    "label": "Brown & grey",
+    "section": "Cats: Adult",
+    "key": "appearanceGrowncatBrowngrey",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1624,
+    "symbol": "GROWNCAT_BLUEGREY",
+    "label": "Blue & grey",
+    "section": "Cats: Adult",
+    "key": "appearanceGrowncatBluegrey",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1625,
+    "symbol": "GROWNCAT_HELL",
+    "label": "Hell",
+    "section": "Cats: Adult",
+    "key": "appearanceGrowncatHell",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1626,
+    "symbol": "LAZYCAT_LIGHT",
+    "label": "White",
+    "section": "Cats: Lazy",
+    "key": "appearanceLazycatLight",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1627,
+    "symbol": "LAZYCAT",
+    "label": "Default",
+    "section": "Cats: Lazy",
+    "key": "appearanceLazycat",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1628,
+    "symbol": "LAZYCAT_BROWN",
+    "label": "Brown",
+    "section": "Cats: Lazy",
+    "key": "appearanceLazycatBrown",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1629,
+    "symbol": "LAZYCAT_BLACK",
+    "label": "Black",
+    "section": "Cats: Lazy",
+    "key": "appearanceLazycatBlack",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1630,
+    "symbol": "LAZYCAT_BROWNGREY",
+    "label": "Brown & grey",
+    "section": "Cats: Lazy",
+    "key": "appearanceLazycatBrowngrey",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1631,
+    "symbol": "LAZYCAT_BLUEGREY",
+    "label": "Blue & grey",
+    "section": "Cats: Lazy",
+    "key": "appearanceLazycatBluegrey",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1632,
+    "symbol": "LAZYCAT_HELL",
+    "label": "Hell",
+    "section": "Cats: Lazy",
+    "key": "appearanceLazycatHell",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5584,
+    "symbol": "WILEYCAT_LIGHT",
+    "label": "White",
+    "section": "Cats: Wily",
+    "key": "appearanceWileycatLight",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5585,
+    "symbol": "WILEYCAT",
+    "label": "Default",
+    "section": "Cats: Wily",
+    "key": "appearanceWileycat",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5586,
+    "symbol": "WILEYCAT_BROWN",
+    "label": "Brown",
+    "section": "Cats: Wily",
+    "key": "appearanceWileycatBrown",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5587,
+    "symbol": "WILEYCAT_BLACK",
+    "label": "Black",
+    "section": "Cats: Wily",
+    "key": "appearanceWileycatBlack",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5588,
+    "symbol": "WILEYCAT_BROWNGREY",
+    "label": "Brown & grey",
+    "section": "Cats: Wily",
+    "key": "appearanceWileycatBrowngrey",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5589,
+    "symbol": "WILEYCAT_BLUEGREY",
+    "label": "Blue & grey",
+    "section": "Cats: Wily",
+    "key": "appearanceWileycatBluegrey",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5590,
+    "symbol": "WILEYCAT_HELL",
+    "label": "Hell",
+    "section": "Cats: Wily",
+    "key": "appearanceWileycatHell",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5591,
+    "symbol": "KITTENPET1",
+    "label": "Default",
+    "section": "Cats: Kitten",
+    "key": "appearanceKittenpet1",
+    "idle": 317,
+    "walk": 2662,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5592,
+    "symbol": "KITTENPET_LIGHT",
+    "label": "White",
+    "section": "Cats: Kitten",
+    "key": "appearanceKittenpetLight",
+    "idle": 317,
+    "walk": 2662,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5593,
+    "symbol": "KITTENPET_BROWN",
+    "label": "Brown",
+    "section": "Cats: Kitten",
+    "key": "appearanceKittenpetBrown",
+    "idle": 317,
+    "walk": 2662,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5594,
+    "symbol": "KITTENPET_BLACK",
+    "label": "Black",
+    "section": "Cats: Kitten",
+    "key": "appearanceKittenpetBlack",
+    "idle": 317,
+    "walk": 2662,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5595,
+    "symbol": "KITTENPET_BROWNGREY",
+    "label": "Brown & grey",
+    "section": "Cats: Kitten",
+    "key": "appearanceKittenpetBrowngrey",
+    "idle": 317,
+    "walk": 2662,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5596,
+    "symbol": "KITTENPET_BLUEGREY",
+    "label": "Blue & grey",
+    "section": "Cats: Kitten",
+    "key": "appearanceKittenpetBluegrey",
+    "idle": 317,
+    "walk": 2662,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5597,
+    "symbol": "KITTENPET_HELL",
+    "label": "Hell",
+    "section": "Cats: Kitten",
+    "key": "appearanceKittenpetHell",
+    "idle": 317,
+    "walk": 2662,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5598,
+    "symbol": "OVERGROWNCAT",
+    "label": "Default",
+    "section": "Cats: Overgrown",
+    "key": "appearanceOvergrowncat",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5599,
+    "symbol": "OVERGROWNCAT_LIGHT",
+    "label": "White",
+    "section": "Cats: Overgrown",
+    "key": "appearanceOvergrowncatLight",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5600,
+    "symbol": "OVERGROWNCAT_BROWN",
+    "label": "Brown",
+    "section": "Cats: Overgrown",
+    "key": "appearanceOvergrowncatBrown",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5601,
+    "symbol": "OVERGROWNCAT_BLACK",
+    "label": "Black",
+    "section": "Cats: Overgrown",
+    "key": "appearanceOvergrowncatBlack",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5602,
+    "symbol": "OVERGROWNCAT_BROWNGREY",
+    "label": "Brown & grey",
+    "section": "Cats: Overgrown",
+    "key": "appearanceOvergrowncatBrowngrey",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5603,
+    "symbol": "OVERGROWNCAT_BLUEGREY",
+    "label": "Blue & grey",
+    "section": "Cats: Overgrown",
+    "key": "appearanceOvergrowncatBluegrey",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5604,
+    "symbol": "OVERGROWNCAT_HELL",
+    "label": "Hell",
+    "section": "Cats: Overgrown",
+    "key": "appearanceOvergrowncatHell",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 318,
+    "symbol": "CORE_PET",
+    "label": "Dark core",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceCorePet",
+    "idle": 7980,
+    "walk": 2417,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2055,
+    "symbol": "CHAOS_ELEMENTAL_PET",
+    "label": "Chaos Elemental Jr.",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceChaosElementalPet",
+    "idle": 3144,
+    "walk": 3145,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2130,
+    "symbol": "SNAKE_PET_GREEN",
+    "label": "Snakeling: Green",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSnakePetGreen",
+    "idle": 1721,
+    "walk": 2405,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2131,
+    "symbol": "SNAKE_PET_ORANGE",
+    "label": "Snakeling: Orange",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSnakePetOrange",
+    "idle": 1721,
+    "walk": 2405,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2132,
+    "symbol": "SNAKE_PET_BLUE",
+    "label": "Snakeling: Blue",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSnakePetBlue",
+    "idle": 1721,
+    "walk": 2405,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2144,
+    "symbol": "SARACHNISPET",
+    "label": "Sraracha: Default",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSarachnispet",
+    "idle": 8320,
+    "walk": 8319,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2782,
+    "symbol": "POH_TOY_CAT",
+    "label": "Clockwork cat",
+    "section": "Pets: Other",
+    "key": "appearancePohToyCat",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3081,
+    "symbol": "PHOENIX_PET_GREEN",
+    "label": "Phoenix: Green",
+    "section": "Pets: Bosses & raids",
+    "key": "appearancePhoenixPetGreen",
+    "idle": 6809,
+    "walk": 6808,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3082,
+    "symbol": "PHOENIX_PET_BLUE",
+    "label": "Phoenix: Blue",
+    "section": "Pets: Bosses & raids",
+    "key": "appearancePhoenixPetBlue",
+    "idle": 6809,
+    "walk": 6808,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3083,
+    "symbol": "PHOENIX_PET_WHITE",
+    "label": "Phoenix: White",
+    "section": "Pets: Bosses & raids",
+    "key": "appearancePhoenixPetWhite",
+    "idle": 6809,
+    "walk": 6808,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3084,
+    "symbol": "PHOENIX_PET_PURPLE",
+    "label": "Phoenix: Purple",
+    "section": "Pets: Bosses & raids",
+    "key": "appearancePhoenixPetPurple",
+    "idle": 6809,
+    "walk": 6808,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3099,
+    "symbol": "HELLPET",
+    "label": "Hellpuppy",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceHellpet",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3566,
+    "symbol": "SOULWARS_PET_BLUE",
+    "label": "Lil' Creator",
+    "section": "Pets: Other",
+    "key": "appearanceSoulwarsPetBlue",
+    "idle": 8842,
+    "walk": 8846,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4002,
+    "symbol": "CHOMPY_BIRD_PET",
+    "label": "Chompy chick",
+    "section": "Pets: Other",
+    "key": "appearanceChompyBirdPet",
+    "idle": 6764,
+    "walk": 6765,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5008,
+    "symbol": "SOULWARS_PET_RED",
+    "label": "Lil' Destructor",
+    "section": "Pets: Other",
+    "key": "appearanceSoulwarsPetRed",
+    "idle": 3079,
+    "walk": 8847,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5557,
+    "symbol": "VENENATISPET",
+    "label": "Venenatis spiderling: Default",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVenenatispet",
+    "idle": 9986,
+    "walk": 9987,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5558,
+    "symbol": "CALLISTOPET",
+    "label": "Callisto cub: Default",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceCallistopet",
+    "idle": 10011,
+    "walk": 10010,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5559,
+    "symbol": "VETIONPET",
+    "label": "Vet'ion Jr.: Default",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVetionpet",
+    "idle": 9965,
+    "walk": 9967,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5560,
+    "symbol": "VETIONPET_2",
+    "label": "Vet'ion Jr.: Reborn",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVetionpet2",
+    "idle": 9965,
+    "walk": 9967,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5561,
+    "symbol": "SCORPIAPET",
+    "label": "Scorpia's offspring",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceScorpiapet",
+    "idle": 6258,
+    "walk": 6257,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5884,
+    "symbol": "ABYSSALSIRE_PET",
+    "label": "Abyssal orphan",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceAbyssalsirePet",
+    "idle": 7125,
+    "walk": 7124,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5893,
+    "symbol": "JADPET",
+    "label": "TzRek-Jad",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceJadpet",
+    "idle": 2650,
+    "walk": 5805,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6628,
+    "symbol": "SUPREME_PET",
+    "label": "Dagannoth Supreme Jr.",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSupremePet",
+    "idle": 2850,
+    "walk": 2849,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6629,
+    "symbol": "PRIME_PET",
+    "label": "Dagannoth Prime Jr.",
+    "section": "Pets: Bosses & raids",
+    "key": "appearancePrimePet",
+    "idle": 2850,
+    "walk": 2849,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6630,
+    "symbol": "REX_PET",
+    "label": "Dagannoth Rex Jr.",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceRexPet",
+    "idle": 2850,
+    "walk": 2849,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6631,
+    "symbol": "ARMADYL_PET",
+    "label": "Kree'arra Jr.",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceArmadylPet",
+    "idle": 7166,
+    "walk": 7167,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6632,
+    "symbol": "BANDOS_PET",
+    "label": "General Graardor Jr.",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceBandosPet",
+    "idle": 7017,
+    "walk": 7016,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6633,
+    "symbol": "SARADOMIN_PET",
+    "label": "Zilyana Jr.",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSaradominPet",
+    "idle": 6966,
+    "walk": 6965,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6634,
+    "symbol": "ZAMORAK_PET",
+    "label": "K'ril Tsutsaroth Jr.",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceZamorakPet",
+    "idle": 6935,
+    "walk": 4070,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6635,
+    "symbol": "MOLE_PET",
+    "label": "Baby Mole",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceMolePet",
+    "idle": 3309,
+    "walk": 3313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6636,
+    "symbol": "KBD_PET",
+    "label": "Prince Black Dragon",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceKbdPet",
+    "idle": 90,
+    "walk": 4635,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6637,
+    "symbol": "KQ_PET_FLYING",
+    "label": "Kalphite Princess: Flying",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceKqPetFlying",
+    "idle": 6236,
+    "walk": 6236,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6638,
+    "symbol": "KQ_PET_WALKING",
+    "label": "Kalphite Princess: Walking",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceKqPetWalking",
+    "idle": 6239,
+    "walk": 6238,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6639,
+    "symbol": "SMOKE_PET",
+    "label": "Smoke Devil: Modern",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSmokePet",
+    "idle": 1829,
+    "walk": 1828,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6640,
+    "symbol": "KRAKEN_PET",
+    "label": "Kraken",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceKrakenPet",
+    "idle": 3989,
+    "walk": 3989,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6674,
+    "symbol": "PENANCE_PET",
+    "label": "Penance Pet",
+    "section": "Pets: Other",
+    "key": "appearancePenancePet",
+    "idle": 5410,
+    "walk": 5409,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6722,
+    "symbol": "SKILLPET_FISH",
+    "label": "Heron",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetFish",
+    "idle": 6772,
+    "walk": 6774,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6756,
+    "symbol": "SKILLPET_HUNTER_RED",
+    "label": "Baby Chinchompa: Red",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetHunterRed",
+    "idle": 5182,
+    "walk": 5181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6757,
+    "symbol": "SKILLPET_HUNTER_GREY",
+    "label": "Baby Chinchompa: Grey",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetHunterGrey",
+    "idle": 5182,
+    "walk": 5181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6758,
+    "symbol": "SKILLPET_HUNTER_BLACK",
+    "label": "Baby Chinchompa: Black",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetHunterBlack",
+    "idle": 5182,
+    "walk": 5181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6759,
+    "symbol": "SKILLPET_HUNTER_GOLD",
+    "label": "Baby Chinchompa: Gold",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetHunterGold",
+    "idle": 5182,
+    "walk": 5181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7232,
+    "symbol": "BLOODHOUNDPET",
+    "label": "Bloodhound",
+    "section": "Pets: Other",
+    "key": "appearanceBloodhoundpet",
+    "idle": 7269,
+    "walk": 7280,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7351,
+    "symbol": "SKILLPET_AGILITY",
+    "label": "Giant Squirrel",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetAgility",
+    "idle": 7309,
+    "walk": 7310,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7352,
+    "symbol": "SKILLPET_FARMING",
+    "label": "Tangleroot: Default",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetFarming",
+    "idle": 7312,
+    "walk": 7313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7353,
+    "symbol": "SKILLPET_THIEVING",
+    "label": "Rocky",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetThieving",
+    "idle": 7315,
+    "walk": 7316,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7354,
+    "symbol": "SKILLPET_RUNECRAFTING_FIRE",
+    "label": "Rift guardian: Fire",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingFire",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7355,
+    "symbol": "SKILLPET_RUNECRAFTING_AIR",
+    "label": "Rift guardian: Air",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingAir",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7356,
+    "symbol": "SKILLPET_RUNECRAFTING_MIND",
+    "label": "Rift guardian: Mind",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingMind",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7357,
+    "symbol": "SKILLPET_RUNECRAFTING_WATER",
+    "label": "Rift guardian: Water",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingWater",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7358,
+    "symbol": "SKILLPET_RUNECRAFTING_EARTH",
+    "label": "Rift guardian: Earth",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingEarth",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7359,
+    "symbol": "SKILLPET_RUNECRAFTING_BODY",
+    "label": "Rift guardian: Body",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingBody",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7360,
+    "symbol": "SKILLPET_RUNECRAFTING_COSMIC",
+    "label": "Rift guardian: Cosmic",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingCosmic",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7361,
+    "symbol": "SKILLPET_RUNECRAFTING_CHAOS",
+    "label": "Rift guardian: Chaos",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingChaos",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7362,
+    "symbol": "SKILLPET_RUNECRAFTING_NATURE",
+    "label": "Rift guardian: Nature",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingNature",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7363,
+    "symbol": "SKILLPET_RUNECRAFTING_LAW",
+    "label": "Rift guardian: Law",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingLaw",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7364,
+    "symbol": "SKILLPET_RUNECRAFTING_DEATH",
+    "label": "Rift guardian: Death",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingDeath",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7365,
+    "symbol": "SKILLPET_RUNECRAFTING_SOUL",
+    "label": "Rift guardian: Soul",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingSoul",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7366,
+    "symbol": "SKILLPET_RUNECRAFTING_ASTRAL",
+    "label": "Rift guardian: Astral",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingAstral",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7367,
+    "symbol": "SKILLPET_RUNECRAFTING_BLOOD",
+    "label": "Rift guardian: Blood",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingBlood",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7370,
+    "symbol": "PHOENIX_PET",
+    "label": "Phoenix: Orange",
+    "section": "Pets: Bosses & raids",
+    "key": "appearancePhoenixPet",
+    "idle": 6809,
+    "walk": 6808,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7451,
+    "symbol": "SKILLPET_MINING_DEFAULT",
+    "label": "Rock Golem: Default",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningDefault",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7452,
+    "symbol": "SKILLPET_MINING_TIN",
+    "label": "Rock Golem: Tin",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningTin",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7453,
+    "symbol": "SKILLPET_MINING_COPPER",
+    "label": "Rock Golem: Copper",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningCopper",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7454,
+    "symbol": "SKILLPET_MINING_IRON",
+    "label": "Rock Golem: Iron",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningIron",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7455,
+    "symbol": "SKILLPET_MINING_BLURITE",
+    "label": "Rock Golem: Blurite",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningBlurite",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7520,
+    "symbol": "RAIDS_OLM_PET",
+    "label": "Olmlet",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceRaidsOlmPet",
+    "idle": 7396,
+    "walk": 7395,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7616,
+    "symbol": "SCURRIUS_PET",
+    "label": "Scurry",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceScurriusPet",
+    "idle": 10687,
+    "walk": 10715,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7642,
+    "symbol": "SKILLPET_MINING_SILVER",
+    "label": "Rock Golem: Silver",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningSilver",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7643,
+    "symbol": "SKILLPET_MINING_COAL",
+    "label": "Rock Golem: Coal",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningCoal",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7644,
+    "symbol": "SKILLPET_MINING_GOLD",
+    "label": "Rock Golem: Gold",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningGold",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7645,
+    "symbol": "SKILLPET_MINING_MITHRIL",
+    "label": "Rock Golem: Mithril",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningMithril",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7646,
+    "symbol": "SKILLPET_MINING_GRANITE",
+    "label": "Rock Golem: Granite",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningGranite",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7647,
+    "symbol": "SKILLPET_MINING_ADAMANTITE",
+    "label": "Rock Golem: Adamantite",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningAdamantite",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7648,
+    "symbol": "SKILLPET_MINING_RUNITE",
+    "label": "Rock Golem: Runite",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningRunite",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7671,
+    "symbol": "SKOTIZO_PET",
+    "label": "Skotos",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSkotizoPet",
+    "idle": 6935,
+    "walk": 4070,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7675,
+    "symbol": "INFERNO_PET",
+    "label": "Jal-Nib-Rek",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceInfernoPet",
+    "idle": 7573,
+    "walk": 7572,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7711,
+    "symbol": "SKILLPET_MINING_AMETHYST",
+    "label": "Rock Golem: Amethyst",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningAmethyst",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7739,
+    "symbol": "SKILLPET_MINING_LOVAKITE",
+    "label": "Rock Golem: Lovakite",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningLovakite",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7740,
+    "symbol": "SKILLPET_MINING_ELEMENTAL",
+    "label": "Rock Golem: Elemental",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningElemental",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7741,
+    "symbol": "SKILLPET_MINING_DAEYALT",
+    "label": "Rock Golem: Daeyalt",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningDaeyalt",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7760,
+    "symbol": "HERBIBOAR_PET",
+    "label": "Herbi",
+    "section": "Pets: Other",
+    "key": "appearanceHerbiboarPet",
+    "idle": 7694,
+    "walk": 7695,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7892,
+    "symbol": "DAWN_PET",
+    "label": "Noon",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceDawnPet",
+    "idle": 7768,
+    "walk": 7768,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7893,
+    "symbol": "DUSK_PET",
+    "label": "Midnight",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceDuskPet",
+    "idle": 7807,
+    "walk": 7806,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8010,
+    "symbol": "CORP_PET",
+    "label": "Corporeal Critter",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceCorpPet",
+    "idle": 1678,
+    "walk": 7974,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8011,
+    "symbol": "ZUK_PET",
+    "label": "TzRek-Zuk",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceZukPet",
+    "idle": 7975,
+    "walk": 7977,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8028,
+    "symbol": "SKILLPET_RUNECRAFTING_WRATH",
+    "label": "Rift guardian: Wrath",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingWrath",
+    "idle": 7307,
+    "walk": 7306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8029,
+    "symbol": "VORKATH_PET",
+    "label": "Vorki",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVorkathPet",
+    "idle": 7948,
+    "walk": 7959,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8201,
+    "symbol": "DOGADILE_PET",
+    "label": "Puppadile",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceDogadilePet",
+    "idle": 7417,
+    "walk": 7982,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8202,
+    "symbol": "TEKTON_PET",
+    "label": "Tektiny",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceTektonPet",
+    "idle": 7476,
+    "walk": 7983,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8203,
+    "symbol": "VANGUARD_PET",
+    "label": "Vanguard",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVanguardPet",
+    "idle": 7430,
+    "walk": 7984,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8204,
+    "symbol": "VASA_PET",
+    "label": "Vasa Minirio",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVasaPet",
+    "idle": 7416,
+    "walk": 7985,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8205,
+    "symbol": "VESPULA_PET",
+    "label": "Vespina",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVespulaPet",
+    "idle": 7449,
+    "walk": 7986,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8337,
+    "symbol": "VERZIK_PET",
+    "label": "Lil' Zik",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVerzikPet",
+    "idle": 13135,
+    "walk": 8122,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8483,
+    "symbol": "SMOKE_PET_OLD",
+    "label": "Smoke Devil: Legacy",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSmokePetOld",
+    "idle": 1829,
+    "walk": 1828,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8492,
+    "symbol": "HYDRA_PET",
+    "label": "Ikkle Hydra: Default",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceHydraPet",
+    "idle": 8233,
+    "walk": 8296,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8493,
+    "symbol": "HYDRA_PET_ELECTRIC",
+    "label": "Ikkle Hydra: Electric",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceHydraPetElectric",
+    "idle": 8298,
+    "walk": 8297,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8494,
+    "symbol": "HYDRA_PET_FIRE",
+    "label": "Ikkle Hydra: Fire",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceHydraPetFire",
+    "idle": 8247,
+    "walk": 8299,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8495,
+    "symbol": "HYDRA_PET_EXTINGUISHED",
+    "label": "Ikkle Hydra: Extinguished",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceHydraPetExtinguished",
+    "idle": 8254,
+    "walk": 8300,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8541,
+    "symbol": "NIGHTMARE_PET_PARASITE",
+    "label": "Little Parasite",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceNightmarePetParasite",
+    "idle": 8553,
+    "walk": 8553,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8737,
+    "symbol": "GAUNTLET_PET",
+    "label": "Youngllef",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceGauntletPet",
+    "idle": 8417,
+    "walk": 8428,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8738,
+    "symbol": "GAUNTLET_PET_CORRUPT",
+    "label": "Corrupted Youngllef",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceGauntletPetCorrupt",
+    "idle": 8417,
+    "walk": 8428,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8739,
+    "symbol": "ZALCANO_PET",
+    "label": "Smolcano",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceZalcanoPet",
+    "idle": 8429,
+    "walk": 8447,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9399,
+    "symbol": "NIGHTMARE_PET",
+    "label": "Little Nightmare",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceNightmarePet",
+    "idle": 8593,
+    "walk": 8634,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9497,
+    "symbol": "SKILLPET_FARMING_CRYSTAL",
+    "label": "Tangleroot: Crystal",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetFarmingCrystal",
+    "idle": 7312,
+    "walk": 7313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9498,
+    "symbol": "SKILLPET_FARMING_DRAGON",
+    "label": "Tangleroot: Dragon",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetFarmingDragon",
+    "idle": 7312,
+    "walk": 7313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9499,
+    "symbol": "SKILLPET_FARMING_HERB",
+    "label": "Tangleroot: Herb",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetFarmingHerb",
+    "idle": 7312,
+    "walk": 7313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9500,
+    "symbol": "SKILLPET_FARMING_LILY",
+    "label": "Tangleroot: Lily",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetFarmingLily",
+    "idle": 7312,
+    "walk": 7313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9501,
+    "symbol": "SKILLPET_FARMING_REDWOOD",
+    "label": "Tangleroot: Redwood",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetFarmingRedwood",
+    "idle": 7312,
+    "walk": 7313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9513,
+    "symbol": "TEKTON_ENRAGED_PET",
+    "label": "Enraged Tektiny",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceTektonEnragedPet",
+    "idle": 7485,
+    "walk": 8637,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9514,
+    "symbol": "VESPULA_FLYING_PET",
+    "label": "Flying Vespina",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVespulaFlyingPet",
+    "idle": 8639,
+    "walk": 8639,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9637,
+    "symbol": "SKILLPET_AGILITY_DARK",
+    "label": "Dark Squirrel",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetAgilityDark",
+    "idle": 7309,
+    "walk": 7310,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9852,
+    "symbol": "SKILLPET_THIEVING_PANDA",
+    "label": "Red",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetThievingPanda",
+    "idle": 7315,
+    "walk": 7316,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9853,
+    "symbol": "SKILLPET_THIEVING_TANUKI",
+    "label": "Ziggy",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetThievingTanuki",
+    "idle": 7315,
+    "walk": 7316,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10625,
+    "symbol": "JADPET_INFERNO",
+    "label": "JalRek-Jad",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceJadpetInferno",
+    "idle": 7589,
+    "walk": 8857,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10636,
+    "symbol": "SKILLPET_FISH_TEMPOROSS",
+    "label": "Great blue heron",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetFishTempoross",
+    "idle": 6772,
+    "walk": 6774,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10637,
+    "symbol": "TEMPOROSS_PET",
+    "label": "Tiny Tempor",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceTemporossPet",
+    "idle": 8895,
+    "walk": 8895,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10651,
+    "symbol": "MOLE_PET_NAKED",
+    "label": "Baby Mole-rat",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceMolePetNaked",
+    "idle": 3309,
+    "walk": 3313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10870,
+    "symbol": "VERZIK_PET_MAIDEN",
+    "label": "Lil' Maiden",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVerzikPetMaiden",
+    "idle": 14520,
+    "walk": 14520,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10871,
+    "symbol": "VERZIK_PET_BLOAT",
+    "label": "Lil' Bloat",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVerzikPetBloat",
+    "idle": 8080,
+    "walk": 9031,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10872,
+    "symbol": "VERZIK_PET_NYLOCAS",
+    "label": "Lil' Nylo",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVerzikPetNylocas",
+    "idle": 8002,
+    "walk": 8003,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10873,
+    "symbol": "VERZIK_PET_SOTETSEG",
+    "label": "Lil' Sot",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVerzikPetSotetseg",
+    "idle": 8137,
+    "walk": 9032,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10874,
+    "symbol": "VERZIK_PET_XARPUS",
+    "label": "Lil' Xarp",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVerzikPetXarpus",
+    "idle": 9033,
+    "walk": 9033,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11159,
+    "symbol": "SARACHNISPET_ORANGE",
+    "label": "Sraracha: Orange",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSarachnispetOrange",
+    "idle": 8320,
+    "walk": 8319,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11160,
+    "symbol": "SARACHNISPET_BLUE",
+    "label": "Sraracha: Blue",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSarachnispetBlue",
+    "idle": 8320,
+    "walk": 8319,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11277,
+    "symbol": "NEX_PET",
+    "label": "Nexling",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceNexPet",
+    "idle": 9177,
+    "walk": 9176,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11428,
+    "symbol": "SKILLPET_RUNECRAFTING_GOTR",
+    "label": "Greatish guardian",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetRunecraftingGotr",
+    "idle": 9379,
+    "walk": 9378,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11429,
+    "symbol": "ABYSSAL_PET",
+    "label": "Abyssal protector",
+    "section": "Pets: Other",
+    "key": "appearanceAbyssalPet",
+    "idle": 2185,
+    "walk": 2184,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11812,
+    "symbol": "WARDEN_PET_TUMEKEN",
+    "label": "Tumeken's Guardian",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWardenPetTumeken",
+    "idle": 9655,
+    "walk": 9651,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11813,
+    "symbol": "WARDEN_PET_ELIDINIS",
+    "label": "Elidinis' Guardian",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWardenPetElidinis",
+    "idle": 9656,
+    "walk": 9652,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11846,
+    "symbol": "WARDEN_PET_AKKHA",
+    "label": "Akkhito",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWardenPetAkkha",
+    "idle": 9760,
+    "walk": 9421,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11847,
+    "symbol": "WARDEN_PET_BABA",
+    "label": "Babi",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWardenPetBaba",
+    "idle": 9741,
+    "walk": 9739,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11848,
+    "symbol": "WARDEN_PET_KEPHRI",
+    "label": "Kephriti",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWardenPetKephri",
+    "idle": 9572,
+    "walk": 9419,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11849,
+    "symbol": "WARDEN_PET_ZEBAK",
+    "label": "Zebo",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWardenPetZebak",
+    "idle": 2037,
+    "walk": 2036,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11850,
+    "symbol": "WARDEN_PET_TUMEKEN_DESTROYED",
+    "label": "Tumeken's Damaged Guardian",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWardenPetTumekenDestroyed",
+    "idle": 9420,
+    "walk": 9420,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11851,
+    "symbol": "WARDEN_PET_ELIDINIS_DESTROYED",
+    "label": "Elidinis' Damaged Guardian",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWardenPetElidinisDestroyed",
+    "idle": 9420,
+    "walk": 9420,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11985,
+    "symbol": "VENENATISPET_LEGACY",
+    "label": "Venenatis spiderling: Legacy",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVenenatispetLegacy",
+    "idle": 5326,
+    "walk": 5325,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11986,
+    "symbol": "CALLISTOPET_LEGACY",
+    "label": "Callisto cub: Legacy",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceCallistopetLegacy",
+    "idle": 4919,
+    "walk": 4923,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11987,
+    "symbol": "VETIONPET_LEGACY",
+    "label": "Vet'ion Jr.: Legacy",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVetionpetLegacy",
+    "idle": 5505,
+    "walk": 5497,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11988,
+    "symbol": "VETIONPET_2_LEGACY",
+    "label": "Vet'ion Jr.: Reborn Legacy",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVetionpet2Legacy",
+    "idle": 5505,
+    "walk": 5497,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12014,
+    "symbol": "MUSPAH_PET",
+    "label": "Muphin: Default",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceMuspahPet",
+    "idle": 9913,
+    "walk": 9915,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12015,
+    "symbol": "MUSPAH_PET_MELEE",
+    "label": "Muphin: Melee",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceMuspahPetMelee",
+    "idle": 9913,
+    "walk": 9915,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12016,
+    "symbol": "MUSPAH_PET_SHIELDED",
+    "label": "Muphin: Shielded",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceMuspahPetShielded",
+    "idle": 9913,
+    "walk": 9915,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12157,
+    "symbol": "WHISPERER_PET",
+    "label": "Wisp",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceWhispererPet",
+    "idle": 10230,
+    "walk": 10233,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12158,
+    "symbol": "VARDORVIS_PET",
+    "label": "Butch",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceVardorvisPet",
+    "idle": 10337,
+    "walk": 10339,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12159,
+    "symbol": "DUKE_SUCELLUS_PET",
+    "label": "Baron",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceDukeSucellusPet",
+    "idle": 10217,
+    "walk": 10218,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12160,
+    "symbol": "LEVIATHAN_PET",
+    "label": "Lil'viathan",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceLeviathanPet",
+    "idle": 10277,
+    "walk": 10292,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12181,
+    "symbol": "SKILLPETWC",
+    "label": "Beaver: Default",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetwc",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12182,
+    "symbol": "SKILLPET_WC_OAK",
+    "label": "Beaver: Oak",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcOak",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12183,
+    "symbol": "SKILLPET_WC_WILLOW",
+    "label": "Beaver: Willow",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcWillow",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12184,
+    "symbol": "SKILLPET_WC_MAPLE",
+    "label": "Beaver: Maple",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcMaple",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12185,
+    "symbol": "SKILLPET_WC_YEW",
+    "label": "Beaver: Yew",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcYew",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12186,
+    "symbol": "SKILLPET_WC_MAGIC",
+    "label": "Beaver: Magic",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcMagic",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12187,
+    "symbol": "SKILLPET_WC_REDWOOD",
+    "label": "Beaver: Redwood",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcRedwood",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12188,
+    "symbol": "SKILLPET_WC_TEAK",
+    "label": "Beaver: Teak",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcTeak",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12189,
+    "symbol": "SKILLPET_WC_MAHOGANY",
+    "label": "Beaver: Mahogany",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcMahogany",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12190,
+    "symbol": "SKILLPET_WC_ARCTIC",
+    "label": "Beaver: Arctic",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcArctic",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12549,
+    "symbol": "SKILLPET_WC_PHEASANT",
+    "label": "Pheasant",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcPheasant",
+    "idle": 2370,
+    "walk": 2369,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12550,
+    "symbol": "SKILLPET_WC_FOX",
+    "label": "Fox",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcFox",
+    "idle": 6561,
+    "walk": 6560,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12593,
+    "symbol": "RTBRANDA_PET",
+    "label": "Bran",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceRtbrandaPet",
+    "idle": 11970,
+    "walk": 11972,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12595,
+    "symbol": "RTELDRIC_PET",
+    "label": "Ric",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceRteldricPet",
+    "idle": 11969,
+    "walk": 11971,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12857,
+    "symbol": "SOLHEREDIT_PET",
+    "label": "Smol Heredit",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceSolhereditPet",
+    "idle": 10874,
+    "walk": 10880,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12858,
+    "symbol": "QUETZAL_PET",
+    "label": "Quetzin",
+    "section": "Pets: Other",
+    "key": "appearanceQuetzalPet",
+    "idle": 10952,
+    "walk": 10952,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13518,
+    "symbol": "WGS_BROAV",
+    "label": "Broav",
+    "section": "Pets: Other",
+    "key": "appearanceWgsBroav",
+    "idle": 11232,
+    "walk": 11234,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13683,
+    "symbol": "ARAXXOR_PET",
+    "label": "Nid",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceAraxxorPet",
+    "idle": 11473,
+    "walk": 11474,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13684,
+    "symbol": "ARAXXOR_PET_CUTE",
+    "label": "Rax",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceAraxxorPetCute",
+    "idle": 8340,
+    "walk": 9139,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14044,
+    "symbol": "SKILLPET_AGILITY_BONE",
+    "label": "Bone Squirrel",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetAgilityBone",
+    "idle": 11662,
+    "walk": 11663,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14045,
+    "symbol": "HUEY_PET",
+    "label": "Huberte",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceHueyPet",
+    "idle": 11732,
+    "walk": 11733,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14046,
+    "symbol": "AMOXLIATL_PET",
+    "label": "Moxi",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceAmoxliatlPet",
+    "idle": 11528,
+    "walk": 11529,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14204,
+    "symbol": "YAMA_PET",
+    "label": "Yami",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceYamaPet",
+    "idle": 12140,
+    "walk": 12143,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14785,
+    "symbol": "DOM_PET",
+    "label": "Dom",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceDomPet",
+    "idle": 12401,
+    "walk": 12402,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14923,
+    "symbol": "SKILLPET_MINING_LEAD",
+    "label": "Rock Golem: Lead",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningLead",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14924,
+    "symbol": "SKILLPET_MINING_RUBIUM",
+    "label": "Rock Golem: Rubium",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningRubium",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14925,
+    "symbol": "SKILLPET_MINING_NICKEL",
+    "label": "Rock Golem: Nickel",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetMiningNickel",
+    "idle": 7180,
+    "walk": 7181,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14926,
+    "symbol": "SKILLPET_WC_CAMPHOR",
+    "label": "Beaver: Camphor",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcCamphor",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14927,
+    "symbol": "SKILLPET_WC_IRONWOOD",
+    "label": "Beaver: Ironwood",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcIronwood",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14928,
+    "symbol": "SKILLPET_WC_JATOBA",
+    "label": "Beaver: Jatoba",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcJatoba",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14929,
+    "symbol": "SKILLPET_WC_ROSEWOOD",
+    "label": "Beaver: Rosewood",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetWcRosewood",
+    "idle": 7177,
+    "walk": 7178,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14930,
+    "symbol": "SKILLPET_SAILING",
+    "label": "Soup",
+    "section": "Pets: Skilling",
+    "key": "appearanceSkillpetSailing",
+    "idle": 13498,
+    "walk": 13499,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14931,
+    "symbol": "GRYPHONBOSS_PET",
+    "label": "Gull",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceGryphonbossPet",
+    "idle": 12586,
+    "walk": 12587,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14932,
+    "symbol": "GRYPHONBOSS_PET_ADULT",
+    "label": "Gulliver",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceGryphonbossPetAdult",
+    "idle": 12548,
+    "walk": 12550,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15631,
+    "symbol": "COWBOSS_PET",
+    "label": "Beef",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceCowbossPet",
+    "idle": 5852,
+    "walk": 5856,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15740,
+    "symbol": "MAGGOT_KING_PET",
+    "label": "Maggot marquess",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceMaggotKingPet",
+    "idle": 13926,
+    "walk": 13935,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16316,
+    "symbol": "GOAT_PIT_PET",
+    "label": "Mr McGroot",
+    "section": "Pets: Other",
+    "key": "appearanceGoatPitPet",
+    "idle": 5339,
+    "walk": 14449,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16317,
+    "symbol": "MAD_ANGEL_PET",
+    "label": "Aggy",
+    "section": "Pets: Bosses & raids",
+    "key": "appearanceMadAngelPet",
+    "idle": 4588,
+    "walk": 4588,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14518,
+    "symbol": "DAGANNOTH_DUNGEON_PRESSURE_PET_EGG",
+    "label": "Humphrey Dumphrey",
+    "section": "Pets: Other",
+    "key": "appearanceDagannothDungeonPressurePetEgg",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15587,
+    "symbol": "DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG",
+    "label": "Archibald: Pattern 1",
+    "section": "Pets: Other",
+    "key": "appearanceDagannothDungeonPressurePetEaster26Egg",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15590,
+    "symbol": "DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG_02",
+    "label": "Archibald: Pattern 2",
+    "section": "Pets: Other",
+    "key": "appearanceDagannothDungeonPressurePetEaster26Egg02",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15592,
+    "symbol": "DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG_03",
+    "label": "Archibald: Pattern 3",
+    "section": "Pets: Other",
+    "key": "appearanceDagannothDungeonPressurePetEaster26Egg03",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15594,
+    "symbol": "DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG_04",
+    "label": "Archibald: Pattern 4",
+    "section": "Pets: Other",
+    "key": "appearanceDagannothDungeonPressurePetEaster26Egg04",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15596,
+    "symbol": "DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG_05",
+    "label": "Archibald: Pattern 5",
+    "section": "Pets: Other",
+    "key": "appearanceDagannothDungeonPressurePetEaster26Egg05",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15598,
+    "symbol": "DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG_06",
+    "label": "Archibald: Pattern 6",
+    "section": "Pets: Other",
+    "key": "appearanceDagannothDungeonPressurePetEaster26Egg06",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15600,
+    "symbol": "DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG_07",
+    "label": "Archibald: Pattern 7",
+    "section": "Pets: Other",
+    "key": "appearanceDagannothDungeonPressurePetEaster26Egg07",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14815,
+    "symbol": "POH_HW_CHAIR",
+    "label": "Spooky chair",
+    "section": "Pets: Other",
+    "key": "appearancePohHwChair",
+    "idle": -1,
+    "walk": 3220,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15050,
+    "symbol": "POH_FISHBOWL_MAYOR_OF_CATHERBY",
+    "label": "Mayor of Catherby",
+    "section": "Pets: Other",
+    "key": "appearancePohFishbowlMayorOfCatherby",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1672,
+    "symbol": "BARROWS_AHRIM",
+    "label": "Ahrim the Blighted",
+    "section": "Bosses: World",
+    "key": "appearanceBarrowsAhrim",
+    "idle": 813,
+    "walk": 1205,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1675,
+    "symbol": "BARROWS_KARIL",
+    "label": "Karil the Tainted",
+    "section": "Bosses: World",
+    "key": "appearanceBarrowsKaril",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1673,
+    "symbol": "BARROWS_DHAROK",
+    "label": "Dharok the Wretched",
+    "section": "Bosses: World",
+    "key": "appearanceBarrowsDharok",
+    "idle": 2065,
+    "walk": 2064,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1674,
+    "symbol": "BARROWS_GUTHAN",
+    "label": "Guthan the Infested",
+    "section": "Bosses: World",
+    "key": "appearanceBarrowsGuthan",
+    "idle": 813,
+    "walk": 1205,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1676,
+    "symbol": "BARROWS_TORAG",
+    "label": "Torag the Corrupted",
+    "section": "Bosses: World",
+    "key": "appearanceBarrowsTorag",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1677,
+    "symbol": "BARROWS_VERAC",
+    "label": "Verac the Defiled",
+    "section": "Bosses: World",
+    "key": "appearanceBarrowsVerac",
+    "idle": 2061,
+    "walk": 2060,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14779,
+    "symbol": "GEMSTONE_CRAB",
+    "label": "Gemstone Crab",
+    "section": "Bosses: World",
+    "key": "appearanceGemstoneCrab",
+    "idle": 12480,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7221,
+    "symbol": "RAT_BOSS_NORMAL",
+    "label": "Scurrius",
+    "section": "Bosses: World",
+    "key": "appearanceRatBossNormal",
+    "idle": 10687,
+    "walk": 10690,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5779,
+    "symbol": "MOLE_GIANT",
+    "label": "Giant Mole",
+    "section": "Bosses: World",
+    "key": "appearanceMoleGiant",
+    "idle": 3309,
+    "walk": 3313,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7806,
+    "symbol": "FOSSIL_CRAZY_ARCHAEOLOGIST",
+    "label": "Deranged Archaeologist",
+    "section": "Bosses: World",
+    "key": "appearanceFossilCrazyArchaeologist",
+    "idle": 3846,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2265,
+    "symbol": "DAGCAVE_RANGED_BOSS",
+    "label": "Dagannoth Supreme",
+    "section": "Bosses: World",
+    "key": "appearanceDagcaveRangedBoss",
+    "idle": 2850,
+    "walk": 2849,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2267,
+    "symbol": "DAGCAVE_MELEE_BOSS",
+    "label": "Dagannoth Rex",
+    "section": "Bosses: World",
+    "key": "appearanceDagcaveMeleeBoss",
+    "idle": 2850,
+    "walk": 2849,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2266,
+    "symbol": "DAGCAVE_MAGIC_BOSS",
+    "label": "Dagannoth Prime",
+    "section": "Bosses: World",
+    "key": "appearanceDagcaveMagicBoss",
+    "idle": 2850,
+    "walk": 2849,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8713,
+    "symbol": "SARACHNIS",
+    "label": "Sarachnis",
+    "section": "Bosses: World",
+    "key": "appearanceSarachnis",
+    "idle": 8320,
+    "walk": 8319,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13011,
+    "symbol": "PMOON_BOSS_BLOOD_MOON_VIS",
+    "label": "Blood Moon",
+    "section": "Bosses: World",
+    "key": "appearancePmoonBossBloodMoonVis",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13013,
+    "symbol": "PMOON_BOSS_BLUE_MOON_VIS",
+    "label": "Blue Moon",
+    "section": "Bosses: World",
+    "key": "appearancePmoonBossBlueMoonVis",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13012,
+    "symbol": "PMOON_BOSS_ECLIPSE_MOON_VIS",
+    "label": "Eclipse Moon",
+    "section": "Bosses: World",
+    "key": "appearancePmoonBossEclipseMoonVis",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 963,
+    "symbol": "KALPHITE_QUEEN",
+    "label": "Kalphite Queen",
+    "section": "Bosses: World",
+    "key": "appearanceKalphiteQueen",
+    "idle": 6239,
+    "walk": 6238,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3162,
+    "symbol": "GODWARS_ARMADYL_AVATAR",
+    "label": "Kree'arra",
+    "section": "Bosses: World",
+    "key": "appearanceGodwarsArmadylAvatar",
+    "idle": 6976,
+    "walk": 6977,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2205,
+    "symbol": "GODWARS_SARADOMIN_AVATAR",
+    "label": "Commander Zilyana",
+    "section": "Bosses: World",
+    "key": "appearanceGodwarsSaradominAvatar",
+    "idle": 6966,
+    "walk": 6965,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2215,
+    "symbol": "GODWARS_BANDOS_AVATAR",
+    "label": "General Graardor",
+    "section": "Bosses: World",
+    "key": "appearanceGodwarsBandosAvatar",
+    "idle": 7017,
+    "walk": 7016,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3129,
+    "symbol": "GODWARS_ZAMORAK_AVATAR",
+    "label": "K'ril Tsutsaroth",
+    "section": "Bosses: World",
+    "key": "appearanceGodwarsZamorakAvatar",
+    "idle": 6935,
+    "walk": 4070,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14009,
+    "symbol": "HUEY_HEAD",
+    "label": "The Hueycoatl",
+    "section": "Bosses: World",
+    "key": "appearanceHueyHead",
+    "idle": 11668,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 319,
+    "symbol": "CORP_BEAST",
+    "label": "Corporeal Beast",
+    "section": "Bosses: World",
+    "key": "appearanceCorpBeast",
+    "idle": 1678,
+    "walk": 1684,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11278,
+    "symbol": "NEX",
+    "label": "Nex",
+    "section": "Bosses: World",
+    "key": "appearanceNex",
+    "idle": 9177,
+    "walk": 9175,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6619,
+    "symbol": "CHAOS_FANATIC",
+    "label": "Chaos Fanatic",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceChaosFanatic",
+    "idle": 2770,
+    "walk": 2769,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6618,
+    "symbol": "CRAZY_ARCHAEOLOGIST",
+    "label": "Crazy archaeologist",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceCrazyArchaeologist",
+    "idle": 3846,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6615,
+    "symbol": "SCORPIA",
+    "label": "Scorpia",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceScorpia",
+    "idle": 6252,
+    "walk": 6262,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 239,
+    "symbol": "KING_DRAGON",
+    "label": "King Black Dragon",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceKingDragon",
+    "idle": 90,
+    "walk": 4635,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2054,
+    "symbol": "CHAOSELEMENTAL",
+    "label": "Chaos Elemental",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceChaoselemental",
+    "idle": 3144,
+    "walk": 3145,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11246,
+    "symbol": "WILD_CAVE_SUPERIOR",
+    "label": "Revenant maledictus",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceWildCaveSuperior",
+    "idle": 9276,
+    "walk": 9275,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11993,
+    "symbol": "VETION_SINGLE",
+    "label": "Calvar'ion",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceVetionSingle",
+    "idle": 9965,
+    "walk": 9967,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6611,
+    "symbol": "VETION",
+    "label": "Vet'ion",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceVetion",
+    "idle": 9965,
+    "walk": 9967,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11998,
+    "symbol": "VENENATIS_SINGLES",
+    "label": "Spindel",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceVenenatisSingles",
+    "idle": 9986,
+    "walk": 9988,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6610,
+    "symbol": "VENENATIS",
+    "label": "Venenatis",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceVenenatis",
+    "idle": 9986,
+    "walk": 9988,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11992,
+    "symbol": "CALLISTO_SINGLES",
+    "label": "Artio",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceCallistoSingles",
+    "idle": 10011,
+    "walk": 10009,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6609,
+    "symbol": "CALLISTO",
+    "label": "Callisto",
+    "section": "Bosses: Wilderness",
+    "key": "appearanceCallisto",
+    "idle": 10011,
+    "walk": 10009,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15626,
+    "symbol": "COWBOSS",
+    "label": "Brutus",
+    "section": "Bosses: World",
+    "key": "appearanceCowboss",
+    "idle": 13781,
+    "walk": 13782,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15628,
+    "symbol": "COWBOSS_HARDMODE",
+    "label": "Demonic Brutus",
+    "section": "Bosses: World",
+    "key": "appearanceCowbossHardmode",
+    "idle": 13781,
+    "walk": 13782,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7416,
+    "symbol": "HILLGIANT_BOSS",
+    "label": "Obor",
+    "section": "Bosses: World",
+    "key": "appearanceHillgiantBoss",
+    "idle": 4650,
+    "walk": 4649,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8195,
+    "symbol": "GB_MOSSGIANT",
+    "label": "Bryophyta",
+    "section": "Bosses: World",
+    "key": "appearanceGbMossgiant",
+    "idle": 4656,
+    "walk": 4654,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13685,
+    "symbol": "AMOXLIATL",
+    "label": "Amoxliatl",
+    "section": "Bosses: World",
+    "key": "appearanceAmoxliatl",
+    "idle": 11528,
+    "walk": 11529,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12596,
+    "symbol": "RT_FIRE_QUEEN",
+    "label": "Branda the Fire Queen",
+    "section": "Bosses: World",
+    "key": "appearanceRtFireQueen",
+    "idle": 11970,
+    "walk": 11972,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14707,
+    "symbol": "DOM_BOSS",
+    "label": "Doom of Mokhaiotl",
+    "section": "Bosses: World",
+    "key": "appearanceDomBoss",
+    "idle": 12405,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16305,
+    "symbol": "MAD_ANGEL",
+    "label": "Mad Angel",
+    "section": "Bosses: World",
+    "key": "appearanceMadAngel",
+    "idle": 4588,
+    "walk": 4588,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2042,
+    "symbol": "SNAKEBOSS_BOSS_RANGED",
+    "label": "Zulrah",
+    "section": "Bosses: World",
+    "key": "appearanceSnakebossBossRanged",
+    "idle": 5070,
+    "walk": 5070,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8060,
+    "symbol": "VORKATH_QUEST",
+    "label": "Vorkath",
+    "section": "Bosses: World",
+    "key": "appearanceVorkathQuest",
+    "idle": 7948,
+    "walk": 7947,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12077,
+    "symbol": "MUSPAH",
+    "label": "Phantom Muspah",
+    "section": "Bosses: World",
+    "key": "appearanceMuspah",
+    "idle": 9913,
+    "walk": 9914,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15742,
+    "symbol": "MAGGOT_KING",
+    "label": "Maggot King",
+    "section": "Bosses: World",
+    "key": "appearanceMaggotKing",
+    "idle": 13926,
+    "walk": 13927,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9425,
+    "symbol": "NIGHTMARE_PHASE_01",
+    "label": "The Nightmare",
+    "section": "Bosses: World",
+    "key": "appearanceNightmarePhase01",
+    "idle": 8593,
+    "walk": 8592,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9416,
+    "symbol": "NIGHTMARE_CHALLENGE_PHASE_01",
+    "label": "Phosani's Nightmare",
+    "section": "Bosses: World",
+    "key": "appearanceNightmareChallengePhase01",
+    "idle": 8593,
+    "walk": 8592,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14176,
+    "symbol": "YAMA",
+    "label": "Yama",
+    "section": "Bosses: World",
+    "key": "appearanceYama",
+    "idle": 12140,
+    "walk": 12141,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12167,
+    "symbol": "DUKE_SUCELLUS_ASLEEP",
+    "label": "Duke Sucellus",
+    "section": "Bosses: World",
+    "key": "appearanceDukeSucellusAsleep",
+    "idle": 10174,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12214,
+    "symbol": "LEVIATHAN",
+    "label": "The Leviathan",
+    "section": "Bosses: World",
+    "key": "appearanceLeviathan",
+    "idle": 10276,
+    "walk": 10276,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12204,
+    "symbol": "WHISPERER",
+    "label": "The Whisperer",
+    "section": "Bosses: World",
+    "key": "appearanceWhisperer",
+    "idle": 10230,
+    "walk": 10232,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12223,
+    "symbol": "VARDORVIS",
+    "label": "Vardorvis",
+    "section": "Bosses: World",
+    "key": "appearanceVardorvis",
+    "idle": 10337,
+    "walk": 10338,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8633,
+    "symbol": "TRAIL_MIMIC_COMBAT",
+    "label": "The Mimic",
+    "section": "Bosses: World",
+    "key": "appearanceTrailMimicCombat",
+    "idle": 8307,
+    "walk": 8306,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8583,
+    "symbol": "HESPORI",
+    "label": "Hespori",
+    "section": "Bosses: World",
+    "key": "appearanceHespori",
+    "idle": 8222,
+    "walk": 8222,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7286,
+    "symbol": "CATA_BOSS",
+    "label": "Skotizo",
+    "section": "Bosses: World",
+    "key": "appearanceCataBoss",
+    "idle": 4675,
+    "walk": 4674,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14860,
+    "symbol": "GRYPHON_BOSS",
+    "label": "Shellbane gryphon",
+    "section": "Bosses: World",
+    "key": "appearanceGryphonBoss",
+    "idle": 12548,
+    "walk": 12550,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7851,
+    "symbol": "GARGBOSS_DUSK_PHASE1_DEFENSIVE",
+    "label": "Dusk",
+    "section": "Bosses: Slayer",
+    "key": "appearanceGargbossDuskPhase1Defensive",
+    "idle": 7781,
+    "walk": 7782,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5889,
+    "symbol": "ABYSSALSIRE_SIRE_PUPPET",
+    "label": "Abyssal Sire",
+    "section": "Bosses: Slayer",
+    "key": "appearanceAbyssalsireSirePuppet",
+    "idle": 4533,
+    "walk": 4534,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 494,
+    "symbol": "SLAYER_KRAKEN_BOSS",
+    "label": "Kraken",
+    "section": "Bosses: Slayer",
+    "key": "appearanceSlayerKrakenBoss",
+    "idle": 3989,
+    "walk": 3989,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5862,
+    "symbol": "CERBERUS_ATTACKING",
+    "label": "Cerberus",
+    "section": "Bosses: Slayer",
+    "key": "appearanceCerberusAttacking",
+    "idle": 4484,
+    "walk": 4488,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13668,
+    "symbol": "ARAXXOR",
+    "label": "Araxxor",
+    "section": "Bosses: Slayer",
+    "key": "appearanceAraxxor",
+    "idle": 11473,
+    "walk": 11474,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 499,
+    "symbol": "SMOKE_DEVIL_BOSS",
+    "label": "Thermonuclear smoke devil",
+    "section": "Bosses: Slayer",
+    "key": "appearanceSmokeDevilBoss",
+    "idle": 1829,
+    "walk": 1828,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8615,
+    "symbol": "HYDRABOSS",
+    "label": "Alchemical Hydra",
+    "section": "Bosses: Slayer",
+    "key": "appearanceHydraboss",
+    "idle": 8233,
+    "walk": 8232,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9021,
+    "symbol": "CRYSTAL_HUNLLEF_MELEE",
+    "label": "Crystalline Hunllef",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceCrystalHunllefMelee",
+    "idle": 8417,
+    "walk": 8416,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9035,
+    "symbol": "CRYSTAL_HUNLLEF_MELEE_HM",
+    "label": "Corrupted Hunllef",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceCrystalHunllefMeleeHm",
+    "idle": 8417,
+    "walk": 8416,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3127,
+    "symbol": "TZHAAR_FIGHTCAVE_SWARM_BOSS",
+    "label": "TzTok-Jad",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceTzhaarFightcaveSwarmBoss",
+    "idle": 2650,
+    "walk": 2651,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7706,
+    "symbol": "INFERNO_TZKALZUK_PLACEHOLDER",
+    "label": "TzKal-Zuk",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceInfernoTzkalzukPlaceholder",
+    "idle": 7564,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12821,
+    "symbol": "COLOSSEUM_SOL_P1",
+    "label": "Sol Heredit",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceColosseumSolP1",
+    "idle": 10874,
+    "walk": 10878,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10572,
+    "symbol": "TEMPOROSS_BOSS_READY",
+    "label": "Tempoross",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceTemporossBossReady",
+    "idle": 8895,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 9049,
+    "symbol": "ZALCANO",
+    "label": "Zalcano",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceZalcano",
+    "idle": 8429,
+    "walk": 8430,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7540,
+    "symbol": "RAIDS_TEKTON_WAITING",
+    "label": "Tekton",
+    "section": "Bosses: Raids",
+    "key": "appearanceRaidsTektonWaiting",
+    "idle": 7473,
+    "walk": 7473,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7526,
+    "symbol": "RAIDS_VANGUARD_WALKING",
+    "label": "Vanguard",
+    "section": "Bosses: Raids",
+    "key": "appearanceRaidsVanguardWalking",
+    "idle": 7430,
+    "walk": 7429,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7530,
+    "symbol": "RAIDS_VESPULA_FLYING",
+    "label": "Vespula",
+    "section": "Bosses: Raids",
+    "key": "appearanceRaidsVespulaFlying",
+    "idle": 7453,
+    "walk": 7453,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7566,
+    "symbol": "RAIDS_VASANISTIRIO_WALKING",
+    "label": "Vasa Nistirio",
+    "section": "Bosses: Raids",
+    "key": "appearanceRaidsVasanistirioWalking",
+    "idle": 7416,
+    "walk": 7411,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7562,
+    "symbol": "RAIDS_DOGODILE_JUNIOR",
+    "label": "Muttadile",
+    "section": "Bosses: Raids",
+    "key": "appearanceRaidsDogodileJunior",
+    "idle": 7417,
+    "walk": 7419,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7554,
+    "symbol": "OLM_HEAD",
+    "label": "Great Olm",
+    "section": "Bosses: Raids",
+    "key": "appearanceOlmHead",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8360,
+    "symbol": "TOB_MAIDEN_100",
+    "label": "The Maiden of Sugadinti",
+    "section": "Bosses: Raids",
+    "key": "appearanceTobMaiden100",
+    "idle": 8090,
+    "walk": 8090,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8359,
+    "symbol": "TOB_BLOAT",
+    "label": "Pestilent Bloat",
+    "section": "Bosses: Raids",
+    "key": "appearanceTobBloat",
+    "idle": 8080,
+    "walk": 8081,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8355,
+    "symbol": "NYLOCAS_BOSS_MELEE",
+    "label": "Nylocas Vasilias",
+    "section": "Bosses: Raids",
+    "key": "appearanceNylocasBossMelee",
+    "idle": 8002,
+    "walk": 8003,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8388,
+    "symbol": "TOB_SOTETSEG_COMBAT",
+    "label": "Sotetseg",
+    "section": "Bosses: Raids",
+    "key": "appearanceTobSotetsegCombat",
+    "idle": 8137,
+    "walk": 8136,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8338,
+    "symbol": "TOB_XARPUS_STATIC",
+    "label": "Xarpus",
+    "section": "Bosses: Raids",
+    "key": "appearanceTobXarpusStatic",
+    "idle": 8060,
+    "walk": 8060,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8372,
+    "symbol": "VERZIK_PHASE2",
+    "label": "Verzik Vitur",
+    "section": "Bosses: Raids",
+    "key": "appearanceVerzikPhase2",
+    "idle": 8113,
+    "walk": 8113,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11790,
+    "symbol": "AKKHA_MELEE",
+    "label": "Akkha",
+    "section": "Bosses: Raids",
+    "key": "appearanceAkkhaMelee",
+    "idle": 9760,
+    "walk": 9764,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11778,
+    "symbol": "TOA_BABA",
+    "label": "Ba-Ba",
+    "section": "Bosses: Raids",
+    "key": "appearanceToaBaba",
+    "idle": 9741,
+    "walk": 9737,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11719,
+    "symbol": "TOA_KEPHRI_BOSS_SHIELDED",
+    "label": "Kephri",
+    "section": "Bosses: Raids",
+    "key": "appearanceToaKephriBossShielded",
+    "idle": 9572,
+    "walk": 9572,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11730,
+    "symbol": "TOA_ZEBAK",
+    "label": "Zebak",
+    "section": "Bosses: Raids",
+    "key": "appearanceToaZebak",
+    "idle": 9618,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11749,
+    "symbol": "TOA_WARDEN_TUMEKEN_PHASE1",
+    "label": "Tumeken's Warden",
+    "section": "Bosses: Raids",
+    "key": "appearanceToaWardenTumekenPhase1",
+    "idle": 9665,
+    "walk": 9649,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 11748,
+    "symbol": "TOA_WARDEN_ELIDINIS_PHASE1",
+    "label": "Elidinis' Warden",
+    "section": "Bosses: Raids",
+    "key": "appearanceToaWardenElidinisPhase1",
+    "idle": 9665,
+    "walk": 9649,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8262,
+    "symbol": "MYQ4_ABOMINATION",
+    "label": "Abomination",
+    "section": "Bosses: Quests",
+    "key": "appearanceMyq4Abomination",
+    "idle": 8022,
+    "walk": 8028,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 911,
+    "symbol": "AGRITH_NAAR",
+    "label": "Agrith-Naar",
+    "section": "Bosses: Quests",
+    "key": "appearanceAgrithNaar",
+    "idle": 4675,
+    "walk": 4674,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10654,
+    "symbol": "BIM_GOLEM_BOSS",
+    "label": "Ancient Guardian",
+    "section": "Bosses: Quests",
+    "key": "appearanceBimGolemBoss",
+    "idle": 8941,
+    "walk": 8939,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 643,
+    "symbol": "TROLLROMANCE_ARRG_ATTACKABLE",
+    "label": "Arrg",
+    "section": "Bosses: Quests",
+    "key": "appearanceTrollromanceArrgAttackable",
+    "idle": 286,
+    "walk": 283,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 600,
+    "symbol": "BRAIN_BARREL_CHEST",
+    "label": "Barrelchest",
+    "section": "Bosses: Quests",
+    "key": "appearanceBrainBarrelChest",
+    "idle": 5893,
+    "walk": 5892,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4067,
+    "symbol": "BLACK_KNIGHT_TITAN",
+    "label": "Black Knight Titan",
+    "section": "Bosses: Quests",
+    "key": "appearanceBlackKnightTitan",
+    "idle": 130,
+    "walk": 127,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1224,
+    "symbol": "ARENA_BOUNCER",
+    "label": "Bouncer",
+    "section": "Bosses: Quests",
+    "key": "appearanceArenaBouncer",
+    "idle": 6580,
+    "walk": 6582,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3510,
+    "symbol": "SHADOW_MAJ_KHAZARD",
+    "label": "General Khazard",
+    "section": "Bosses: Quests",
+    "key": "appearanceShadowMajKhazard",
+    "idle": 9874,
+    "walk": 9875,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4987,
+    "symbol": "CHRONOZON",
+    "label": "Chronozon",
+    "section": "Bosses: Quests",
+    "key": "appearanceChronozon",
+    "idle": 66,
+    "walk": 63,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8000,
+    "symbol": "SHAYZIENQUEST_LIZARDMAN_BOSS",
+    "label": "Corrupt Lizardman",
+    "section": "Bosses: Quests",
+    "key": "appearanceShayzienquestLizardmanBoss",
+    "idle": 7191,
+    "walk": 7195,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3481,
+    "symbol": "COUNT_DRAYNOR",
+    "label": "Count Draynor",
+    "section": "Bosses: Quests",
+    "key": "appearanceCountDraynor",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3400,
+    "symbol": "HUNDRED_CULINAROMANCER_BASE",
+    "label": "Culinaromancer",
+    "section": "Bosses: Quests",
+    "key": "appearanceHundredCulinaromancerBase",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12955,
+    "symbol": "FROG_QUEST_CUTHBERT_NAMED",
+    "label": "Cuthbert",
+    "section": "Bosses: Quests",
+    "key": "appearanceFrogQuestCuthbertNamed",
+    "idle": 1796,
+    "walk": 1797,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4130,
+    "symbol": "TROLL_CHAMPION",
+    "label": "Dad",
+    "section": "Bosses: Quests",
+    "key": "appearanceTrollChampion",
+    "idle": 925,
+    "walk": 1140,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5079,
+    "symbol": "DELRITH",
+    "label": "Delrith",
+    "section": "Bosses: Quests",
+    "key": "appearanceDelrith",
+    "idle": 66,
+    "walk": 63,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8033,
+    "symbol": "ELVARG_ALIVE",
+    "label": "Elvarg",
+    "section": "Bosses: Quests",
+    "key": "appearanceElvargAlive",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 625,
+    "symbol": "DEAL_EVIL_SPIRIT",
+    "label": "Evil Spirit",
+    "section": "Bosses: Quests",
+    "key": "appearanceDealEvilSpirit",
+    "idle": 2803,
+    "walk": 2802,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8917,
+    "symbol": "DARK_SEREN",
+    "label": "Fragment of Seren",
+    "section": "Bosses: Quests",
+    "key": "appearanceDarkSeren",
+    "idle": 8372,
+    "walk": 8372,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4483,
+    "symbol": "BURGH_GADDERANKS",
+    "label": "Gadderanks",
+    "section": "Bosses: Quests",
+    "key": "appearanceBurghGadderanks",
+    "idle": 2065,
+    "walk": 2064,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8094,
+    "symbol": "GALVEK_WAVES",
+    "label": "Galvek",
+    "section": "Bosses: Quests",
+    "key": "appearanceGalvekWaves",
+    "idle": 7902,
+    "walk": 7902,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 763,
+    "symbol": "MYARM_GIANT_ROC",
+    "label": "Giant Roc",
+    "section": "Bosses: Quests",
+    "key": "appearanceMyarmGiantRoc",
+    "idle": 5021,
+    "walk": 5022,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 797,
+    "symbol": "CONTACT_SCARAB_BOSS",
+    "label": "giant scarab",
+    "section": "Bosses: Quests",
+    "key": "appearanceContactScarabBoss",
+    "idle": 5455,
+    "walk": 5454,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1101,
+    "symbol": "ROYAL_SEA_SNAKE_MOTHER_SMALLER",
+    "label": "Giant Sea Snake",
+    "section": "Bosses: Quests",
+    "key": "appearanceRoyalSeaSnakeMotherSmaller",
+    "idle": 4037,
+    "walk": 4037,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5129,
+    "symbol": "GRIM_GLOD",
+    "label": "Glod",
+    "section": "Bosses: Quests",
+    "key": "appearanceGrimGlod",
+    "idle": 6504,
+    "walk": 6505,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5822,
+    "symbol": "FRIS_TROLL_KING_TRUE",
+    "label": "Ice Troll King",
+    "section": "Bosses: Quests",
+    "key": "appearanceFrisTrollKingTrue",
+    "idle": 286,
+    "walk": 283,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7961,
+    "symbol": "CORSCURS_NAVIGATOR",
+    "label": "Ithoi the Navigator",
+    "section": "Bosses: Quests",
+    "key": "appearanceCorscursNavigator",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1443,
+    "symbol": "MM_DEMON",
+    "label": "Jungle demon",
+    "section": "Bosses: Quests",
+    "key": "appearanceMmDemon",
+    "idle": 66,
+    "walk": 63,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1225,
+    "symbol": "ARENA_OGRE",
+    "label": "Khazard Ogre",
+    "section": "Bosses: Quests",
+    "key": "appearanceArenaOgre",
+    "idle": 357,
+    "walk": 358,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3897,
+    "symbol": "VIKING_ENEMY1",
+    "label": "Koschei the Deathless",
+    "section": "Bosses: Quests",
+    "key": "appearanceVikingEnemy1",
+    "idle": 813,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 15936,
+    "symbol": "MYQ6_LOWERNIEL_HURT",
+    "label": "Lowerniel Drakan",
+    "section": "Bosses: Quests",
+    "key": "appearanceMyq6LowernielHurt",
+    "idle": 8726,
+    "walk": 8725,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 785,
+    "symbol": "QUEST_LUNAR_MIRROR_OF_PLAYER",
+    "label": "Me",
+    "section": "Bosses: Quests",
+    "key": "appearanceQuestLunarMirrorOfPlayer",
+    "idle": 813,
+    "walk": 1205,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 823,
+    "symbol": "MELZAR_THE_MAD",
+    "label": "Melzar the Mad",
+    "section": "Bosses: Quests",
+    "key": "appearanceMelzarTheMad",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 891,
+    "symbol": "ROVING_MOSSGIANT",
+    "label": "Moss Guardian",
+    "section": "Bosses: Quests",
+    "key": "appearanceRovingMossgiant",
+    "idle": 4656,
+    "walk": 4654,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3962,
+    "symbol": "NEZIKCHENED",
+    "label": "Nezikchened",
+    "section": "Bosses: Quests",
+    "key": "appearanceNezikchened",
+    "idle": 66,
+    "walk": 63,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3744,
+    "symbol": "MYQ3_RANIS_DRAKAN",
+    "label": "Ranis Drakan",
+    "section": "Bosses: Quests",
+    "key": "appearanceMyq3RanisDrakan",
+    "idle": 4702,
+    "walk": 4699,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7903,
+    "symbol": "HOSIDIUSQUEST_SNAKE",
+    "label": "Sand Snake",
+    "section": "Bosses: Quests",
+    "key": "appearanceHosidiusquestSnake",
+    "idle": 3535,
+    "walk": 3537,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4315,
+    "symbol": "SWAN_SEATROLL_QUEEN",
+    "label": "Sea Troll Queen",
+    "section": "Bosses: Quests",
+    "key": "appearanceSwanSeatrollQueen",
+    "idle": 3989,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 990,
+    "symbol": "DTTD_SIGMUND_MILL",
+    "label": "Sigmund",
+    "section": "Bosses: Quests",
+    "key": "appearanceDttdSigmundMill",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4682,
+    "symbol": "RD_COMBAT_NPC_ROOM_3",
+    "label": "Sir Leye",
+    "section": "Bosses: Quests",
+    "key": "appearanceRdCombatNpcRoom3",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3527,
+    "symbol": "SIR_MORDRED",
+    "label": "Sir Mordred",
+    "section": "Bosses: Quests",
+    "key": "appearanceSirMordred",
+    "idle": 6487,
+    "walk": 6486,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1362,
+    "symbol": "SLAGILITH",
+    "label": "Slagilith",
+    "section": "Bosses: Quests",
+    "key": "appearanceSlagilith",
+    "idle": 1749,
+    "walk": 1748,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 882,
+    "symbol": "ZOGRE_SLASH_BASH",
+    "label": "Slash Bash",
+    "section": "Bosses: Quests",
+    "key": "appearanceZogreSlashBash",
+    "idle": 357,
+    "walk": 358,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1057,
+    "symbol": "SOULBANE_TOLNA",
+    "label": "Tolna",
+    "section": "Bosses: Quests",
+    "key": "appearanceSoulbaneTolna",
+    "idle": 5752,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3616,
+    "symbol": "HAUNTEDMINE_BOSS_GHOST",
+    "label": "Treus Dayth",
+    "section": "Bosses: Quests",
+    "key": "appearanceHauntedmineBossGhost",
+    "idle": 5538,
+    "walk": 5539,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4500,
+    "symbol": "OLAF2_ULFRIC",
+    "label": "Ulfric",
+    "section": "Bosses: Quests",
+    "key": "appearanceOlaf2Ulfric",
+    "idle": 6113,
+    "walk": 6112,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4742,
+    "symbol": "ELID_GOLEM_BLACK",
+    "label": "black golem",
+    "section": "Bosses: Quests",
+    "key": "appearanceElidGolemBlack",
+    "idle": 1913,
+    "walk": 1912,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4744,
+    "symbol": "ELID_GOLEM_GREY",
+    "label": "grey golem",
+    "section": "Bosses: Quests",
+    "key": "appearanceElidGolemGrey",
+    "idle": 1913,
+    "walk": 1912,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4743,
+    "symbol": "ELID_GOLEM_WHITE",
+    "label": "white golem",
+    "section": "Bosses: Quests",
+    "key": "appearanceElidGolemWhite",
+    "idle": 1913,
+    "walk": 1912,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3459,
+    "symbol": "BLOODDIAMOND_VAMPIREWARRIOR",
+    "label": "Dessous",
+    "section": "Bosses: Quests",
+    "key": "appearanceBlooddiamondVampirewarrior",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3458,
+    "symbol": "ICEDIAMOND_ICEWARRIOR",
+    "label": "Kamil",
+    "section": "Bosses: Quests",
+    "key": "appearanceIcediamondIcewarrior",
+    "idle": 842,
+    "walk": 841,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3456,
+    "symbol": "FIREDIAMOND_FIREWARRIOR",
+    "label": "Fareed",
+    "section": "Bosses: Quests",
+    "key": "appearanceFirediamondFirewarrior",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 682,
+    "symbol": "FD_DAMIS_NORMAL",
+    "label": "Damis",
+    "section": "Bosses: Quests",
+    "key": "appearanceFdDamisNormal",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4880,
+    "symbol": "HUNDRED_MINION1",
+    "label": "Agrith Na-Na",
+    "section": "Bosses: Quests",
+    "key": "appearanceHundredMinion1",
+    "idle": 3498,
+    "walk": 3499,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4881,
+    "symbol": "HUNDRED_MINION2",
+    "label": "Flambeed",
+    "section": "Bosses: Quests",
+    "key": "appearanceHundredMinion2",
+    "idle": 1749,
+    "walk": 1748,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4882,
+    "symbol": "HUNDRED_MINION3",
+    "label": "Karamel",
+    "section": "Bosses: Quests",
+    "key": "appearanceHundredMinion3",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4883,
+    "symbol": "HUNDRED_MINION4",
+    "label": "Dessourt",
+    "section": "Bosses: Quests",
+    "key": "appearanceHundredMinion4",
+    "idle": 3504,
+    "walk": 3506,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4884,
+    "symbol": "HUNDRED_MINION5_AIR",
+    "label": "Gelatinnoth Mother",
+    "section": "Bosses: Quests",
+    "key": "appearanceHundredMinion5Air",
+    "idle": 1338,
+    "walk": 1339,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3473,
+    "symbol": "DREAM_INADEQUACY",
+    "label": "The Inadequacy",
+    "section": "Bosses: Quests",
+    "key": "appearanceDreamInadequacy",
+    "idle": 6317,
+    "walk": 6317,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3474,
+    "symbol": "DREAM_EVERLASTING",
+    "label": "The Everlasting",
+    "section": "Bosses: Quests",
+    "key": "appearanceDreamEverlasting",
+    "idle": 6343,
+    "walk": 6344,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3475,
+    "symbol": "DREAM_UNTOUCHABLE",
+    "label": "The Untouchable",
+    "section": "Bosses: Quests",
+    "key": "appearanceDreamUntouchable",
+    "idle": 6328,
+    "walk": 6328,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3476,
+    "symbol": "DREAM_ILLUSIVE",
+    "label": "The Illusive",
+    "section": "Bosses: Quests",
+    "key": "appearanceDreamIllusive",
+    "idle": 6338,
+    "walk": 6339,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5257,
+    "symbol": "MM_KRUK",
+    "label": "Kruk",
+    "section": "Bosses: Quests",
+    "key": "appearanceMmKruk",
+    "idle": 1386,
+    "walk": 1385,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7107,
+    "symbol": "MM2_GENERAL_KOB_COMBAT",
+    "label": "Kob",
+    "section": "Bosses: Quests",
+    "key": "appearanceMm2GeneralKobCombat",
+    "idle": 927,
+    "walk": 1141,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7105,
+    "symbol": "MM2_CHIEFTAN_KEEF_COMBAT",
+    "label": "Keef",
+    "section": "Bosses: Quests",
+    "key": "appearanceMm2ChieftanKeefCombat",
+    "idle": 357,
+    "walk": 358,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8057,
+    "symbol": "DREAM_ROBERT_COMBAT",
+    "label": "Robert the Strong",
+    "section": "Bosses: Quests",
+    "key": "appearanceDreamRobertCombat",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3415,
+    "symbol": "REGICIDE_EVIL_ELF1",
+    "label": "Essyllt",
+    "section": "Bosses: Quests",
+    "key": "appearanceRegicideEvilElf1",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 4159,
+    "symbol": "SUROK_SUROK_TYPE1",
+    "label": "Surok Magis",
+    "section": "Bosses: Quests",
+    "key": "appearanceSurokSurokType1",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 13528,
+    "symbol": "WGS_BALANCE_ELEMENTAL",
+    "label": "Balance Elemental",
+    "section": "Bosses: Quests",
+    "key": "appearanceWgsBalanceElemental",
+    "idle": 11352,
+    "walk": 11353,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12898,
+    "symbol": "VMQ2_ITZLA_COMBAT",
+    "label": "Prince Itzla Arkan",
+    "section": "Bosses: Quests",
+    "key": "appearanceVmq2ItzlaCombat",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14125,
+    "symbol": "COA_MASTABA_GOLEM",
+    "label": "golem guard",
+    "section": "Bosses: Quests",
+    "key": "appearanceCoaMastabaGolem",
+    "idle": 10778,
+    "walk": 10775,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 12613,
+    "symbol": "DOV_ARRAV_COMBAT",
+    "label": "Arrav",
+    "section": "Bosses: Quests",
+    "key": "appearanceDovArravCombat",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14266,
+    "symbol": "VMQ4_TEMPLE_GUARD_BOSS_PATROL",
+    "label": "Emissary Enforcer",
+    "section": "Bosses: Quests",
+    "key": "appearanceVmq4TempleGuardBossPatrol",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14363,
+    "symbol": "VMQ4_KEYSTONE_CHAMBER_BOSS_MAGIC",
+    "label": "Lucius",
+    "section": "Bosses: Quests",
+    "key": "appearanceVmq4KeystoneChamberBossMagic",
+    "idle": 813,
+    "walk": 1205,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14362,
+    "symbol": "VMQ4_KEYSTONE_CHAMBER_BOSS_RANGED",
+    "label": "Chimalli",
+    "section": "Bosses: Quests",
+    "key": "appearanceVmq4KeystoneChamberBossRanged",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14331,
+    "symbol": "VMQ4_CRYPT_ENNIUS_BOSS",
+    "label": "Ennius Tullus",
+    "section": "Bosses: Quests",
+    "key": "appearanceVmq4CryptEnniusBoss",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14318,
+    "symbol": "VMQ4_CRYPT_METZLI_NOOPS",
+    "label": "Augur Metzli",
+    "section": "Bosses: Quests",
+    "key": "appearanceVmq4CryptMetzliNoops",
+    "idle": 813,
+    "walk": 1205,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 16212,
+    "symbol": "SAFALAAN_WYRD",
+    "label": "Wyrd",
+    "section": "Bosses: Quests",
+    "key": "appearanceSafalaanWyrd",
+    "idle": 14014,
+    "walk": 14016,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7852,
+    "symbol": "GARGBOSS_DAWN_PHASE1",
+    "label": "Dawn",
+    "section": "Bosses: Slayer",
+    "key": "appearanceGargbossDawnPhase1",
+    "idle": 7768,
+    "walk": 7768,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 14147,
+    "symbol": "RT_ICE_KING",
+    "label": "Eldric the Ice King",
+    "section": "Bosses: World",
+    "key": "appearanceRtIceKing",
+    "idle": 11969,
+    "walk": 11971,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1425,
+    "symbol": "GRANDTREE_GLOUGH_BATTLE",
+    "label": "Glough",
+    "section": "Bosses: Quests",
+    "key": "appearanceGrandtreeGloughBattle",
+    "idle": 2331,
+    "walk": 12042,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 980,
+    "symbol": "HORROR_DAGGANOTH_AIRA",
+    "label": "Dagannoth Mother",
+    "section": "Bosses: Quests",
+    "key": "appearanceHorrorDagganothAira",
+    "idle": 1344,
+    "walk": 1344,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1163,
+    "symbol": "TREE_SPIRIT",
+    "label": "Dramen Tree Spirit",
+    "section": "Bosses: Quests",
+    "key": "appearanceTreeSpirit",
+    "idle": 5530,
+    "walk": 5531,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3922,
+    "symbol": "VIKING_DRAUGEN",
+    "label": "Draugen",
+    "section": "Bosses: Quests",
+    "key": "appearanceVikingDraugen",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1870,
+    "symbol": "CHICKENQUEST_EVIL_CHICKEN",
+    "label": "Evil Chicken",
+    "section": "Bosses: Quests",
+    "key": "appearanceChickenquestEvilChicken",
+    "idle": 2298,
+    "walk": 2297,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1227,
+    "symbol": "DWARF_ROCK_AVATAR_WARRIOR",
+    "label": "Arzinian Avatar: Strength",
+    "section": "Bosses: Quests",
+    "key": "appearanceDwarfRockAvatarWarrior",
+    "idle": 1838,
+    "walk": 1839,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1230,
+    "symbol": "DWARF_ROCK_AVATAR_ARCHER",
+    "label": "Arzinian Avatar: Ranging",
+    "section": "Bosses: Quests",
+    "key": "appearanceDwarfRockAvatarArcher",
+    "idle": 1838,
+    "walk": 1839,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 1233,
+    "symbol": "DWARF_ROCK_AVATAR_MAGE",
+    "label": "Arzinian Avatar: Magic",
+    "section": "Bosses: Quests",
+    "key": "appearanceDwarfRockAvatarMage",
+    "idle": 1838,
+    "walk": 1839,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 6477,
+    "symbol": "LOTR_TRAN_RAZORLOR_MUTANT",
+    "label": "Tarn Razorlor",
+    "section": "Bosses: Quests",
+    "key": "appearanceLotrTranRazorlorMutant",
+    "idle": 5616,
+    "walk": 5615,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 3509,
+    "symbol": "SHADOW_MAJ_BOUNCER",
+    "label": "Bouncer (ghost)",
+    "section": "Bosses: Quests",
+    "key": "appearanceShadowMajBouncer",
+    "idle": 6580,
+    "walk": 6582,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 240,
+    "symbol": "BLACK_DEMON_STRONGHOLDCAVE_1",
+    "label": "Black demon (The Grand Tree)",
+    "section": "Bosses: Quests",
+    "key": "appearanceBlackDemonStrongholdcave1",
+    "idle": 66,
+    "walk": 63,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 5775,
+    "symbol": "BARBASSAULT_PEN_QUEEN_NEW",
+    "label": "Penance Queen",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceBarbassaultPenQueenNew",
+    "idle": 5410,
+    "walk": 5409,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10531,
+    "symbol": "SOUL_WARS_AVATAR_BLUE",
+    "label": "Avatar of Creation",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceSoulWarsAvatarBlue",
+    "idle": 8842,
+    "walk": 8843,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 10532,
+    "symbol": "SOUL_WARS_AVATAR_RED",
+    "label": "Avatar of Destruction",
+    "section": "Bosses: Minigames & skilling",
+    "key": "appearanceSoulWarsAvatarRed",
+    "idle": 3079,
+    "walk": 3082,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 7101,
+    "symbol": "MM2_DEMON_GLOUGH",
+    "label": "Glough: Mutated",
+    "section": "Bosses: Quests",
+    "key": "appearanceMm2DemonGlough",
+    "idle": 4650,
+    "walk": 4649,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 8865,
+    "symbol": "SOTE_ARIANWYN_COMBAT",
+    "label": "Elven traitor (Arianwyn)",
+    "section": "Bosses: Quests",
+    "key": "appearanceSoteArianwynCombat",
+    "idle": 808,
+    "walk": 819,
+    "textures": "null:null"
+  },
+  {
+    "npcId": 2108,
+    "symbol": "WISE_OLD_MAN",
+    "label": "Wise Old Man",
+    "section": "Characters & cabbage",
+    "key": "appearanceWiseOldMan",
+    "idle": 813,
+    "walk": 1146,
+    "textures": "null:null"
+  },
+  {
+    "itemId": 1965,
+    "symbol": "CABBAGE",
+    "label": "Cabbage",
+    "section": "Characters & cabbage",
+    "key": "appearanceItemCabbage",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "itemId": 6670,
+    "symbol": "FISHBOWL_BLUEFISH",
+    "label": "Pet fish: Default",
+    "section": "Pets: Other",
+    "key": "appearanceItemFishbowlBluefish",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "itemId": 6671,
+    "symbol": "FISHBOWL_GREENFISH",
+    "label": "Pet fish: Default",
+    "section": "Pets: Other",
+    "key": "appearanceItemFishbowlGreenfish",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  },
+  {
+    "itemId": 6672,
+    "symbol": "FISHBOWL_SPINEFISH",
+    "label": "Pet fish: Default",
+    "section": "Pets: Other",
+    "key": "appearanceItemFishbowlSpinefish",
+    "idle": -1,
+    "walk": -1,
+    "textures": "null:null"
+  }
+]

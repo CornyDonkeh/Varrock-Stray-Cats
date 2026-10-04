@@ -1,0 +1,7 @@
+plugins { id 'application' }
+repositories {
+    maven { url = 'https://repo.runelite.net' }
+    mavenCentral()
+}
+dependencies { implementation 'net.runelite:cache:1.13.1' }
+application { mainClass = 'DumpNpcs' }
