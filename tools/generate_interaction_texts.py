@@ -24,7 +24,7 @@ for block in re.split(r'(?m)(?=^## )', proposal):
         assert len(rows) == 4
         rejected = re.search(r'\*\*Rejected item:\*\* (.*)', body).group(1)
         entries.append((candidates[0]['key'].upper(), [name] + sum(rows, []) + [rejected]))
-assert len(entries) == len(catalogue) == 494, len(entries)
+assert len(entries) == len(catalogue), len(entries)
 quote = lambda s: json.dumps(s, ensure_ascii=False)
 out = ['package com.cornydonkeh.varrockstraycats;', '', 'import java.util.EnumMap;', 'import java.util.Map;', '', '/** Generated from the approved interaction proposal. */', 'final class InteractionTexts', '{', '    private static final Map<AppearanceVariant, String[]> TEXTS = new EnumMap<>(AppearanceVariant.class);', '    static', '    {']
 for i in range(0, len(entries), 20):

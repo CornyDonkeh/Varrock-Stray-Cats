@@ -50,6 +50,51 @@ public class OriginalVisibilityTest
     @InjectMocks private VarrockStrayCatsPlugin plugin;
 
     @Test
+    public void dukeUsesBobsMenuNameAndExamineWhenReplaced() throws Exception
+    {
+        WorldView world = mock(WorldView.class);
+        NPC duke = mock(NPC.class);
+        NPCComposition definition = mock(NPCComposition.class);
+        ModelData data = mock(ModelData.class);
+        RuneLiteObject replacement = mock(RuneLiteObject.class);
+        when(config.healVarrockDogs()).thenReturn(true);
+        when(config.randomBreeds()).thenReturn(true);
+        when(config.replaceDuke()).thenReturn(true);
+        when(config.appearanceBob()).thenReturn(true);
+        when(client.getTopLevelWorldView()).thenReturn(world);
+        when(duke.getWorldView()).thenReturn(world);
+        when(duke.getId()).thenReturn(NpcID.XMAS24_STRAYDOG_FINAL);
+        when(duke.getTransformedComposition()).thenReturn(definition);
+        when(duke.getLocalLocation()).thenReturn(new LocalPoint(6400, 6400));
+        when(duke.getWorldLocation()).thenReturn(new WorldPoint(3200, 3200, 0));
+        when(client.getNpcDefinition(NpcID.DS2_MEETING_BOB)).thenReturn(definition);
+        when(definition.getModels()).thenReturn(new int[] {1});
+        when(client.loadModelData(1)).thenReturn(data);
+        when(data.shallowCopy()).thenReturn(data);
+        when(data.cloneVertices()).thenReturn(data);
+        when(data.cloneColors()).thenReturn(data);
+        when(data.light()).thenReturn(mock(Model.class));
+        when(client.createRuneLiteObject()).thenReturn(replacement);
+        when(replacement.isActive()).thenReturn(true);
+
+        plugin.startUp();
+        plugin.onNpcSpawned(new NpcSpawned(duke));
+        plugin.onGameTick(new GameTick());
+        MenuEntry entry = mock(MenuEntry.class);
+        when(entry.getNpc()).thenReturn(duke);
+        when(entry.getTarget()).thenReturn("Bones -> <col=ffff00>Duke");
+        plugin.onMenuEntryAdded(new MenuEntryAdded(entry));
+        verify(entry).setTarget("Bones -> <col=ffff00>Bob");
+        verify(entry, never()).setIdentifier(anyInt());
+        when(entry.getType()).thenReturn(MenuAction.EXAMINE_NPC);
+        MenuOptionClicked examine = new MenuOptionClicked(entry);
+        plugin.onMenuOptionClicked(examine);
+        assertTrue(examine.isConsumed());
+        verify(client).addChatMessage(ChatMessageType.NPC_EXAMINE, "",
+            ExamineTexts.get(AppearanceVariant.APPEARANCEBOB), "");
+    }
+
+    @Test
     public void hidesOnlyTheOriginalStrayOnceReplacementIsActive() throws Exception
     {
         WorldView world = mock(WorldView.class);
@@ -95,12 +140,26 @@ public class OriginalVisibilityTest
         assertTrue("Preserve scene insertion for native NPC interactions",
             callback.getValue().addEntity(stray, false));
         assertArrayEquals(new int[] {-2, -2, -2}, originalColors);
+
+        MenuEntry examineEntry = mock(MenuEntry.class);
+        when(examineEntry.getNpc()).thenReturn(stray);
+        when(examineEntry.getType()).thenReturn(MenuAction.EXAMINE_NPC);
+        MenuOptionClicked examine = new MenuOptionClicked(examineEntry);
+        plugin.onMenuOptionClicked(examine);
+        assertTrue("Only the cosmetic examine should be consumed", examine.isConsumed());
+        verify(client).addChatMessage(ChatMessageType.NPC_EXAMINE, "", ExamineTexts.get(null), "");
+        verify(examineEntry, never()).setIdentifier(anyInt());
+
+        MenuEntry unrelatedExamine = mock(MenuEntry.class);
+        when(unrelatedExamine.getNpc()).thenReturn(unrelated);
+        MenuOptionClicked normalExamine = new MenuOptionClicked(unrelatedExamine);
+        plugin.onMenuOptionClicked(normalExamine);
+        assertFalse(normalExamine.isConsumed());
         MenuEntry entry = mock(MenuEntry.class);
         when(entry.getNpc()).thenReturn(stray);
-        when(entry.getTarget()).thenReturn("Bones -> <col=ffff00>Stray dog");
         when(entry.getOption()).thenReturn("Pet");
         plugin.onMenuEntryAdded(new MenuEntryAdded(entry));
-        verify(entry).setTarget("Bones -> <col=ffff00>Stray dog");
+        verify(entry, never()).setTarget(anyString());
         verify(entry, never()).setIdentifier(anyInt());
         plugin.onMenuOptionClicked(new MenuOptionClicked(entry));
         plugin.onOverheadTextChanged(new OverheadTextChanged(stray, "Woof!"));
@@ -161,6 +220,9 @@ public class OriginalVisibilityTest
         assertArrayEquals(new int[] {-2, -2, -2}, originalColors);
 
         plugin.shutDown();
+        MenuOptionClicked disabledExamine = new MenuOptionClicked(examineEntry);
+        plugin.onMenuOptionClicked(disabledExamine);
+        assertFalse("Disabled plugin must keep native examine", disabledExamine.isConsumed());
         ArgumentCaptor<Runnable> cleanup = ArgumentCaptor.forClass(Runnable.class);
         verify(clientThread, atLeastOnce()).invoke(cleanup.capture());
         cleanup.getValue().run();

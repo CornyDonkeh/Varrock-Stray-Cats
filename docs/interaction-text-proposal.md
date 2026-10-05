@@ -1,6 +1,6 @@
 # All proposed interaction texts
 
-Approved interaction catalogue. All 494 appearances are listed individually. Voice evidence and research limitations are in [the voice proposal](noise-proposal.md). The narration is custom writing. Names in menus are cosmetic; actions still target the real dog. Only automatic interaction lines change, never player-authored chat. Player lines refer to automatic overhead text; outgoing chat is never rewritten.
+Interaction catalogue. The 494 previously approved appearances and the two local Bob/Evil Bob drafts are listed individually. Voice evidence and research limitations are in [the voice proposal](noise-proposal.md). The narration is custom writing. Names in menus are cosmetic; actions still target the real dog. Only automatic interaction lines change, never player-authored chat. Player lines refer to automatic overhead text; outgoing chat is never rewritten. Examine drafts for all 496 options are in [the examine catalogue](examine-drafts.md).
 
 Small cabbage: **You hear a faint, leafy crunch as the bone dissolves into fertilizer.**
 
@@ -7424,6 +7424,36 @@ Giant cabbage: **The bones vanish into the folds, followed by a wet, echoing cru
 **Voice basis:** Proposed: icy royal character
 
 ## Characters & cabbage
+
+### Bob (NPC 8055)
+
+**Menu:** Pet Bob; Shoo-away Bob; Examine Bob; Use Bones → Bob; Use Meat → Bob.
+
+| Action | Player automatic line | Creature response | Chat-box narration |
+| --- | --- | --- | --- |
+| Pet | Who's a good Bob? | Prrr... | You scratch Bob behind the ears. They purr like a tiny dragon. |
+| Shoo | Go on, Bob! | Mrrrow? | Bob pads away, quite certain you will miss them. |
+| Feed bones | Here you go, Bob! | Fish, perhaps? | Bob bats the bones with a paw. They were hoping for fish. |
+| Feed meat | Here you go, Bob! | Prrr... | Bob tucks into the meat, then gives their whiskers a proud little wash. |
+
+**Rejected item:** Bob sniffs the offering, then politely looks elsewhere.
+
+**Voice basis:** Lore-based draft: wandering black cat with a heroic past.
+
+### Evil Bob (NPC 390)
+
+**Menu:** Pet Evil Bob; Shoo-away Evil Bob; Examine Evil Bob; Use Bones → Evil Bob; Use Meat → Evil Bob.
+
+| Action | Player automatic line | Creature response | Chat-box narration |
+| --- | --- | --- | --- |
+| Pet | Who's a good Evil Bob? | I allow this. | Evil Bob accepts your scritches as a tribute to their fluffy magnificence. |
+| Shoo | Go on, Evil Bob! | You go on! | Evil Bob stalks away, pretending the idea was theirs. |
+| Feed bones | Here you go, Evil Bob! | Uncook them! | Evil Bob examines the bones. Apparently your tribute is far too cooked. |
+| Feed meat | Here you go, Evil Bob! | Raw tribute! | Evil Bob claims the meat with a smug little purr. |
+
+**Rejected item:** Evil Bob rejects the offering with a very small, very imperial huff.
+
+**Voice basis:** Lore-based draft: imperious feline ruler of ScapeRune.
 
 ### Wise Old Man (NPC 2108)
 

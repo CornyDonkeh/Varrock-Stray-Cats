@@ -4890,6 +4890,28 @@
     "textures": "null:null"
   },
   {
+    "npcId": 8055,
+    "symbol": "DS2_MEETING_BOB",
+    "label": "Bob",
+    "section": "Characters & cabbage",
+    "key": "appearanceBob",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null",
+    "defaultSelected": false
+  },
+  {
+    "npcId": 390,
+    "symbol": "MACRO_EVIL_BOB_OUTSIDE",
+    "label": "Evil Bob",
+    "section": "Characters & cabbage",
+    "key": "appearanceEvilBob",
+    "idle": 317,
+    "walk": 314,
+    "textures": "null:null",
+    "defaultSelected": false
+  },
+  {
     "itemId": 1965,
     "symbol": "CABBAGE",
     "label": "Cabbage",

@@ -104,12 +104,26 @@ public class VarrockStrayCatsPlugin extends Plugin
 	public void onMenuEntryAdded(MenuEntryAdded event)
 	{
 		MenuEntry entry = event.getMenuEntry();
-		String[] text = texts(menuNpc(entry));
+		NPC npc = menuNpc(entry);
+		String[] text = texts(npc);
 		if (text != null)
 		{
 			// Preserve the selected item prefix, action opcode and original NPC index.
-			entry.setTarget(entry.getTarget().replace("Stray dog", text[0]));
+			DogAppearance appearance = dogs.get(npc);
+			String originalName = appearance.originalNpcId == NpcID.XMAS24_STRAYDOG_FINAL
+				? "Duke" : "Stray dog";
+			if (appearance.variant != null)
+			{
+				entry.setTarget(renameNpcTarget(entry.getTarget(), originalName, text[0]));
+			}
 		}
+	}
+
+	static String renameNpcTarget(String target, String originalName, String replacementName)
+	{
+		int index = target.lastIndexOf(originalName);
+		return index < 0 ? target : target.substring(0, index) + replacementName
+			+ target.substring(index + originalName.length());
 	}
 
 	@Subscribe
@@ -121,6 +135,14 @@ public class VarrockStrayCatsPlugin extends Plugin
 		String[] text = texts(npc);
 		if (text == null)
 		{
+			return;
+		}
+		if (entry.getType() == MenuAction.EXAMINE_NPC)
+		{
+			// Replace only this cosmetic NPC's existing examine, without a server action.
+			event.consume();
+			client.addChatMessage(ChatMessageType.NPC_EXAMINE, "",
+				ExamineTexts.get(dogs.get(npc).variant), "");
 			return;
 		}
 		String option = entry.getOption();

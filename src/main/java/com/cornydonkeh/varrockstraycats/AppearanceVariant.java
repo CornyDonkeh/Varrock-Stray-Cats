@@ -500,6 +500,8 @@ enum AppearanceVariant
     APPEARANCEMM2DEMONGLOUGH(NpcID.MM2_DEMON_GLOUGH, false, AnimationID.GIANT_UPDATE_BASIC_READY, AnimationID.GIANT_UPDATE_BASIC_WALK, null, null, VarrockStrayCatsConfig::appearanceMm2DemonGlough),
     APPEARANCESOTEARIANWYNCOMBAT(NpcID.SOTE_ARIANWYN_COMBAT, false, AnimationID.HUMAN_READY, AnimationID.HUMAN_WALK_F, null, null, VarrockStrayCatsConfig::appearanceSoteArianwynCombat),
     APPEARANCEWISEOLDMAN(NpcID.WISE_OLD_MAN, false, AnimationID.HUMAN_STAFFREADY, AnimationID.WALK_WALKINGSTICK, null, null, VarrockStrayCatsConfig::appearanceWiseOldMan),
+    APPEARANCEBOB(NpcID.DS2_MEETING_BOB, false, AnimationID.CAT_READY, AnimationID.CAT_WALK, null, null, VarrockStrayCatsConfig::appearanceBob),
+    APPEARANCEEVILBOB(NpcID.MACRO_EVIL_BOB_OUTSIDE, false, AnimationID.CAT_READY, AnimationID.CAT_WALK, null, null, VarrockStrayCatsConfig::appearanceEvilBob),
     APPEARANCEITEMCABBAGE(ItemID.CABBAGE, true, -1, -1, null, null, VarrockStrayCatsConfig::appearanceItemCabbage),
     APPEARANCEGIANTCABBAGE(ItemID.CABBAGE, true, -1, -1, null, null, 200, VarrockStrayCatsConfig::appearanceGiantCabbage),
     APPEARANCEITEMFISHBOWLBLUEFISH(ItemID.FISHBOWL_BLUEFISH, true, -1, -1, null, null, VarrockStrayCatsConfig::appearanceItemFishbowlBluefish),

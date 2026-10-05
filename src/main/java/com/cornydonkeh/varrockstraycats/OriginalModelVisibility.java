@@ -5,11 +5,11 @@ import java.util.IdentityHashMap;
 import java.util.Map;
 import net.runelite.api.Model;
 
-/** Temporarily masks faces without changing the original model's clickbox geometry. */
+/** Temporarily masks faces while preserving the vertices used by the native bounding-box clickbox. */
 final class OriginalModelVisibility
 {
 	// Animated NPC models share these arrays with their cached base models.
-	private final Map<int[], int[]> originalColors = new IdentityHashMap<>();
+	private final Map<int[], int[]> originalArrays = new IdentityHashMap<>();
 
 	void hide(Model model)
 	{
@@ -18,21 +18,30 @@ final class OriginalModelVisibility
 		{
 			return;
 		}
-		int[] colors = model.getFaceColors3();
-		if (colors != null && !originalColors.containsKey(colors))
+		// -2 is the client's non-rendered face sentinel, not a color value.
+		mask(model.getFaceColors3(), -2);
+		// Outline renderers ignore face colours. Zero-area triangles are culled by
+		// those renderers too. Keep all vertices intact for the original bounds.
+		mask(model.getFaceIndices1(), 0);
+		mask(model.getFaceIndices2(), 0);
+		mask(model.getFaceIndices3(), 0);
+	}
+
+	private void mask(int[] array, int value)
+	{
+		if (array != null && !originalArrays.containsKey(array))
 		{
-			originalColors.put(colors, colors.clone());
-			// -2 is the client's non-rendered face sentinel, not a color value.
-			Arrays.fill(colors, -2);
+			originalArrays.put(array, array.clone());
+			Arrays.fill(array, value);
 		}
 	}
 
 	void restore()
 	{
-		for (Map.Entry<int[], int[]> entry : originalColors.entrySet())
+		for (Map.Entry<int[], int[]> entry : originalArrays.entrySet())
 		{
 			System.arraycopy(entry.getValue(), 0, entry.getKey(), 0, entry.getKey().length);
 		}
-		originalColors.clear();
+		originalArrays.clear();
 	}
 }

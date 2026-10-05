@@ -127,6 +127,10 @@ add(by_id[8865],'Bosses: Quests','Elven traitor (Arianwyn)')
 
 # Scope is pets, obtainable cat stages, bosses, Wise Old Man and cabbage.
 add(by_id[2108],'Characters & cabbage','Wise Old Man')
+add(by_id[8055],'Characters & cabbage','Bob','appearanceBob')
+entries[-1]['defaultSelected'] = False
+add(by_id[390],'Characters & cabbage','Evil Bob','appearanceEvilBob')
+entries[-1]['defaultSelected'] = False
 
 def item(symbol,label,section):
     id=next(i for i,s in item_constants.items() if s==symbol)

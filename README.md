@@ -28,9 +28,13 @@ Petting, shooing and feeding use the approved creature-specific narration in
 [the interaction catalogue](docs/interaction-text-proposal.md). The cabbage sizes
 have distinct feeding lines. These are cosmetic text reactions, not recorded audio.
 Player-authored chat and server behavior remain unchanged. These cosmetic models do not
-become owned pets. The rendering callback hides the original dog's model faces
+become owned pets. The rendering callback hides the original dog's model faces and hover outlines
 while preserving its original geometry, clickbox, and normal NPC menus.
 Pet, shoo-away, and item-on-NPC actions still target the original stray dog.
+Appearance options include opt-in **Bob** and **Evil Bob** under **Characters & cabbage**,
+plus a distinct cosmetic examine for every appearance. The [examine drafts](docs/examine-drafts.md)
+are unverified lore-based writing, not checked against the normal in-game examines.
+Only an active replacement changes Examine; unrelated NPCs retain their normal text.
 Bosses keep their native scale. Stationary models and inventory
 pets follow the stray without walking animations.
 **Giant cabbage** is an additional checkbox beside regular cabbage. It enlarges

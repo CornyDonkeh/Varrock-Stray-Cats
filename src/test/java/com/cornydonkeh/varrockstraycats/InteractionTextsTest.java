@@ -6,6 +6,17 @@ import static org.junit.Assert.*;
 public class InteractionTextsTest
 {
     @Test
+    public void dukeMenuNameChangesWithoutChangingTheSelectedItemPrefix()
+    {
+        assertEquals("<col=ffff00>Bob", VarrockStrayCatsPlugin.renameNpcTarget(
+            "<col=ffff00>Duke", "Duke", "Bob"));
+        assertEquals("Duke's item -> <col=ffff00>Evil Bob", VarrockStrayCatsPlugin.renameNpcTarget(
+            "Duke's item -> <col=ffff00>Duke", "Duke", "Evil Bob"));
+        assertEquals("Bones -> <col=ffff00>Cat", VarrockStrayCatsPlugin.renameNpcTarget(
+            "Bones -> <col=ffff00>Stray dog", "Stray dog", "Cat"));
+        assertEquals("Someone else", VarrockStrayCatsPlugin.renameNpcTarget("Someone else", "Duke", "Bob"));
+    }
+    @Test
     public void everyAppearanceHasAllApprovedTexts()
     {
         for (AppearanceVariant variant : AppearanceVariant.values())

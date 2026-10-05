@@ -16,7 +16,7 @@ public interface VarrockStrayCatsConfig extends Config
     @ConfigItem(keyName = HEAL_VARROCK_DOGS, name = "Enable appearances", description = "Heal Varrock's strays and Duke, or use checked favorite appearances. Cosmetic changes are local to your client.", position = 0)
     default boolean healVarrockDogs() { return true; }
 
-    @ConfigItem(keyName = "randomBreeds", name = "Random favorite appearances", description = "Choose equally from checked cats, dogs, pets, bosses, Wise Old Man and cabbage. With none checked, use healthy dogs.", position = 1)
+    @ConfigItem(keyName = "randomBreeds", name = "Random favorite appearances", description = "Choose equally from checked cats, dogs, pets, bosses, Bob, Evil Bob, Wise Old Man and cabbage. With none checked, use healthy dogs.", position = 1)
     default boolean randomBreeds() { return true; }
 
     @ConfigItem(keyName = "replaceDuke", name = "Include Duke in favorites", description = "Let Duke use checked favorites too. Disabled: Duke always keeps his healthy appearance.", position = 2)
@@ -513,6 +513,8 @@ public interface VarrockStrayCatsConfig extends Config
         "appearanceMm2DemonGlough",
         "appearanceSoteArianwynCombat",
         "appearanceWiseOldMan",
+        "appearanceBob",
+        "appearanceEvilBob",
         "appearanceItemCabbage",
         "appearanceGiantCabbage",
         "appearanceItemFishbowlBluefish",
@@ -2077,10 +2079,16 @@ public interface VarrockStrayCatsConfig extends Config
     @ConfigItem(keyName = "appearanceWiseOldMan", name = "Wise Old Man", description = "Include Wise Old Man in random appearances.", section = section26, position = 0)
     default boolean appearanceWiseOldMan() { return true; }
 
-    @ConfigItem(keyName = "appearanceItemCabbage", name = "Cabbage", description = "Include Cabbage in random appearances.", section = section26, position = 1)
+    @ConfigItem(keyName = "appearanceBob", name = "Bob", description = "Include Bob in random appearances.", section = section26, position = 1)
+    default boolean appearanceBob() { return false; }
+
+    @ConfigItem(keyName = "appearanceEvilBob", name = "Evil Bob", description = "Include Evil Bob in random appearances.", section = section26, position = 2)
+    default boolean appearanceEvilBob() { return false; }
+
+    @ConfigItem(keyName = "appearanceItemCabbage", name = "Cabbage", description = "Include Cabbage in random appearances.", section = section26, position = 3)
     default boolean appearanceItemCabbage() { return true; }
 
-    @ConfigItem(keyName = "appearanceGiantCabbage", name = "Giant cabbage", description = "Include Giant cabbage in random appearances.", section = section26, position = 2)
+    @ConfigItem(keyName = "appearanceGiantCabbage", name = "Giant cabbage", description = "Include Giant cabbage in random appearances.", section = section26, position = 4)
     default boolean appearanceGiantCabbage() { return false; }
 
 }

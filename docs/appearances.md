@@ -31,6 +31,8 @@ cache in `tools/cache/`. Save RuneLite gameval sources as `npc-ids-source.txt`,
 `animation-ids-source.txt`, `item-ids-source.txt`, and wiki raw pet/boss lists as
 `pets-wiki.txt` / `bosses-wiki.txt` in the workspace root. Then run
 `python tools/build_catalogue.py` and `python tools/generate_java.py`.
+Regenerate interaction texts with `python tools/generate_interaction_texts.py`.
+Regenerate the unverified local examine drafts with `python tools/generate_examine_texts.py`.
 Run `tools/fetch-boss-ids.ps1` to refresh the optional per-boss wiki ID cross-check.
 Review `tools/appearance-catalogue.json` before generating Java. Sleeping, dead,
 cutscene and other inactive models are deprioritized when choosing boss models.
@@ -663,6 +665,8 @@ cutscene and other inactive models are deprioritized when choosing boss models.
 | Checkbox | Definition | Idle | Walk |
 | --- | --- | --- | --- |
 | Wise Old Man | NpcID.WISE_OLD_MAN (2108) | 813 | 1146 |
+| Bob | NpcID.DS2_MEETING_BOB (8055) | 317 | 314 |
+| Evil Bob | NpcID.MACRO_EVIL_BOB_OUTSIDE (390) | 317 | 314 |
 | Cabbage | ItemID.CABBAGE (1965) | -1 | -1 |
 | Giant cabbage | ItemID.CABBAGE (1965) | -1 | -1 |
 

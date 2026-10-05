@@ -35,7 +35,7 @@ public interface VarrockStrayCatsConfig extends Config
     @ConfigItem(keyName = HEAL_VARROCK_DOGS, name = "Enable appearances", description = "Heal Varrock's strays and Duke, or use checked favorite appearances. Cosmetic changes are local to your client.", position = 0)
     default boolean healVarrockDogs() { return true; }
 
-    @ConfigItem(keyName = "randomBreeds", name = "Random favorite appearances", description = "Choose equally from checked cats, dogs, pets, bosses, Wise Old Man and cabbage. With none checked, use healthy dogs.", position = 1)
+    @ConfigItem(keyName = "randomBreeds", name = "Random favorite appearances", description = "Choose equally from checked cats, dogs, pets, bosses, Bob, Evil Bob, Wise Old Man and cabbage. With none checked, use healthy dogs.", position = 1)
     default boolean randomBreeds() { return true; }
 
     @ConfigItem(keyName = "replaceDuke", name = "Include Duke in favorites", description = "Let Duke use checked favorites too. Disabled: Duke always keeps his healthy appearance.", position = 2)
@@ -51,7 +51,7 @@ for i,s in enumerate(sections):
     section_id = original_dog_sections.get(s.removeprefix('Dogs: '), sk)
     config+=f'    @ConfigSection(name = {quoted(s)}, description = {quoted("Favorite appearances: "+s)}, position = {10+i}, closedByDefault = true)\n    String {sk} = "{section_id}";\n\n'
     for pos,e in enumerate(x for x in entries if x['section']==s):
-        default = 'true' if (s.startswith('Cats:') or s == 'Characters & cabbage') and not e.get('targetHeight') else 'false'
+        default = 'true' if e.get('defaultSelected', (s.startswith('Cats:') or s == 'Characters & cabbage') and not e.get('targetHeight')) else 'false'
         config+=f'    @ConfigItem(keyName = "{e["key"]}", name = {quoted(e["label"])}, description = {quoted("Include "+e["label"]+" in random appearances.")}, section = {sk}, position = {pos})\n    default boolean {e["key"]}() {{ return {default}; }}\n\n'
 config+='}\n'
 (JAVA/'VarrockStrayCatsConfig.java').write_text(config,encoding='utf-8')
@@ -154,6 +154,8 @@ cache in `tools/cache/`. Save RuneLite gameval sources as `npc-ids-source.txt`,
 `animation-ids-source.txt`, `item-ids-source.txt`, and wiki raw pet/boss lists as
 `pets-wiki.txt` / `bosses-wiki.txt` in the workspace root. Then run
 `python tools/build_catalogue.py` and `python tools/generate_java.py`.
+Regenerate interaction texts with `python tools/generate_interaction_texts.py`.
+Regenerate the unverified local examine drafts with `python tools/generate_examine_texts.py`.
 Run `tools/fetch-boss-ids.ps1` to refresh the optional per-boss wiki ID cross-check.
 Review `tools/appearance-catalogue.json` before generating Java. Sleeping, dead,
 cutscene and other inactive models are deprioritized when choosing boss models.
