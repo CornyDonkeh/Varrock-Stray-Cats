@@ -23,6 +23,7 @@ import net.runelite.api.WorldView;
 import net.runelite.api.coords.LocalPoint;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.api.events.GameTick;
+import net.runelite.api.events.BeforeRender;
 import net.runelite.api.events.NpcSpawned;
 import net.runelite.api.gameval.NpcID;
 import net.runelite.client.callback.ClientThread;
@@ -53,8 +54,6 @@ public class OriginalVisibilityTest
     {
         WorldView world = mock(WorldView.class);
         NPC stray = mock(NPC.class);
-        GameObject strayObject = mock(GameObject.class);
-        when(strayObject.getRenderable()).thenReturn(stray);
         NPC unrelated = mock(NPC.class);
         NPCComposition definition = mock(NPCComposition.class);
         ModelData data = mock(ModelData.class);
@@ -82,11 +81,20 @@ public class OriginalVisibilityTest
         plugin.onNpcSpawned(new NpcSpawned(stray));
 
         // Missing/unready assets must not make the dog disappear.
-        assertTrue(callback.getValue().drawObject(null, strayObject));
+        assertTrue(callback.getValue().addEntity(stray, false));
         plugin.onGameTick(new GameTick());
-        assertTrue(callback.getValue().drawObject(null, strayObject));
+        assertTrue(callback.getValue().addEntity(stray, false));
 
         when(replacement.isActive()).thenReturn(true);
+
+        Model originalModel = mock(Model.class);
+        int[] originalColors = {123, 456, -1};
+        when(stray.getModel()).thenReturn(originalModel);
+        when(originalModel.useBoundingBox()).thenReturn(true);
+        when(originalModel.getFaceColors3()).thenReturn(originalColors);
+        assertTrue("Preserve scene insertion for native NPC interactions",
+            callback.getValue().addEntity(stray, false));
+        assertArrayEquals(new int[] {-2, -2, -2}, originalColors);
         MenuEntry entry = mock(MenuEntry.class);
         when(entry.getNpc()).thenReturn(stray);
         when(entry.getTarget()).thenReturn("Bones -> <col=ffff00>Stray dog");
@@ -130,24 +138,34 @@ public class OriginalVisibilityTest
         plugin.onChatMessage(new ChatMessage(privateChat, ChatMessageType.PRIVATECHAT,
             "Tester", "It happily gnaws on them.", "", 0));
         verify(privateChat, never()).setValue(anyString());
-        assertFalse("Original dog must not render underneath the replacement",
-            callback.getValue().drawObject(null, strayObject));
-        assertTrue("Keep original NPC in scene for clickbox and item-on-NPC menus",
+        assertTrue("The original clickbox must remain in the scene",
             callback.getValue().addEntity(stray, false));
         assertTrue(callback.getValue().addEntity(stray, true));
         assertTrue(callback.getValue().addEntity(unrelated, false));
         assertTrue(callback.getValue().addEntity(mock(Renderable.class), false));
         GameObject unrelatedObject = mock(GameObject.class);
-        when(unrelatedObject.getRenderable()).thenReturn(unrelated);
         assertTrue(callback.getValue().drawObject(null, unrelatedObject));
         assertTrue(callback.getValue().drawObject(null, mock(TileObject.class)));
         GameObject replacementObject = mock(GameObject.class);
-        when(replacementObject.getRenderable()).thenReturn(mock(Renderable.class));
         assertTrue(callback.getValue().drawObject(null, replacementObject));
 
-        plugin.shutDown();
+        plugin.onBeforeRender(new BeforeRender());
+        assertArrayEquals(new int[] {123, 456, -1}, originalColors);
+        when(replacement.isActive()).thenReturn(false);
+        assertTrue("Restore the original if the replacement becomes inactive",
+            callback.getValue().addEntity(stray, false));
+        assertArrayEquals(new int[] {123, 456, -1}, originalColors);
+
+        when(replacement.isActive()).thenReturn(true);
         assertTrue(callback.getValue().addEntity(stray, false));
-        assertTrue(callback.getValue().drawObject(null, strayObject));
+        assertArrayEquals(new int[] {-2, -2, -2}, originalColors);
+
+        plugin.shutDown();
+        ArgumentCaptor<Runnable> cleanup = ArgumentCaptor.forClass(Runnable.class);
+        verify(clientThread, atLeastOnce()).invoke(cleanup.capture());
+        cleanup.getValue().run();
+        assertArrayEquals(new int[] {123, 456, -1}, originalColors);
+        assertTrue(callback.getValue().addEntity(stray, false));
         verify(renderCallbackManager).unregister(callback.getValue());
     }
 }

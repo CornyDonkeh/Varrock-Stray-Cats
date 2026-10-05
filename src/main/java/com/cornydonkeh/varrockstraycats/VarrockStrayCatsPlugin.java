@@ -17,7 +17,6 @@ import net.runelite.api.events.MenuEntryAdded;
 import net.runelite.api.events.MenuOptionClicked;
 import net.runelite.api.events.OverheadTextChanged;
 import net.runelite.api.GameState;
-import net.runelite.api.GameObject;
 import net.runelite.api.ItemComposition;
 import net.runelite.api.Model;
 import net.runelite.api.ModelData;
@@ -25,8 +24,6 @@ import net.runelite.api.NPC;
 import net.runelite.api.NPCComposition;
 import net.runelite.api.Renderable;
 import net.runelite.api.RuneLiteObject;
-import net.runelite.api.Scene;
-import net.runelite.api.TileObject;
 import net.runelite.api.events.BeforeRender;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.GameTick;
@@ -279,15 +276,18 @@ public class VarrockStrayCatsPlugin extends Plugin
 		return normalized.equals("The dog doesn't seem interested in that.") ? text[13] : null;
 	}
 	private final Random random = new Random();
+	private final OriginalModelVisibility originalVisibility = new OriginalModelVisibility();
 	private final RenderCallback drawListener = new RenderCallback()
 	{
 		@Override
-		public boolean drawObject(Scene scene, TileObject object)
+		public boolean addEntity(Renderable renderable, boolean ui)
 		{
-			// Keep the NPC in the scene for the client's original clickbox and menus.
-			// Temporary NPC scene objects wrap their NPC as a GameObject renderable.
-			return !(object instanceof GameObject)
-				|| shouldDraw(((GameObject) object).getRenderable());
+			if (!ui)
+			{
+				hideOriginalModel(renderable);
+			}
+			// Preserve scene insertion, native clickbox checks and NPC menu generation.
+			return true;
 		}
 	};
 	private volatile boolean running;
@@ -603,6 +603,8 @@ public class VarrockStrayCatsPlugin extends Plugin
 	@Subscribe
 	public void onBeforeRender(BeforeRender event)
 	{
+		// Restore cached arrays before each frame, then mask only ready replacements.
+		originalVisibility.restore();
 		synchronizeReplacements();
 	}
 
@@ -659,25 +661,39 @@ public class VarrockStrayCatsPlugin extends Plugin
 			appearance.widthScale, appearance.heightScale));
 	}
 
-	private boolean shouldDraw(Renderable renderable)
+	private void hideOriginalModel(Renderable renderable)
 	{
-		// Suppress geometry only, never scene insertion or interaction processing.
+		// Leave the original visible until a replacement is ready to render.
 		if (!running || !(renderable instanceof NPC))
 		{
-			return true;
+			return;
 		}
 		DogAppearance appearance = dogs.get(renderable);
+		if (appearance == null || appearance.replacement == null || !appearance.replacement.isActive())
+		{
+			return;
+		}
+		// Same-definition dogs share cached face arrays. Never hide an unready dog.
+		for (DogAppearance other : dogs.values())
+		{
+			if (other.originalNpcId == appearance.originalNpcId
+				&& (other.replacement == null || !other.replacement.isActive()))
+			{
+				return;
+			}
+		}
+		originalVisibility.hide(renderable.getModel());
 		if (appearance != null && appearance.replacement != null && appearance.replacement.isActive()
 			&& !appearance.suppressionLogged)
 		{
 			appearance.suppressionLogged = true;
 			log.debug("Suppressing original stray {} draw", appearance.originalNpcId);
 		}
-		return appearance == null || appearance.replacement == null || !appearance.replacement.isActive();
 	}
 
 	private void removeDog(NPC npc)
 	{
+		originalVisibility.restore();
 		DogAppearance appearance = dogs.remove(npc);
 		if (appearance != null && appearance.replacement != null)
 		{
@@ -687,6 +703,7 @@ public class VarrockStrayCatsPlugin extends Plugin
 
 	private void clearDogs()
 	{
+		originalVisibility.restore();
 		for (DogAppearance appearance : dogs.values())
 		{
 			if (appearance.replacement != null)

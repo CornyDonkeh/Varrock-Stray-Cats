@@ -28,8 +28,8 @@ Petting, shooing and feeding use the approved creature-specific narration in
 [the interaction catalogue](docs/interaction-text-proposal.md). The cabbage sizes
 have distinct feeding lines. These are cosmetic text reactions, not recorded audio.
 Player-authored chat and server behavior remain unchanged. These cosmetic models do not
-become owned pets. The rendering callback hides only the original dog's drawn
-model, keeping the original NPC in the scene for its normal interaction checks.
+become owned pets. The rendering callback hides the original dog's model faces
+while preserving its original geometry, clickbox, and normal NPC menus.
 Pet, shoo-away, and item-on-NPC actions still target the original stray dog.
 Bosses keep their native scale. Stationary models and inventory
 pets follow the stray without walking animations.
@@ -81,8 +81,8 @@ The build and unit tests cannot verify in-game rendering. Manually check:
 6. Uncheck every favorite: healthy dogs return. Turn the master switch off:
    injured originals return. Disable/re-enable, relog, leave/return and hop
    worlds: no orphaned or doubled replacements should remain.
-7. Check overhead text and right-click behavior; the original dog's 3D clickbox
-   is hidden with its model. Repeat visibility checks with GPU on and off. Other NPCs,
+7. Check overhead text, right-click menus, petting, shooing, and feeding through the
+   original dog's clickbox. Repeat visibility checks with GPU on and off. Other NPCs,
    including actual bosses and owned pets, should retain normal appearances.
 
 Original plugin copyright and BSD license are retained in [LICENSE](LICENSE).
