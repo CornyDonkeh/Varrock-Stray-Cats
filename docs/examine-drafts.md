@@ -1,6 +1,6 @@
-# Examine drafts for local testing
+# Examine texts
 
-**Source status: unverified lore-based drafts.** These lines are original writing, not verified adaptations or quotations of the normal in-game examines. No Wiki lookup was used for this catalogue.
+Custom examine text for each appearance. These are not the original in-game descriptions.
 
 Every appearance has a distinct line. Existing native Examine menus are used; only an active cosmetic stray receives the local replacement text. Actual creatures, pets, items, and disabled appearances keep their normal examines.
 

@@ -3,7 +3,7 @@ package com.cornydonkeh.varrockstraycats;
 import java.util.EnumMap;
 import java.util.Map;
 
-/** Generated from the approved interaction proposal. */
+/** Interaction text from docs/interaction-text-proposal.md. */
 final class InteractionTexts
 {
     private static final Map<AppearanceVariant, String[]> TEXTS = new EnumMap<>(AppearanceVariant.class);

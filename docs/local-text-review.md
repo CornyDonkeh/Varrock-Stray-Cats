@@ -1,6 +1,6 @@
-# Local test text catalogue
+# Text catalogue
 
-Review catalogue. All examine lines are unverified lore-based custom writing.
+Interaction and examine text used by the plugin.
 
 ## Bob and Evil Bob: Pet, Shoo, Feed, and rejected items
 
@@ -17,7 +17,7 @@ Review catalogue. All examine lines are unverified lore-based custom writing.
 
 **Rejected item:** Bob sniffs the offering, then politely looks elsewhere.
 
-**Voice basis:** Lore-based draft: wandering black cat with a heroic past.
+**Character:** A wandering black cat with a heroic past.
 
 ### Evil Bob (NPC 390)
 
@@ -32,12 +32,12 @@ Review catalogue. All examine lines are unverified lore-based custom writing.
 
 **Rejected item:** Evil Bob rejects the offering with a very small, very imperial huff.
 
-**Voice basis:** Lore-based draft: imperious feline ruler of ScapeRune.
+**Character:** The imperious feline ruler of ScapeRune.
 
 
 # All 496 examine texts
 
-**Source status: unverified lore-based drafts.** These lines are original writing, not verified adaptations or quotations of the normal in-game examines. No Wiki lookup was used for this catalogue.
+Custom examine text for each appearance. These are not the original in-game descriptions.
 
 Every appearance has a distinct line. Existing native Examine menus are used; only an active cosmetic stray receives the local replacement text. Actual creatures, pets, items, and disabled appearances keep their normal examines.
 

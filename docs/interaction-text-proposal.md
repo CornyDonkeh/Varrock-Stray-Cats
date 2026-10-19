@@ -1,6 +1,6 @@
-# All proposed interaction texts
+# Interaction texts
 
-Interaction catalogue. The 494 previously approved appearances and the two local Bob/Evil Bob drafts are listed individually. Voice evidence and research limitations are in [the voice proposal](noise-proposal.md). The narration is custom writing. Names in menus are cosmetic; actions still target the real dog. Only automatic interaction lines change, never player-authored chat. Player lines refer to automatic overhead text; outgoing chat is never rewritten. Examine drafts for all 496 options are in [the examine catalogue](examine-drafts.md).
+Text for all 496 appearances. Menu names and automatic overhead text match the appearance; actions still target the original dog. Player chat is unchanged. See the [examine catalogue](examine-drafts.md) for examine text and the [voice notes](noise-proposal.md) for reference material.
 
 Small cabbage: **You hear a faint, leafy crunch as the bone dissolves into fertilizer.**
 
@@ -7438,7 +7438,7 @@ Giant cabbage: **The bones vanish into the folds, followed by a wet, echoing cru
 
 **Rejected item:** Bob sniffs the offering, then politely looks elsewhere.
 
-**Voice basis:** Lore-based draft: wandering black cat with a heroic past.
+**Character:** A wandering black cat with a heroic past.
 
 ### Evil Bob (NPC 390)
 
@@ -7453,7 +7453,7 @@ Giant cabbage: **The bones vanish into the folds, followed by a wet, echoing cru
 
 **Rejected item:** Evil Bob rejects the offering with a very small, very imperial huff.
 
-**Voice basis:** Lore-based draft: imperious feline ruler of ScapeRune.
+**Character:** The imperious feline ruler of ScapeRune.
 
 ### Wise Old Man (NPC 2108)
 

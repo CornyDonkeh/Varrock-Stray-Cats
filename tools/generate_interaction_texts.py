@@ -26,7 +26,7 @@ for block in re.split(r'(?m)(?=^## )', proposal):
         entries.append((candidates[0]['key'].upper(), [name] + sum(rows, []) + [rejected]))
 assert len(entries) == len(catalogue), len(entries)
 quote = lambda s: json.dumps(s, ensure_ascii=False)
-out = ['package com.cornydonkeh.varrockstraycats;', '', 'import java.util.EnumMap;', 'import java.util.Map;', '', '/** Generated from the approved interaction proposal. */', 'final class InteractionTexts', '{', '    private static final Map<AppearanceVariant, String[]> TEXTS = new EnumMap<>(AppearanceVariant.class);', '    static', '    {']
+out = ['package com.cornydonkeh.varrockstraycats;', '', 'import java.util.EnumMap;', 'import java.util.Map;', '', '/** Interaction text from docs/interaction-text-proposal.md. */', 'final class InteractionTexts', '{', '    private static final Map<AppearanceVariant, String[]> TEXTS = new EnumMap<>(AppearanceVariant.class);', '    static', '    {']
 for i in range(0, len(entries), 20):
     out.append(f'        group{i}();')
 fallback = ['Stray dog', "Who's a good doggy?", 'Woof!', 'You gently pet them. They wag their tail happily.', 'Go on, Stray dog!', 'Whine!', 'They lower their tail and move away.', 'Here you go, Stray dog!', 'Woof woof!', 'You offer them the bones. They happily gnaw on them.', 'Here you go, Stray dog!', 'Woof woof!', 'You offer them some meat. They gobble it up.', 'They sniff the item, then turn their nose up at it.']

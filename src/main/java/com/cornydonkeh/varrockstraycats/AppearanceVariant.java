@@ -8,7 +8,7 @@ import net.runelite.api.gameval.AnimationID;
 import net.runelite.api.gameval.ItemID;
 import net.runelite.api.gameval.NpcID;
 
-/** Generated offline from a reviewed cache catalogue; see docs/appearances.md. */
+/** Appearance definitions generated from the cache catalogue; see docs/appearances.md. */
 enum AppearanceVariant
 {
     BERNESEPUPPYCHOCOLATE(NpcID.SHEPARD_CHOCO_PUPPY, false, AnimationID.DOG_UPDATE_SMALL_DOG_READY, AnimationID.DOG_UPDATE_WALK, null, null, VarrockStrayCatsConfig::bernesePuppyChocolate),

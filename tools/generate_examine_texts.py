@@ -1,11 +1,11 @@
-"""Offline lore-based examine drafts. Original in-game examines are NOT verified."""
+"""Generate custom examine text for the appearance catalogue."""
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 entries = json.loads((ROOT / 'tools/appearance-catalogue.json').read_text())
 
-# Individually written lore drafts, not quotations or verified normal examines.
+# Custom descriptions, separate from the original in-game examines.
 SPECIAL = dict(line.split('|', 1) for line in '''
 Wise Old Man|A wise old wizard with a twinkle in his eye and suspiciously roomy pockets.
 Bob|A wandering black cat with the heart of a hero and whiskers worth protecting.
@@ -360,13 +360,13 @@ def examine(entry):
         if family in FAMILIES:
             detail = 'classic' if detail == 'Default' else detail.lower()
             return FAMILIES[family].format(detail=detail)
-    raise ValueError('Write an individual lore draft for ' + label)
+    raise ValueError('Missing examine text for ' + label)
 
 texts = [(e, examine(e)) for e in entries]
 assert len({text for _, text in texts}) == len(texts), 'Each option needs its own distinct examine'
 quote = lambda text: json.dumps(text, ensure_ascii=False)
 out = ['package com.cornydonkeh.varrockstraycats;', '', 'import java.util.EnumMap;',
-       'import java.util.Map;', '', '/** Generated lore-based drafts; original examine texts are unverified. */',
+       'import java.util.Map;', '', '/** Custom examine text. See tools/generate_examine_texts.py. */',
        'final class ExamineTexts', '{',
        '    private static final Map<AppearanceVariant, String> TEXTS = new EnumMap<>(AppearanceVariant.class);',
        '    static', '    {']
@@ -382,12 +382,12 @@ for i in range(0, len(texts), 20):
     out.append('    }')
 out.append('}')
 (ROOT / 'src/main/java/com/cornydonkeh/varrockstraycats/ExamineTexts.java').write_text('\n'.join(out)+'\n', encoding='utf-8')
-doc = ['# Examine drafts for local testing', '',
-       '**Source status: unverified lore-based drafts.** These lines are original writing, not verified adaptations or quotations of the normal in-game examines. No Wiki lookup was used for this catalogue.', '',
+doc = ['# Examine texts', '',
+       'Custom examine text for each appearance. These are not the original in-game descriptions.', '',
        'Every appearance has a distinct line. Existing native Examine menus are used; only an active cosmetic stray receives the local replacement text. Actual creatures, pets, items, and disabled appearances keep their normal examines.', '']
 for section in dict.fromkeys(e['section'] for e in entries):
     doc += ['## '+section, '', '| Option | Draft examine |', '| --- | --- |']
     doc += [f'| {e["label"]} | {text} |' for e, text in texts if e['section'] == section]
     doc.append('')
 (ROOT / 'docs/examine-drafts.md').write_text('\n'.join(doc)+'\n', encoding='utf-8')
-print(f'Generated {len(texts)} distinct, unverified lore-based examine drafts.')
+print(f'Generated {len(texts)} custom examine texts.')

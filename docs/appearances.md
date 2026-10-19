@@ -32,7 +32,7 @@ cache in `tools/cache/`. Save RuneLite gameval sources as `npc-ids-source.txt`,
 `pets-wiki.txt` / `bosses-wiki.txt` in the workspace root. Then run
 `python tools/build_catalogue.py` and `python tools/generate_java.py`.
 Regenerate interaction texts with `python tools/generate_interaction_texts.py`.
-Regenerate the unverified local examine drafts with `python tools/generate_examine_texts.py`.
+Regenerate the custom examine text with `python tools/generate_examine_texts.py`.
 Run `tools/fetch-boss-ids.ps1` to refresh the optional per-boss wiki ID cross-check.
 Review `tools/appearance-catalogue.json` before generating Java. Sleeping, dead,
 cutscene and other inactive models are deprioritized when choosing boss models.

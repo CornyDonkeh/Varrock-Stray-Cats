@@ -3,7 +3,7 @@ package com.cornydonkeh.varrockstraycats;
 import java.util.EnumMap;
 import java.util.Map;
 
-/** Generated lore-based drafts; original examine texts are unverified. */
+/** Custom examine text. See tools/generate_examine_texts.py. */
 final class ExamineTexts
 {
     private static final Map<AppearanceVariant, String> TEXTS = new EnumMap<>(AppearanceVariant.class);

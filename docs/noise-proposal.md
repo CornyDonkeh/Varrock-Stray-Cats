@@ -1,8 +1,8 @@
-# Varrock Stray Cats — proposed interaction voices
+# Interaction voice notes
 
-Proposal only, 2026-10-04. No plugin source or configuration changes made for this request.
+Reference notes from 2026-10-04. The current text is listed in [the interaction catalogue](interaction-text-proposal.md).
 
-This is overhead text replacing the cosmetic dog's reactions, not recorded audio or sound-effect IDs. Each row lists the proposed response to **pet / accepted feed / shoo**. Feed means the existing dog successfully receives bones or meat; a cosmetic refusal such as “Fish, please.” does not undo the server's feeding action. A future implementation should distinguish accepted food from rejected items.
+This is overhead text replacing the cosmetic dog's reactions, not recorded audio or sound-effect IDs. Each row lists the proposed response to **pet / accepted feed / shoo**. Feed means the existing dog successfully receives bones or meat; a cosmetic refusal such as “Fish, please.” does not undo the server's feeding action. Accepted food and rejected items use separate responses.
 
 ## Matching interaction labels and player text
 
